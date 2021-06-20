@@ -1,4 +1,16 @@
 <template>
-	<NavMobileComponent></NavMobileComponent>
+	<SideNavComponent />
+	<NavMobileComponent />
 	<router-view></router-view>
 </template>
+
+<script>
+	import NavMobileComponent from '../globalComponents/NavMobileComponent.vue';
+	import SideNavComponent from '../globalComponents/SideNavComponent.vue';
+	export default {
+		components: {
+			NavMobileComponent,
+			SideNavComponent
+		}
+	}
+</script>

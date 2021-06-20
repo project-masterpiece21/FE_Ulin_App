@@ -4,6 +4,7 @@ import HomeComponent from '../components/layout/HomeComponent.vue';
 import MomentComponent from '../components/layout/MomentComponent.vue';
 import CategoryComponent from '../components/layout/CategoryComponent.vue';
 import RankComponent from '../components/layout/RankComponent.vue';
+import DetailMenuComponent from '../components/layout/DetailMenuComponent.vue';
 
 const routes = [
 	{
@@ -14,6 +15,10 @@ const routes = [
 			{ path: 'category', component: CategoryComponent },
 			{ path: 'rank', component: RankComponent }
 		]
+	},
+	{
+		path: '/detail',
+		component: DetailMenuComponent
 	}
 ];
 
