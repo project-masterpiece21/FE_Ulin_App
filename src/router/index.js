@@ -1,5 +1,6 @@
 import { createWebHistory, createRouter } from 'vue-router';
 
+import MainComponent from '../components/layout/MainComponent.vue';
 import HomeComponent from '../components/layout/HomeComponent.vue';
 import MomentComponent from '../components/layout/MomentComponent.vue';
 import CategoryComponent from '../components/layout/CategoryComponent.vue';
@@ -9,8 +10,9 @@ import DetailMenuComponent from '../components/layout/DetailMenuComponent.vue';
 const routes = [
 	{
 		path: '/',
-		component: HomeComponent,
+		component: MainComponent,
 		children: [
+			{ path: 'home', alias: '/', component: HomeComponent },
 			{ path: 'moment', component: MomentComponent },
 			{ path: 'category', component: CategoryComponent },
 			{ path: 'rank', component: RankComponent }

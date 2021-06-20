@@ -1,17 +1,17 @@
 <template>
-	<nav class="fixed hidden md:block">
-		<div  class="xl:w-52 xl:ml-3 flex flex-col w-28">
+	<nav class="fixed hidden md:block z-10">
+		<div  class="xl:w-44 xl:ml-3 flex flex-col w-28 mt-6 h-screen">
 
 			<!-- Logo -->
 			<router-link to="/">
-				<figure class="lg:ml-0 lg:ml-3 lg:w-24 mb-3 w-20 mx-auto">
+				<figure class="lg:ml-0 2xl:ml-3 lg:ml-4 ml-4 lg:w-24 mb-3 w-24 mx-auto">
 					<img src="../../assets/img/logo/logo.png">
 				</figure>
 			</router-link>
 			<!-- Logo -->
 
 			<!-- Menu Navbar -->
-			<router-link :to="menu.link" v-for="menu in navMenu" :key="menu.name" class="xl:w-full group mt-7 mx-auto cursor-pointer block items-center">
+			<router-link :to="menu.link" v-for="menu in navMenu" :key="menu.name" class="xl:w-full group mt-5 mb-3 mx-auto cursor-pointer block items-center">
 
 				<div class="xl:w-full xl:h-12 xl:rounded-3xl flex items-center w-14 h-14 rounded-full group-hover:bg-white">
 
@@ -35,7 +35,7 @@
 	export default {
 		setup() {
 			const navMenu = reactive([
-				{ name: "Beranda", icon: "bx:bxs-home-circle", link:"/", isActive: false},
+				{ name: "Beranda", icon: "bx:bxs-home-circle", link:"/home", isActive: false},
 				{ name: "Momentum", icon: "ri:ghost-smile-fill", link:"/moment", isActive: false},
 				{ name: "Kategori", icon: "bx:bxs-category-alt", link:"/category", isActive: false},
 				{ name: "Peringkat", icon: "icomoon-free:trophy", link:"/rank", isActive: false}

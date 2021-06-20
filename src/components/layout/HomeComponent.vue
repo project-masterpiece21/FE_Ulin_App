@@ -1,16 +1,17 @@
 <template>
-	<SideNavComponent />
-	<NavMobileComponent />
-	<router-view></router-view>
+	<SearchMobileComponent />
+	<main class="md:flex xl:ml-52 ml-24">
+		<BannerComponent />
+	</main>
 </template>
 
 <script>
-	import NavMobileComponent from '../globalComponents/NavMobileComponent.vue';
-	import SideNavComponent from '../globalComponents/SideNavComponent.vue';
+	import SearchMobileComponent from '../pages/homeComponents/componentMobileOnly/SearchMobileComponent.vue';
+	import BannerComponent from '../pages/homeComponents/BannerComponent.vue';
 	export default {
 		components: {
-			NavMobileComponent,
-			SideNavComponent
+			SearchMobileComponent,
+			BannerComponent
 		}
 	}
 </script>

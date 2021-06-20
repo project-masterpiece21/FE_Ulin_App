@@ -17,7 +17,7 @@
 	export default {
 		setup() {
 			const navMenu = reactive([
-				{ name: "Beranda", icon: "bx:bxs-home-circle", link:"/"},
+				{ name: "Beranda", icon: "bx:bxs-home-circle", link:"/home"},
 				{ name: "Moment", icon: "ri:ghost-smile-fill", link:"/moment"},
 				{ name: "Kategory", icon: "bx:bxs-category-alt", link:"/category"},
 				{ name: "Peringkat", icon: "icomoon-free:trophy", link:"/rank"}
