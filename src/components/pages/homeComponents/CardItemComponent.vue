@@ -3,7 +3,7 @@
 			<div>
 				<figure class="flex-shrink-0">
 					<img
-						class="md:max-h-56 sm:h-60 h-52 w-full object-cover"
+						class="xl:h-60 md:h-72 sm:h-60 h-52 w-full object-cover"
 						src="https://images.unsplash.com/photo-1614773305142-260aa1658982?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=891&q=80"
 						alt="Man looking at item at a store"
 					/>
