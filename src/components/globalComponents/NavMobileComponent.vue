@@ -1,5 +1,5 @@
 <template>
-	<nav class="md:hidden w-full fixed bottom-0 inset-x-0 flex text-xs bg-white rounded-tl-3xl rounded-tr-3xl">
+	<nav class="md:hidden w-full fixed bottom-0 inset-x-0 flex text-xs bg-white rounded-tl-3xl rounded-tr-3xl z-10">
 
 		<router-link :to="menu.link" v-for="menu in navMenu" :key="menu.name" :name="menu.name" class="w-full focus:outline-none block p-4 text-center md:mb-8 group cursor-pointer">
 			<span class="iconify text-2xl mx-auto text-gray-400 group-hover:text-yellow-500" :data-icon="menu.icon" data-inline="false"></span>

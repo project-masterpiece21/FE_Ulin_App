@@ -11,7 +11,7 @@
 			<!-- Logo -->
 
 			<!-- Menu Navbar -->
-			<router-link :to="menu.link" v-for="menu in navMenu" :key="menu.name" class="xl:w-full group mt-5 mb-3 mx-auto cursor-pointer block items-center">
+			<router-link :to="menu.link" v-for="menu in navMenu" :key="menu.name" class="xl:w-full group mt-7 mx-auto cursor-pointer block items-center">
 
 				<div class="xl:w-full xl:h-12 xl:rounded-3xl flex items-center w-14 h-14 rounded-full group-hover:bg-white">
 

@@ -1,17 +1,27 @@
 <template>
 	<SearchMobileComponent />
-	<main class="md:flex xl:ml-52 ml-24">
-		<BannerComponent />
+	<main class="md:flex md:ml-24 xl:ml-52 mt-9">
+		<section>
+			<BannerComponent />
+			<CardListComponent />
+		</section>
+		<section>
+			<RecomendationListComponent />
+		</section>
 	</main>
 </template>
 
 <script>
 	import SearchMobileComponent from '../pages/homeComponents/componentMobileOnly/SearchMobileComponent.vue';
 	import BannerComponent from '../pages/homeComponents/BannerComponent.vue';
+	import CardListComponent from '../pages/homeComponents/CardListComponent.vue';
+	import RecomendationListComponent from '../pages/homeComponents/RecomendationListComponent.vue';
 	export default {
 		components: {
 			SearchMobileComponent,
-			BannerComponent
+			BannerComponent,
+			CardListComponent,
+			RecomendationListComponent
 		}
 	}
 </script>
