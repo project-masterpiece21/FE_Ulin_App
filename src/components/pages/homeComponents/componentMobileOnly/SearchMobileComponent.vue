@@ -1,5 +1,5 @@
 <template>
-	<div class="px-4 flex justify-between items-center py-3">
+	<div class="px-4 flex justify-between items-center pt-3">
 		<div class="font-medium text-sm md:text-base text-gray-600 font-semibold">
 			<p>Ayo main,</p>
 			<p>bosen napa diem-diem bae</p>
