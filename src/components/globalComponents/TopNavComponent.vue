@@ -2,7 +2,7 @@
 	<header class="xl:container w-full">
 		<div class="md:fixed md:bg-white w-full left-0 flex justify-between px-4 items-center pt-7 pb-3 bg-gray-100 mr-10 z-10">
 
-			<router-link to="/" class="md:hidden xl:w-28 h-9 w-20">
+			<router-link to="/" class="md:hidden xl:w-28 h-9 md:w-20 w-28">
 				<img src="../../assets/img/logo/logo.png" alt="logo-ulin">
 			</router-link>
 
