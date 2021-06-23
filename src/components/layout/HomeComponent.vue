@@ -13,7 +13,6 @@
 </template>
 
 <script>
-	import { defineAsyncComponent } from "vue";
 	import SearchMobileComponent from '../pages/homeComponents/componentMobileOnly/SearchMobileComponent.vue';
 	import CategoryMobileComponent from '../pages/homeComponents/componentMobileOnly/CategoryMobileComponent.vue';
 	import BannerComponent from '../pages/homeComponents/BannerComponent.vue';

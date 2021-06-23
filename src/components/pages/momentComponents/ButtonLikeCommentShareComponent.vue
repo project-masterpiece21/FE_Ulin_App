@@ -1,8 +1,8 @@
 <template>
 	<div class="flex mt-4">
-		<button v-for="button in buttons" :key="button" class="flex items-center mr-8 focus:outline-none">
-			<span class="iconify text-2xl text-gray-600 mr-2" :data-icon="button" data-inline="false"></span>
-			<span>23</span>
+		<button v-for="button in buttons" :key="button" class="group flex items-center sm:mr-8 mr-5 focus:outline-none">
+			<span class="iconify group-hover:text-yellow-500 sm:text-2xl text-xl text-gray-600 mr-2" :data-icon="button" data-inline="false"></span>
+			<span class="group-hover:text-yellow-500">23</span>
 		</button>
 	</div>
 </template>

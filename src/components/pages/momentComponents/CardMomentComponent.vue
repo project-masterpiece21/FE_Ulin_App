@@ -1,7 +1,7 @@
 <template>
-	<article v-for="owner in owners" :key="owner" class="sm:px-14 mb-5 px-10 bg-white rounded-xl py-8 hover:shadow-lg cursor-pointer">
+	<article v-for="owner in owners" :key="owner" class="sm:px-14 sm:py-8 py-5 mb-5 px-6 bg-white rounded-xl hover:shadow-lg cursor-pointer">
 
-		<div class="flex justify-between" >
+		<div class="relative" >
 			<div class="flex items-center">
 				<img :src="owner.image" :alt="owner.name" class="object-cover sm:w-14 sm:h-14 w-12 h-12 rounded-xl">
 				<div class="sm:ml-4 ml-2 truncate">
@@ -9,9 +9,9 @@
 					<span class="text-sm text-gray-500 truncate">{{ owner.time }}</span>
 				</div>
 			</div>
-			<button class="flex flex-rows items-center lg:px-5 h-7 px-3 bg-yellow-400 font-semibold rounded-md hover:bg-yellow-500 focus:outline-none">
-				<span class="iconify" data-icon="akar-icons:plus" data-inline="false"></span>
-				<span class="ml-1">Ikuti</span>
+			<button class="absolute top-0 right-0 flex items-center lg:px-4 h-6 px-3 bg-yellow-400 font-semibold rounded-md hover:bg-yellow-500 focus:outline-none">
+				<span class="iconify text-sm" data-icon="akar-icons:plus" data-inline="false"></span>
+				<span class="ml-1 sm:text-sm text-xs">Ikuti</span>
 			</button>
 		</div>
 
