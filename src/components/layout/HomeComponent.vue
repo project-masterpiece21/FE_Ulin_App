@@ -1,12 +1,12 @@
 <template>
 	<SearchMobileComponent />
 	<main class="md:flex md:ml-24 xl:ml-52 md:mt-20 mt-6">
-		<section>
+		<section class="w-full lg:mr-4">
 			<BannerComponent />
 			<CategoryMobileComponent />
 			<CardListComponent />
 		</section>
-		<section>
+		<section class="w-2/5 lg:block hidden">
 			<RecomendationListComponent />
 		</section>
 	</main>

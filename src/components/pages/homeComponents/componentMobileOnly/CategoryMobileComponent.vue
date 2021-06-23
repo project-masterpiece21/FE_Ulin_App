@@ -5,9 +5,9 @@
 
 			<router-link v-for="categorie in categories" :key="categorie.name"  to="/" class="group w-full flex flex-col items-center border mx-auto shadow-sm rounded-xl py-2 hover:shadow-lg bg-white shadow-sm">
 
-				<span class="iconify md:text-5xl sm:text-4xl text-3xl text-yellow-500 group-hover:text-yellow-600" :data-icon="categorie.icon" data-inline="false"></span>
+				<span class="iconify md:text-5xl sm:text-4xl text-3xl text-gray-500 group-hover:text-yellow-500" :data-icon="categorie.icon" data-inline="false"></span>
 
-				<span class="sm:block hidden md:mt-2 md:text-sm text-xs mt-2 text-yellow-600 group-hover:text-yellow-500 truncate">{{ categorie.name }}</span>
+				<span class="sm:block hidden md:mt-2 md:text-sm text-xs mt-2 text-gray-500 group-hover:text-yellow-500 truncate">{{ categorie.name }}</span>
 
 			</router-link>
 
