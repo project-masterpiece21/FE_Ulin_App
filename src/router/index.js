@@ -1,26 +1,32 @@
 import { createWebHistory, createRouter } from 'vue-router';
 
-import MainComponent from '../components/layout/MainComponent.vue';
-import HomeComponent from '../components/layout/HomeComponent.vue';
-import MomentComponent from '../components/layout/MomentComponent.vue';
-import CategoryComponent from '../components/layout/CategoryComponent.vue';
-import RankComponent from '../components/layout/RankComponent.vue';
-import DetailMenuComponent from '../components/layout/DetailMenuComponent.vue';
-
 const routes = [
 	{
 		path: '/',
-		component: MainComponent,
+		component: () => import('../components/layout/MainComponent.vue'),
 		children: [
-			{ path: 'home', alias: '/', component: HomeComponent },
-			{ path: 'moment', component: MomentComponent },
-			{ path: 'category', component: CategoryComponent },
-			{ path: 'rank', component: RankComponent }
+			{ 
+				path: 'home',
+				alias: '/', 
+				component: () => import('../components/layout/HomeComponent.vue') 
+			},
+			{ 
+				path: 'moment',
+				component: () => import ('../components/layout/MomentComponent.vue') 
+			},
+			{ 
+				path: 'category',
+				component: () => import('../components/layout/CategoryComponent.vue') 
+			},
+			{ 
+				path: 'rank',
+				component: () => import('../components/layout/RankComponent.vue') 
+			}
 		]
 	},
 	{
 		path: '/detail',
-		component: DetailMenuComponent
+		component: () => import('../components/layout/DetailMenuComponent.vue')
 	}
 ];
 

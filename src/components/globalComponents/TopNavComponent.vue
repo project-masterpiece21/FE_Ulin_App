@@ -1,20 +1,34 @@
 <template>
-	<header class="xl:container w-full">
-		<div class="md:fixed md:bg-white w-full left-0 flex justify-between px-4 items-center pt-7 pb-3 bg-gray-100 mr-10 z-10">
+	<header class="fixed top-0 2xl:container z-10 w-full">
+		<div class="flex w-full justify-between px-4 items-center py-4 bg-gray-100 ">
 
-			<router-link to="/" class="md:hidden xl:w-28 h-9 md:w-20 w-28">
+			<router-link to="/" class="xl:ml-2 xl:mb-2 xl:w-28 h-9 w-28 mb-1">
 				<img src="../../assets/img/logo/logo.png" alt="logo-ulin">
 			</router-link>
 
 
-			<div class="flex items-center w-full justify-end">
-				<router-link to="" class="md:block hidden px-4 font-semibold text-base text-gray-800 hover:text-yellow-500">
-					Kategori
-				</router-link>
+			<div class="2xl:container flex items-center w-full justify-end">
 
+				<div class="md:block hidden flex items-center border-r-2 mr-9">
+					<router-link to="/" class="px-4 font-semibold text-base text-gray-800 hover:text-yellow-500">
+						Kategori
+					</router-link>
+
+					<router-link to="/" class="hover:bg-yellow-300 hover:text-white hover:shadow py-2 px-7 rounded mr-11 bg-yellow-200 text-yellow-700">
+						Dashboard
+					</router-link>
+				</div>
+
+				<!-- Nav -->
 				<div class="flex items-center">
+					<router-link to="/" class="md:block hidden">
+						<button name="profile" class="group h-9 w-9 md:h-10 md:w-10 rounded-full shadow focus:outline-none mr-2 bg-white">
+							<span class="iconify group-hover:text-yellow-500 text-gray-600 text-base md:text-xl mx-auto" data-icon="bx:bx-search-alt" data-inline="false"></span>
+						</button>
+					</router-link>
+
 					<router-link to="#">
-						<button name="message" class="relative group h-9 w-9 md:h-11 md:w-11 rounded-full shadow focus:outline-none mr-2 bg-white">
+						<button name="message" class="relative group h-9 w-9 md:h-10 md:w-10 rounded-full shadow focus:outline-none mr-2 bg-white">
 
 							<span class="flex h-3 w-3 top-0 right-0 absolute">
 								<span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-yellow-500 opacity-75"></span>
@@ -25,12 +39,13 @@
 						</button>
 					</router-link>
 
-					<router-link to="/login">
-						<button name="profile" class="group h-9 w-9 md:h-11 md:w-11 rounded-full shadow focus:outline-none bg-white">
-							<span class="iconify group-hover:text-yellow-500 text-gray-600 text-md md:text-xl mx-auto" data-icon="bx:bxs-user" data-inline="false"></span>
+					<router-link to="/">
+						<button name="profile" class="group h-9 w-9 md:h-10 md:w-10 rounded-full shadow focus:outline-none bg-white">
+							<span class="iconify group-hover:text-yellow-500 text-gray-600 text-base md:text-xl mx-auto" data-icon="bx:bxs-user" data-inline="false"></span>
 						</button>
 					</router-link>
 				</div>
+				<!-- Nav -->
 
 			</div>
 		</div>
