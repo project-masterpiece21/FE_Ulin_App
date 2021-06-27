@@ -1,5 +1,5 @@
 module.exports = {
-  purge: [],
+  purge: ['./index.html', './src/**/*.vue'],
   darkMode: false, // or 'media' or 'class'
   theme: {
     extend: {},
@@ -8,7 +8,6 @@ module.exports = {
     extend: {},
   },
   plugins: [
-    require('@tailwindcss/aspect-ratio'),
-    require('@tailwindcss/forms')
+    require('@tailwindcss/aspect-ratio')
   ],
 }

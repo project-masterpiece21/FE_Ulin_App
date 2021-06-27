@@ -1,7 +1,7 @@
 <template>
 	<figure class="flex mt-3 overflow-hidden">
 		<div v-for="index in images" :key="index" class="aspect-w-1 aspect-h-0 sm:w-40 sm:h-40 h-20 w-20 mx-1">
-			<img :src="index" class="rounded-md overflow-hidden">
+			<img v-lazy="index" class="rounded-md overflow-hidden">
 		</div>
 	</figure>
 </template>

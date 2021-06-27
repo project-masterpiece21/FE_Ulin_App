@@ -1,6 +1,6 @@
 <template>
-	<nav class="fixed top-14 mt-2 hidden md:block">
-		<div  class="xl:w-44 xl:ml-3 flex flex-col w-28 h-screen">
+	<nav class="fixed top-14 mt-2 hidden sm:block z-10">
+		<div  class="xl:w-44 xl:ml-3 flex flex-col md:w-28 w-24 h-screen bg-gray-100">
 
 			<!-- Menu Navbar -->
 			<router-link :to="menu.link" v-for="menu in navMenu" :key="menu.name" class="xl:w-full group mt-7 mx-auto cursor-pointer block items-center">

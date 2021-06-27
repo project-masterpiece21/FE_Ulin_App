@@ -1,6 +1,6 @@
 <template>
 	<a v-for="destination in destinations" href="/" class="flex aspect-w-4 aspect-h-2 items-center w-full mt-4">
-		<img :src="destination.image" alt="Recomendation Destination" class="object-fit rounded-xl block object-cover">
+		<img v-lazy="destination.image" alt="Recomendation Destination" class="object-fit rounded-xl block object-cover">
 
 		<figcaption class="flex flex-col py-3 truncate text-white px-3">
 			<h1 class="font-semibold text-base truncate font-bold">{{ destination.name }}</h1>

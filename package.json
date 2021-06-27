@@ -8,12 +8,12 @@
     "lint": "eslint ./src"
   },
   "dependencies": {
-    "@tailwindcss/aspect-ratio": "^0.2.1",
     "vue": "^3.0.5",
-    "vue-router": "^4.0.9"
+    "vue-router": "^4.0.9",
+    "vue3-lazyload": "^0.2.2-beta"
   },
   "devDependencies": {
-    "@tailwindcss/forms": "^0.3.3",
+    "@tailwindcss/aspect-ratio": "^0.2.1",
     "@vitejs/plugin-vue": "^1.2.3",
     "@vue/compiler-sfc": "^3.0.5",
     "autoprefixer": "^10.2.6",

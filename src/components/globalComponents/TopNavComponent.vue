@@ -3,7 +3,16 @@
 		<div class="flex w-full justify-between px-4 items-center py-4 bg-gray-100 ">
 
 			<router-link to="/" class="xl:ml-2 xl:mb-2 xl:w-28 h-9 w-28 mb-1">
-				<img src="../../assets/img/logo/logo.png" alt="logo-ulin">
+				<suspense>
+					<template #default>
+						<img src="../../assets/img/logo/logo.png" alt="logo-ulin">
+					</template>
+					<template #fallback>
+						<div>
+							loading .....
+						</div>
+					</template>
+				</suspense>
 			</router-link>
 
 

@@ -1,6 +1,6 @@
 <template>
 	<SearchMobileComponent />
-	<main class="md:flex md:ml-24 xl:ml-52 md:mt-20 mt-6">
+	<main class="md:flex xl:ml-52 sm:ml-24 md:mt-20 mt-6">
 		<section class="w-full lg:mr-4">
 			<BannerComponent />
 			<CategoryMobileComponent />

@@ -1,5 +1,5 @@
 <template>
-	<section class="lg:hidden px-4 md:mt-5">
+	<section class="md:hidden px-4 md:mt-5">
 		<div class="md:text-lg mb-2 text-sm font-medium text-gray-600">Kategori</div>
 		<div class="w-full grid grid-cols-5 gap-2">
 

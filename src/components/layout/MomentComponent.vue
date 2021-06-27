@@ -1,5 +1,5 @@
 <template>
-	<main class="md:flex md:ml-24 xl:ml-52 md:mt-20 mx-auto px-4 mt-20">
+	<main class="md:flex md:ml-24 sm:ml-20 xl:ml-52 md:mt-20 mx-auto px-4 mt-20">
 		<section class="w-full lg:mr-4">
 			<CardMomentComponent />
 		</section>
@@ -20,6 +20,7 @@
 	);
 
 	export default {
+		name: 'Moment',
 		components: {
 			CardMomentComponent,
 			BestOwnerComponent
