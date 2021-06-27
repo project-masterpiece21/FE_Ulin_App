@@ -25,6 +25,6 @@
 			CardListComponent,
 			RecomendationListComponent,
 			CategoryMobileComponent
-		}
+		},
 	}
 </script>
