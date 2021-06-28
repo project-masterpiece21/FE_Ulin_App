@@ -15,7 +15,7 @@
 			</button>
 		</div>
 
-		<p class="text-sm mt-3">{{ owner.body }}</p>
+		<p class="md:text-base text-sm mt-3">{{ owner.body }}</p>
 
 		<ImagesPostComponent />
 

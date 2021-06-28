@@ -1,5 +1,5 @@
 import { createApp } from 'vue';
-import VueLazyLoad from 'vue3-lazyload'
+import VueLazyLoad from 'vue3-lazyload';
 
 import './assets/css/tailwindcss.css';
 import App from './App.vue';

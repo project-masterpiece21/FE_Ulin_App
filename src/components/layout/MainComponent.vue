@@ -1,7 +1,13 @@
 <template>
-	<TopNavComponent />
-	<SideNavComponent />
-	<NavMobileComponent />
+	<keep-alive>
+		<SideNavComponent />
+	</keep-alive>
+	<keep-alive>
+		<TopNavComponent />
+	</keep-alive>
+	<keep-alive>
+		<NavMobileComponent />
+	</keep-alive>
 	<router-view></router-view>
 </template>
 

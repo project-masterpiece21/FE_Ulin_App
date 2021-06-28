@@ -1,10 +1,10 @@
 <template>
-	<nav class="sm:hidden w-full fixed bottom-0 inset-x-0 flex text-xs bg-white z-10">
+	<nav class="sm:hidden w-full fixed border-t bottom-0 inset-x-0 flex text-xs bg-white z-10">
 
 		<a :href="menu.link" v-for="menu in navMenu" :key="menu.name" :name="menu.name" class="w-full focus:outline-none block py-3 text-center md:mb-8 group cursor-pointer">
 			<span :class="$route.path === menu.link ? 'text-yellow-500' : 'text-gray-400'" class="iconify text-xl mx-auto  group-hover:text-yellow-500" :data-icon="menu.icon" data-inline="false"></span>
 
-			<div :class="$route.path === menu.link ? 'text-yellow-500' : ''" class="text-gray-500 group-hover:text-yellow-500 text-xs">
+			<div :class="$route.path === menu.link ? 'text-yellow-500' : ''" class="text-gray-500 group-hover:text-yellow-500 text-[10px]">
 				{{menu.name}}
 			</div>
 		</a>
