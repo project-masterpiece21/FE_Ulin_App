@@ -1,5 +1,5 @@
 <template>
-	<router-link to="/detail" class="w-full bg-white rounded-2xl overflow-hidden border cursor-pointer shadow-md hover:shadow-xl">
+	<router-link to="/detail" class="w-full bg-white rounded-xl overflow-hidden border cursor-pointer shadow-md hover:shadow-xl">
 			<div>
 
 				<figure class="relative flex-shrink-0">

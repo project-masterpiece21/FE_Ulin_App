@@ -1,5 +1,5 @@
 <template>
-	<article v-for="owner in owners" :key="owner" class="sm:px-14 sm:py-8 py-5 mb-5 px-6 bg-white rounded-xl hover:shadow-lg cursor-pointer">
+	<article v-for="owner in owners" :key="owner" class="sm:px-14 sm:py-8 py-5 mb-5 px-6 bg-white rounded-lg hover:shadow-lg cursor-pointer">
 
 		<div class="relative" >
 			<div class="flex items-center">

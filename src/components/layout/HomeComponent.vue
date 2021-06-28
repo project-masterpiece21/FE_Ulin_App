@@ -1,5 +1,8 @@
 <template>
-	<SearchMobileComponent />
+	<keep-alive>
+		<SearchMobileComponent />
+	</keep-alive>
+	
 	<main class="md:flex xl:ml-52 sm:ml-24 md:mt-20 mt-6">
 		<section class="w-full lg:mr-4">
 			<BannerComponent />

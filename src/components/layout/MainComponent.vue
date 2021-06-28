@@ -1,25 +1,12 @@
 <template>
 	<keep-alive>
-		<SideNavComponent />
+		<TopNavbar />
 	</keep-alive>
 	<keep-alive>
-		<TopNavComponent />
+		<SideNavbar />
 	</keep-alive>
 	<keep-alive>
-		<NavMobileComponent />
+		<NavbarMobile />
 	</keep-alive>
 	<router-view></router-view>
 </template>
-
-<script>
-	import NavMobileComponent from '../globalComponents/NavMobileComponent.vue';
-	import SideNavComponent from '../globalComponents/SideNavComponent.vue';
-	import TopNavComponent from '../globalComponents/TopNavComponent.vue';
-	export default {
-		components: {
-			NavMobileComponent,
-			SideNavComponent,
-			TopNavComponent
-		}
-	}
-</script>
