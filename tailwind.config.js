@@ -4,7 +4,7 @@ module.exports = {
   theme: {
     extend: {
       fontSize: {
-        'xs': ['10px', {
+        'xss': ['10px', {
           letterSpacing: '-0.01em',
         }],
       }

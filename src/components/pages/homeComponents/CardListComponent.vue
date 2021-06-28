@@ -1,5 +1,5 @@
 <template>
-	<article class="grid md:grid-cols-2 gap-4 w-full mt-8 px-4">
+	<article class="grid md:grid-cols-2 gap-5 w-full mt-8 px-4">
 
 		<CardItemComponent />
 

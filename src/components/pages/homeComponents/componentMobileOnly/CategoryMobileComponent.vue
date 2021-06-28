@@ -8,7 +8,7 @@
 					<span class="iconify md:text-5xl sm:text-3xl text-2xl text-yellow-500 group-hover:text-yellow-700 mx-auto" :data-icon="categorie.icon" data-inline="false"></span>
 				</div>
 
-				<span class="sm:text-sm text-xs mt-1 text-gray-500 group-hover:text-yellow-500 truncate font-medium">{{ categorie.name }}</span>
+				<span class="sm:text-sm text-xss mt-1 text-gray-500 group-hover:text-yellow-500 truncate font-medium">{{ categorie.name }}</span>
 
 			</router-link>
 

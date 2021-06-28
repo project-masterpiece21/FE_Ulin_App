@@ -6,11 +6,11 @@
 		</div>
 
 		<router-link to="/"
-			class="group md:w-28 h-9 w-30 border border-gray-200 rounded-lg flex items-center p-3 focus:ring-2 focus:ring-yellow-500 focus:border-transparent hover:border-yellow-500 bg-white shadow-sm"
+			class="group md:w-28 h-9 w-30 border border-gray-200 rounded-lg flex items-center p-3 focus:ring-2 focus:ring-yellow-500 focus:border-transparent hover:border-yellow-500 bg-white shadow"
 		>	
 			<span class="iconify text-gray-400 text-lg sm:text-xl md:ml-2 mr-1 group-hover:text-yellow-500" data-icon="bx:bx-search-alt" data-inline="false"></span>
 
-			<p class="sm:text-base text-sm ml-1 text-gray-400 group-hover:text-yellow-500 truncate">
+			<p class="sm:text-base font-medium text-sm ml-1 text-gray-400 group-hover:text-yellow-500 truncate">
 				Cari tempat
 			</p>
 		</router-link>
