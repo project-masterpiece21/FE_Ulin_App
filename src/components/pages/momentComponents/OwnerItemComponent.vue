@@ -1,12 +1,17 @@
 <template>
-	<a href="/" v-for="owner in owners" :key="owner.name" class="flex aspect-w-4 aspect-h-2 items-center mt-4 w-full">
+	<a href="/" v-for="owner in owners" :key="owner.name" class="relative flex aspect-w-4 aspect-h-2 items-center mt-4 w-full">
 		<img v-lazy="owner.image" :alt="owner.name" class="rounded-xl object-cover">
-		<div class="truncate px-3 text-white mt-2">
-			<h1 class="xl:text-base text-sm truncate font-bold">{{ owner.name }}</h1>
-			<span class="text-xs font-semibold">233k pengikut</span>
+
+		<div class="absolute group hover:bg-opacity-0 w-full h-full bg-black bg-opacity-25 rounded-xl">
+			<div class="truncate px-3 text-white mt-2">
+				<h1 class="xl:text-base text-sm truncate font-bold">{{ owner.name }}</h1>
+				<span class="text-xs font-semibold">233k pengikut</span>
+			</div>
 		</div>
 	</a>
 </template>
+
+
 
 <script>
 	import { reactive } from 'vue';

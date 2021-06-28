@@ -23,7 +23,7 @@
 						Kategori
 					</router-link>
 
-					<router-link to="/" class="hover:bg-yellow-300 hover:text-white hover:shadow py-2 px-7 rounded mr-11 bg-yellow-200 text-yellow-700">
+					<router-link to="/" class="focus:ring ring-yellow-300 hover:bg-yellow-500 hover:text-white hover:shadow py-2 px-7 rounded mr-11 bg-yellow-200 text-yellow-700 font-semibold">
 						Dashboard
 					</router-link>
 				</div>

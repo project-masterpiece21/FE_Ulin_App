@@ -1,13 +1,17 @@
 <template>
-	<a v-for="destination in destinations" href="/" class="flex aspect-w-4 aspect-h-2 items-center w-full mt-4">
+	<a v-for="destination in destinations" href="/" class="reactive flex aspect-w-4 aspect-h-2 items-center w-full mt-4">
 		<img v-lazy="destination.image" alt="Recomendation Destination" class="object-fit rounded-xl block object-cover">
 
-		<figcaption class="flex flex-col py-3 truncate text-white px-3">
-			<h1 class="font-semibold text-base truncate font-bold">{{ destination.name }}</h1>
-			<span class="text-sm font-semibold truncate">{{ destination.address }}</span>
+		<figcaption class="absolute group hover:bg-opacity-0 w-full h-full bg-black bg-opacity-25 rounded-xl">
+			<div class="flex flex-col py-3 truncate text-white px-3">
+				<h1 class="text-lg text-base truncate font-bold">{{ destination.name }}</h1>
+				<span class="text-sm font-semibold truncate">{{ destination.address }}</span>
+			</div>
 		</figcaption>
 	</a>
 </template>
+
+
 
 <script>
 	import { reactive } from 'vue';
