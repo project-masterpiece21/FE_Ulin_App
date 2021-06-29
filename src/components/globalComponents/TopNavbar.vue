@@ -2,18 +2,9 @@
 	<header class="fixed top-0 2xl:container z-10 w-full">
 		<div class="flex w-full justify-between px-4 items-center py-4 bg-gray-100 ">
 
-			<router-link to="/" class="xl:ml-2 xl:mb-2 xl:w-28 h-9 w-28 mb-1">
-				<suspense>
-					<template #default>
-						<img src="../../assets/img/logo/logo.png" alt="logo-ulin">
-					</template>
-					<template #fallback>
-						<div>
-							loading .....
-						</div>
-					</template>
-				</suspense>
-			</router-link>
+			<a href="/" class="xl:ml-2 xl:mb-2 xl:w-28 h-9 w-28 mb-1">
+				<img src="../../assets/img/logo/logo.png" alt="logo-ulin">
+			</a>
 
 
 			<div class="2xl:container flex items-center w-full justify-end">

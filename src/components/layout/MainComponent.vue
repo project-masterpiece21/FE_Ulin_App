@@ -6,7 +6,7 @@
 		<SideNavbar />
 	</keep-alive>
 	<keep-alive>
-		<NavbarMobile />
+		<NavbarBottomMobile />
 	</keep-alive>
 	<router-view></router-view>
 </template>
