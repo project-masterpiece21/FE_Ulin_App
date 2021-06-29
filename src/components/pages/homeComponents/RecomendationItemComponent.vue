@@ -3,9 +3,9 @@
 		<img v-lazy="destination.image" alt="Recomendation Destination" class="object-fit rounded-xl block object-cover">
 
 		<figcaption class="absolute group hover:bg-opacity-0 w-full h-full bg-black bg-opacity-25 rounded-xl">
-			<div class="flex flex-col py-3 truncate text-white px-3">
-				<h1 class="text-lg text-base truncate font-bold">{{ destination.name }}</h1>
-				<span class="text-sm font-semibold truncate">{{ destination.address }}</span>
+			<div class="flex flex-col py-3 text-white px-3">
+				<h1 class="text-lg font-bold leading-tight">{{ destination.name }}</h1>
+				<span class="text-sm font-medium">{{ destination.address }}</span>
 			</div>
 		</figcaption>
 	</a>
@@ -19,7 +19,7 @@
 		setup() {
 			const destinations = reactive([
 				{ 
-					name: 'Kuningan',
+					name: 'Desa Cibuntu',
 					image: 'https://images.unsplash.com/photo-1523539693385-e5e891eb4465?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=335&q=80',
 					address: 'Kuningan, Jawa Barat'
 				},
@@ -29,9 +29,9 @@
 					address: 'Denpasar, Bali'
 				},
 				{ 
-					name: 'Karang Taruna Daerah Indramayu',
+					name: 'Alun-alun Indramayu',
 					image: 'https://images.unsplash.com/photo-1602183081720-3ff0403e87d5?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=334&q=80',
-					address: 'Wonosobo, Jawa Tengah'
+					address: 'Indramayu, Jawa Barat'
 				},
 			]);
 			return {
