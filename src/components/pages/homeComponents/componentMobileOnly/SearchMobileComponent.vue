@@ -1,8 +1,8 @@
 <template>
 	<div class="md:hidden px-4 w-full flex justify-between items-center mt-24 sm:pl-28">
-		<div class="font-medium text-sm md:text-base text-gray-600 font-semibold">
-			<p>Ayo main,</p>
-			<p>bosen napa diem-diem bae</p>
+		<div class="flex flex-col font-medium text-sm md:text-base text-gray-600 font-semibold">
+			<span>Ayo main,</span>
+			<span>bosen napa diem-diem bae</span>
 		</div>
 
 		<router-link to="/"
