@@ -25,7 +25,7 @@
 <script>
 	import HeroImage from '../pages/detailComponents/HeroImage.vue';
 	import InviteButton from '../pages/detailComponents/InviteButton.vue';
-	import InfoDetail from '../pages/detailComponents/infoDetail.vue';
+	import InfoDetail from '../pages/detailComponents/InfoDetail.vue';
 	import HeadingDetail from '../pages/detailComponents/HeadingDetail.vue';
 	import NavInfoDetail from '../pages/detailComponents/NavInfoDetail.vue';
 	import ImagesDetail from '../pages/detailComponents/ImagesDetail.vue';
