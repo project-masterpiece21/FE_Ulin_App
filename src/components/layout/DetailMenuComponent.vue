@@ -3,43 +3,23 @@
 		<TopNavbar class="sm:block hidden" />
 	</keep-alive>
 
-	<main>
-		<HeroImage />
-		<div class="px-3 w-full">
-			<InviteButton />
+	<div class="flex sm:mt-20 lg:px-8">
 
-			<HeadingDetail />
+		<MainDetail />
+		
+		<SidebarDetail />
+	</div>
 
-			<NavInfoDetail />
-
-			<ImagesDetail />
-
-			<DescriptionDetail />
-
-			<InfoDetail />
-
-		</div>
-	</main>
 </template>
 
 <script>
-	import HeroImage from '../pages/detailComponents/HeroImage.vue';
-	import InviteButton from '../pages/detailComponents/InviteButton.vue';
-	import InfoDetail from '../pages/detailComponents/InfoDetail.vue';
-	import HeadingDetail from '../pages/detailComponents/HeadingDetail.vue';
-	import NavInfoDetail from '../pages/detailComponents/NavInfoDetail.vue';
-	import ImagesDetail from '../pages/detailComponents/ImagesDetail.vue';
-	import DescriptionDetail from '../pages/detailComponents/DescriptionDetail.vue';
+	import MainDetail from '../pages/detailComponents/MainDetail.vue';
+	import SidebarDetail from '../pages/detailComponents/SidebarDetail.vue';
 
 	export default {
 		components: {
-			HeroImage,
-			InviteButton,
-			InfoDetail,
-			HeadingDetail,
-			NavInfoDetail,
-			ImagesDetail,
-			DescriptionDetail
+			MainDetail,
+			SidebarDetail
 		}
 	}
 </script>

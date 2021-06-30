@@ -1,10 +1,10 @@
 <template>
 	<section class="my-6">
-		<div class="text-xl font-semibold w-full block mr-4">
+		<div class="lg:text-2xl text-xl font-semibold w-full">
 			Tentang Penyaweuan
 		</div>
 
-		<div class="md:text-base mt-2 text-sm leading-relaxed text-gray-700">
+		<div class="lg:text-lg sm:text-base mt-2 font-medium text-sm leading-relaxed text-gray-700">
 			Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
 			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo

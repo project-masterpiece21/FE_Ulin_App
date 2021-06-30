@@ -1,9 +1,9 @@
 <template>
-	<div id="info_detail" class="p-4 bg-white rounded-lg shadow cursor-default">
-		<h1 class="text-xl font-semibold border-gray-300">Detail info</h1>
-
-		<div v-for="detail in details" :key="detail.info" class="py-6 border-b pb-2 flex justify-between items-center">
-			<h2 class="md:text-base text-sm w-1/3 block font-semibold mb-1">{{ detail.info }}</h2>
+	<div id="info_detail" class="rounded-lg cursor-default">
+		<h1 class="lg:text-2xl text-xl font-semibold border-gray-300">Detail info</h1>
+		
+		<div v-for="detail in details" :key="detail.info" class="py-6 border-b pb-2 flex justify-between items-center truncate">
+			<h2 class="md:text-base text-sm w-1/3 block font-semibold mb-1 truncate">{{ detail.info }}</h2>
 			<p class="md:text-base text-sm text-gray-600 text-right">{{ detail.detail }}</p>
 		</div>
 
