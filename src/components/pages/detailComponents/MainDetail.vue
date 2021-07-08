@@ -14,6 +14,8 @@
 
 			<InfoDetail />
 
+			<ReviewDetail />
+
 		</div>
 	</main>
 </template>
@@ -26,6 +28,7 @@
 	import NavInfoDetail from './assetComponents/NavInfoDetail.vue';
 	import ImagesDetail from './assetComponents/ImagesDetail.vue';
 	import DescriptionDetail from './assetComponents/DescriptionDetail.vue';
+	import ReviewDetail from './assetComponents/ReviewDetail.vue';
 
 	export default {
 		components: {
@@ -35,7 +38,8 @@
 			HeadingDetail,
 			NavInfoDetail,
 			ImagesDetail,
-			DescriptionDetail
+			DescriptionDetail,
+			ReviewDetail
 		}
 	}
 </script>
