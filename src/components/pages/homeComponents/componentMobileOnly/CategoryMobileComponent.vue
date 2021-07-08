@@ -4,11 +4,11 @@
 
 			<router-link v-for="categorie in categories" :key="categorie.name"  to="/" class="group w-14 flex flex-col items-center w-full">
 
-				<div class="flex items-center sm:w-14 sm:h-14 h-12 w-12 bg-yellow-200 rounded-xl border border-yellow-300">
-					<span class="iconify md:text-5xl sm:text-3xl text-2xl text-yellow-500 group-hover:text-yellow-700 mx-auto" :data-icon="categorie.icon" data-inline="false"></span>
+				<div class="flex items-center sm:w-14 sm:h-14 h-12 w-12 bg-gray-200 rounded-xl">
+					<span class="iconify md:text-5xl sm:text-3xl text-2xl text-gray-500 group-hover:text-yellow-500 mx-auto" :data-icon="categorie.icon" data-inline="false"></span>
 				</div>
 
-				<span class="sm:text-sm text-xss mt-1 text-gray-500 group-hover:text-yellow-500 truncate font-medium">{{ categorie.name }}</span>
+				<span class="sm:text-sm text-xss mt-1 text-gray-500 group-hover:text-yellow-500 font-medium">{{ categorie.name }}</span>
 
 			</router-link>
 

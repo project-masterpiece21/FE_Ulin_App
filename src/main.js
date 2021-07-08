@@ -10,6 +10,7 @@ import NavbarBottomMobile from './components/globalComponents/NavbarBottomMobile
 import SideNavbar from './components/globalComponents/SideNavbar.vue';
 import TopNavbar from './components/globalComponents/TopNavbar.vue';
 import TopNavbarMobile from './components/globalComponents/TopNavbarMobile.vue';
+import RecommendationDestination from './components/globalComponents/RecommendationDestination.vue';
 
 const app = createApp(App);
 
@@ -17,6 +18,7 @@ app.component('NavbarBottomMobile', NavbarBottomMobile);
 app.component('SideNavbar', SideNavbar);
 app.component('TopNavbar', TopNavbar);
 app.component('TopNavbarMobile', TopNavbarMobile);
+app.component('RecommendationDestination', RecommendationDestination);
 
 app.use(router);
 app.use(VueLazyLoad);

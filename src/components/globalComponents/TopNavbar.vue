@@ -2,6 +2,10 @@
 	<header class="fixed top-0 2xl:container z-10 w-full">
 		<div class="flex w-full justify-between px-4 items-center py-4 bg-gray-100 ">
 
+			<button class="flex items-center lg:ml-3 lg:text-4xl mr-2.5 pt-2.5 text-3xl text-black">
+				<span class="iconify" data-icon="gridicons:menu" data-inline="false"></span>
+			</button>
+
 			<a href="/" class="xl:ml-2 xl:mb-2 xl:w-28 h-9 w-28 mb-1">
 				<img src="../../assets/img/logo/logo.png" alt="logo-ulin">
 			</a>

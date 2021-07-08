@@ -1,25 +1,26 @@
 <template>
 	<keep-alive>
-		<TopNavbar class="sm:block hidden" />
+		<TopNavbar class="sm:block hidden"></TopNavbar>
 	</keep-alive>
 
 	<div class="flex sm:mt-20 lg:px-8">
 
 		<MainDetail />
 		
-		<SidebarDetail />
+		<RecommendationDestination />
 	</div>
 
 </template>
 
 <script>
-	import MainDetail from '../pages/detailComponents/MainDetail.vue';
-	import SidebarDetail from '../pages/detailComponents/SidebarDetail.vue';
+	import { defineAsyncComponent } from 'vue';
 
+	const MainDetail = defineAsyncComponent(() => 
+		import ('../pages/detailComponents/MainDetail.vue')
+	);
 	export default {
 		components: {
 			MainDetail,
-			SidebarDetail
 		}
 	}
 </script>
