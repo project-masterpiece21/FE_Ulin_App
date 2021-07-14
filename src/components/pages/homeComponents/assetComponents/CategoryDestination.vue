@@ -1,12 +1,12 @@
 <template>
-	<section class="px-4 w-full my-8">
+	<section class="md:hidden px-4 w-full my-8">
 		<div class="scrollbar-thin overflow-x-scroll scrollbar-thumb-rounded">
 			<div class="flex flex-row w-max">
-				<div v-for="category in categories" :key="category.name" class="group flex flex-col items-center mr-7">
-					<button class="group-hover:bg-yellow-100 h-12 w-12 bg-gray-200 rounded-full">
-						<img :src="category.src" :alt="category.name" class="w-8 h-8 mx-auto">
+				<div v-for="category in categories" :key="category.name" class="group flex flex-col items-center sm:mr-8 mr-7">
+					<button class="group-hover:bg-yellow-100 sm:h-14 sm:w-14 h-12 w-12 bg-gray-200 rounded-full">
+						<img :src="category.src" :alt="category.name" class="sm:h-9 sm:w-9 w-8 h-8 mx-auto">
 					</button>
-					<span class="mx-auto text-xs mt-1.5">{{ category.name }}</span>
+					<span class="mx-auto text-xs mt-1.5 truncate">{{ category.name }}</span>
 				</div>
 			</div>
 		</div>
