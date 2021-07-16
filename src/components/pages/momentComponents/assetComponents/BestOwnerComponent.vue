@@ -1,5 +1,5 @@
 <template>
-	<aside class="sticky top-20 rounded-lg ml-6 px-7 bg-white">
+	<aside class="sticky top-20 rounded-lg xl:ml-4 px-7 bg-white">
 		<h1 class="py-4 border-b font-semibold text-lg">Pengelolah Terbaik</h1>
 
 		<OwnerItemComponent />

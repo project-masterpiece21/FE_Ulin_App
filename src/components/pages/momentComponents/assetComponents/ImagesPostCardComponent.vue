@@ -1,8 +1,6 @@
 <template>
-	<figure class="flex mt-3 overflow-hidden">
-		<div v-for="index in images" :key="index" class="aspect-w-1 aspect-h-0 sm:w-40 sm:h-40 h-20 w-20 mx-1">
-			<img v-lazy="index" class="rounded-md overflow-hidden">
-		</div>
+	<figure class="grid grid-cols-3 mt-3 overflow-hidden w-full">
+		<img v-for="index in images" :key="index" v-lazy="index" class="rounded-md overflow-hidden px-2 w-full md:h-44 sm:h-32 h-24 object-cover rounded-xl">
 	</figure>
 </template>
 
