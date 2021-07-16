@@ -3,7 +3,7 @@
 		<div class="relative">
 			<div class="flex items-center">
 				<div class="sm:w-14 sm:h-14 w-12 h-12">
-					<img :src="owner.image" :alt="owner.name" class="object-cover  rounded-xl w-full h-full">
+					<img :src="owner.image" :alt="owner.name" class="object-cover rounded-xl w-full h-full">
 				</div>
 				<div class="sm:ml-4 ml-2 truncate">
 					<h1 class="lg:text-lg font-semibold text-base truncate mr-20">{{ owner.name }}</h1>
