@@ -1,15 +1,13 @@
 <template>
 	<aside class="mt-5 w-full bg-white rounded-lg p-5">
-		<div class="pb-4 border-b font-medium text-lg">
+		<div class="pb-4 border-b font-medium lg:text-lg text-base">
 			Tags Populer
 		</div>
 
-		<div class="grid grid-cols-2 gap-y-2 text-base truncate mt-2">
-			<div v-for="tag in bestTags" class="py-1">
-				<a href="/" class="px-4 py-1.5 bg-yellow-100 rounded-full text-yellow-600 font-medium">
-					{{ tag }}
-				</a>
-			</div>
+		<div class="lg:text-base lg:text-sm text-xs mt-2 flex flex-wrap">
+			<a v-for="tag in bestTags" href="/" class="px-4 lg:mr-3 my-1 mr-1.5 py-1.5 bg-yellow-100 rounded-full text-yellow-600 font-medium truncate">
+				{{ tag }}
+			</a>
 		</div>
 	</aside>
 </template>
