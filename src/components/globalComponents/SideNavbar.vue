@@ -29,7 +29,7 @@
 			const navMenu = reactive([
 				{ name: "Beranda", icon: "bx:bxs-home-circle", link:"/" },
 				{ name: "Momentum", icon: "ri:ghost-smile-fill", link:"/moment" },
-				{ name: "Cari Tempat", icon: "ic:sharp-place", link:"/category" },
+				{ name: "Cari Tempat", icon: "ri:map-pin-fill", link:"/category" },
 				{ name: "Peringkat", icon: "icomoon-free:trophy", link:"/rank" }
 			]);
 

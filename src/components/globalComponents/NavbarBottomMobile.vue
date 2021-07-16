@@ -19,7 +19,7 @@
 			const navMenu = reactive([
 				{ name: "Beranda", icon: "bx:bxs-home-smile", link:"/"},
 				{ name: "Moment", icon: "ri:ghost-smile-fill", link:"/moment"},
-				{ name: "Cari tempat", icon: "ic:sharp-place", link:"/category"},
+				{ name: "Cari tempat", icon: "ri:map-pin-fill", link:"/category"},
 				{ name: "Peringkat", icon: "icomoon-free:trophy", link:"/rank"}
 			])
 
