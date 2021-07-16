@@ -10,7 +10,7 @@
 					<div class="xl:pl-3 flex xl:ml-0 mx-auto items-center">
 						<span :class="$route.path === menu.link ? 'text-yellow-500' : ''" class="iconify text-3xl mx-auto text-gray-400" :data-icon="menu.icon" data-inline="false"></span>
 
-						<h1 :class="$route.path === menu.link ? 'text-yellow-500' : ''" class="xl:block text-black hidden ml-3 font-semibold">{{menu.name}}</h1>
+						<h1 :class="$route.path === menu.link ? 'text-yellow-500 font-semibold' : ''" class="xl:block text-black hidden ml-3 font-medium">{{ menu.name }}</h1>
 					</div>
 
 				</div>
@@ -27,10 +27,10 @@
 	export default {
 		setup() {
 			const navMenu = reactive([
-				{ name: "Beranda", icon: "bx:bxs-home-circle", link:"/", isActive: false},
-				{ name: "Momentum", icon: "ri:ghost-smile-fill", link:"/moment", isActive: false},
-				{ name: "Destinasi", icon: "cib:everplaces", link:"/category", isActive: false},
-				{ name: "Peringkat", icon: "icomoon-free:trophy", link:"/rank", isActive: false}
+				{ name: "Beranda", icon: "bx:bxs-home-circle", link:"/" },
+				{ name: "Momentum", icon: "ri:ghost-smile-fill", link:"/moment" },
+				{ name: "Cari Tempat", icon: "ic:sharp-place", link:"/category" },
+				{ name: "Peringkat", icon: "icomoon-free:trophy", link:"/rank" }
 			]);
 
 			return {
