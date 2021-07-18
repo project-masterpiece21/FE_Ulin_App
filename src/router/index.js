@@ -80,6 +80,10 @@ const routes = [
     path: '/detail',
     component: () => import('../components/layout/DetailMenuComponent.vue'),
   },
+  {
+    path: '/signup',
+    component: () => import('../components/layout/SignupComponent.vue'),
+  }
 ];
 
 const router = createRouter({
