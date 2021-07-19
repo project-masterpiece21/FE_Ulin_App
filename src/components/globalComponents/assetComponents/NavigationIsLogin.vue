@@ -1,15 +1,11 @@
 <template>
 	<div class="2xl:container flex items-center w-full justify-end">
 
-		<div class="md:block hidden flex items-center border-r-2 mr-9">
-			<router-link to="/" class="focus:ring ring-yellow-300 hover:bg-yellow-500 hover:text-white hover:shadow py-2 px-7 rounded mr-11 bg-yellow-200 text-yellow-700 font-semibold">
-				Dashboard
-			</router-link>
-		</div>
+		<slot></slot>
 
 		<!-- Nav -->
 		<div class="flex items-center">
-			<router-link to="/" class="md:block hidden">
+			<router-link to="/" class="lg:hidden">
 				<button name="profile" class="group h-9 w-9 md:h-10 md:w-10 rounded-full shadow focus:outline-none mr-2 bg-white">
 					<span class="iconify group-hover:text-yellow-500 text-gray-600 text-base md:text-xl mx-auto" data-icon="bx:bx-search-alt" data-inline="false"></span>
 				</button>
