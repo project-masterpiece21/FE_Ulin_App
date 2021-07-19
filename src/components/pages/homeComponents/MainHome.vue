@@ -1,11 +1,11 @@
 <template>
-	<main class="md:flex xl:ml-52 sm:ml-24 md:mt-20 mt-6">
-		<section class="w-full lg:mr-4">
+	<main class="md:flex xl:ml-52 sm:ml-24 mt-20">
+		<section class="lg:w-3/4 w-full px-4">
 			<BannerComponent />
 			<CategoryDestination />
 			<CardListComponent />
 		</section>
-		<section class="w-2/5 lg:block hidden">
+		<section class="w-2/6 sticky top-20 lg:block hidden px-4">
 			<RecomendationListComponent />
 		</section>
 	</main>

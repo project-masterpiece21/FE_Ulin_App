@@ -1,8 +1,10 @@
 <template>
-	<aside class="sticky top-20 rounded-lg xl:ml-4 px-7 bg-white">
-		<h1 class="py-4 border-b font-semibold text-lg">Pengelolah Terbaik</h1>
+	<aside class="rounded-lg w-full h-full">
+		<div class="w-full bg-white rounded-lg px-5">
+			<h1 class="py-4 border-b font-semibold text-lg">Pengelolah Terbaik</h1>
 
-		<OwnerItemComponent />
+			<OwnerItemComponent />
+		</div>
 	</aside>
 </template>
 

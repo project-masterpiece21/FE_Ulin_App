@@ -1,5 +1,5 @@
 <template>
-	<main class="md:flex xl:ml-52 sm:ml-24">
+	<main class="md:flex xl:ml-52 sm:ml-24 mt-20">
 		<section class="md:w-3/5 w-full px-4">
 			<CardListRankComponent />
 		</section>

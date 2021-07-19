@@ -1,5 +1,5 @@
 <template>
-	<div v-for="owner in owners" :key="owner" class="bg-white sm:px-14 sm:py-8 py-5 my-5 px-6 rounded-lg cursor-pointer" >
+	<div v-for="owner in owners" :key="owner" class="bg-white sm:px-14 sm:py-8 py-5 mb-5 px-6 rounded-lg cursor-pointer" >
 		<div class="relative">
 			<div class="flex items-center">
 				<div class="sm:w-14 sm:h-14 w-12 h-12">
@@ -18,9 +18,8 @@
 
 			<p class="md:text-base text-sm my-4">{{ owner.body }}</p>
 
-			<ImagesPostComponent />
-
-			<ButtonsCardComponent />
+			<slot name="imagePost"></slot>
+			<slot name="buttonCard"></slot>
 			
 		</div>
 	</div>
@@ -28,13 +27,7 @@
 
 <script>
 	import { reactive } from 'vue';
-	import ImagesPostComponent from './ImagesPostCardComponent.vue';
-	import ButtonsCardComponent from './ButtonLikeCommentShareComponent.vue';
 	export default {
-		components: {
-			ImagesPostComponent,
-			ButtonsCardComponent
-		},
 		setup() {
 			const owners = reactive([
 				{

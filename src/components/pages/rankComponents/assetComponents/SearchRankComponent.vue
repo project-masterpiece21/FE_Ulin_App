@@ -1,5 +1,5 @@
 <template>
-	<aside class="mt-20 w-full bg-white rounded-lg p-5">
+	<aside class="w-full bg-white rounded-lg p-5">
 		<div class="pb-4 border-b font-medium lg:text-lg text-base">
 			Paling banyak dicari
 		</div>

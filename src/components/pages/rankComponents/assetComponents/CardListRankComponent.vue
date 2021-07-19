@@ -1,5 +1,5 @@
 <template>
-	<div class="w-full h-screen bg-white md:px-10 py-6 px-5 mt-20 rounded-lg">
+	<div class="w-full h-screen bg-white md:px-10 py-6 px-5 rounded-lg">
 		<div class="flex items-center justify-between pb-2 border-b">
 			<div class="flex lg:flex-row flex-col truncate sm:text-base text-xs">
 				<span>Peringkat menurut : </span> 
