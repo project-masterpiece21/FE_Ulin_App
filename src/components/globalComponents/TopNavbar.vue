@@ -5,16 +5,16 @@
 		<div class="flex w-full justify-between px-7 items-center h-16 bg-gray-100">
 
 			<a href="/" class="w-24">
-				<img src="../../assets/img/logo/logo.png" alt="logo-ulin" class="">
+				<img src="../../assets/img/logo/logo.png" alt="logo-ulin">
 			</a>
-			
+			<!-- 
 			<NavbarIsLogin>
 				<TopNavigation />
 			</NavbarIsLogin>
-			<!-- 
+			 -->
 			<NavbarIsNotLogin>
 				<TopNavigation />
-			</NavbarIsNotLogin> -->
+			</NavbarIsNotLogin>
 		</div>
 	</header>
 </template>
