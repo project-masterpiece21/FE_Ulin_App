@@ -17,17 +17,21 @@
 			</NavbarIsNotLogin>
 		</div>
 	</header>
+
+	<!-- <DropdownMenu /> -->
 </template>
 
 <script>
 	import NavbarIsLogin from './assetComponents/NavigationIsLogin.vue';
 	import NavbarIsNotLogin from './assetComponents/NavigationIsNotLogin.vue';
 	import TopNavigation from './assetComponents/TopNavigation.vue';
+	import DropdownMenu from './assetComponents/DropdownMenu.vue';
 	export default {
 		components: {
 			NavbarIsLogin,
 			NavbarIsNotLogin,
-			TopNavigation
+			TopNavigation,
+			DropdownMenu
 		}
 	}
 </script>
