@@ -1,7 +1,5 @@
 <template>
-	<div class="2xl:container flex items-center w-full justify-end">
-
-		<slot></slot>
+	<div class="flex items-center">
 
 		<!-- Nav -->
 		<div class="flex items-center">

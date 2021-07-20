@@ -1,14 +1,13 @@
 <template>
 	<div class="hidden md:block">
 		<div class="flex items-center font-medium text-base">
-			<slot></slot>
 			<router-link to="/signup">
-				<h1 class="mr-4 lg:py-1 py-0.5 lg:px-8 px-6 rounded-2xl shadow text-yellow-700 font-semibold bg-yellow-300 hover:bg-yellow-200">
+				<h1 class="mr-4 lg:py-1 py-0.5 lg:px-8 px-6 rounded-xl shadow text-yellow-700 font-semibold bg-yellow-200 hover:bg-yellow-300">
 					Daftar
 				</h1>
 			</router-link>
 			<router-link to="/login">
-				<h1 class="lg:py-1 py-0.5 lg:px-8 px-6 bg-white rounded-2xl shadow font-medium hover:shadow-md hover:text-yellow-600 hover:font-semibold">
+				<h1 class="lg:py-1 py-0.5 lg:px-8 px-6 bg-white rounded-xl shadow font-medium hover:shadow-md hover:text-yellow-600 hover:font-semibold">
 					Masuk
 				</h1>
 			</router-link>

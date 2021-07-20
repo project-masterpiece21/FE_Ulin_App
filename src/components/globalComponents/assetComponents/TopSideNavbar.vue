@@ -1,11 +1,20 @@
 <template>
-	<div class="md:block hidden w-full bg-white font-medium z-30">
-		<div class="px-6 lg:h-9 h-8 flex items-center">
-			<router-link v-for="navigation in navigations" :to="navigation.link" class="group flex items-center mr-4">
-				<span class="iconify mr-1 lg:text-lg text-base text-gray-600 group-hover:text-yellow-600" :data-icon="navigation.icon" data-inline="false"></span>
-				<span class="lg:text-xs text-xss text-gray-600 group-hover:text-yellow-600 font-semibold">{{ navigation.name }}</span>
-			</router-link>
+	<div class="md:block hidden w-full z-30">
+		<div class="w-full px-6 lg:h-9 h-8 flex justify-between items-center bg-gray-100 text-base">
+			<div class="flex items-center">
+				<router-link to="/" v-for="navigation in navigations" :to="navigation.link" class="group flex items-center mr-4">
+					<span class="iconify mr-1 group-hover:text-yellow-600 text-gray-600" :data-icon="navigation.icon" data-inline="false"></span>
+					<span class="lg:text-xs text-xss group-hover:text-yellow-600">{{ navigation.name }}</span>
+				</router-link>
+			</div>
+			<div class="flex items-center">
+				<router-link to="/" v-for="navigation in navigations2" :to="navigation.link" class="group flex items-center mr-4">
+					<span class="iconify mr-1 group-hover:text-yellow-600 text-gray-600" :data-icon="navigation.icon" data-inline="false"></span>
+					<span class="lg:text-xs text-xss group-hover:text-yellow-600">{{ navigation.name }}</span>
+				</router-link>
+			</div>
 		</div>
+
 	</div>
 </template>
 
@@ -14,12 +23,18 @@
 	export default {
 		setup() {
 			const navigations = reactive([
-				{ name: 'Pasang Iklan', icon: 'ic:outline-add-location', link: '/'},
+				{ name: 'Kamu pengelolah tempat wisata?', icon: 'bx:bx-map', link: '/'},
 				{ name: 'Promo', icon: 'tabler:discount-2', link: '/'},
-				{ name: 'Tentang Kami', icon: 'fluent:emoji-laugh-16-regular', link: '/'}
-			]); 
+			]);
 
-			return { navigations }
+			const navigations2 = reactive([
+				{ name: 'Notifikasi', icon: 'akar-icons:bell', link: '/'},
+				{ name: 'Syarat dan Ketentuan', icon: 'gridicons:notice-outline', link: '/'},
+				{ name: 'Pusat bantuan', icon: 'iconoir:headset-help', link: '/'},
+				{ name: 'Tentang Kami', icon: 'fluent:emoji-laugh-16-regular', link: '/'}
+			]);
+
+			return { navigations, navigations2 }
 		}
 	}
 </script>
