@@ -10,10 +10,10 @@
 
 			<div class="relative lg:block hidden w-3/5">
 
-				<form class="relative w-full text-sm pb-5">
-					<input type="search" name="search" class="focus:border-yellow-400 px-6 focus:outline-none border py-2 rounded-xl w-full shadow" placeholder="Cari tempat destinasi wisata, tempat nongkrong, caffe">
+				<form class="relative w-full text-sm pb-5 overflow-hidden">
+					<input type="search" name="search" class="focus:border-2 focus:border-yellow-500 px-6 focus:outline-none border py-2 rounded-xl w-full shadow" placeholder="Cari tempat destinasi wisata, tempat nongkrong, caffe">
 
-					<button type="sumbit" class="absolute top-1 right-1 py-1 px-4 rounded-lg bg-yellow-200 text-2xl text-yellow-700 hover:bg-yellow-300">
+					<button type="sumbit" class="absolute top-1 right-1 py-1 px-4 rounded-lg text-2xl bg-white text-gray-500 hover:bg-gray-100">
 						<span class="iconify" data-icon="bx:bx-search-alt" data-inline="false"></span>
 					</button>
 				</form>
