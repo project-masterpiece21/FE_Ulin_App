@@ -19,7 +19,7 @@
 		<span class="iconify mx-auto text-4xl" data-icon="system-uicons:menu-hamburger" data-inline="false"></span>
 	</button>
 
-	<div :class="`md:hidden px-7 py-5 transition ease-${dropdown ? 'in' : 'out'} duration-${dropdown ? '75' : '50'} transform opacity-${dropdown ? '100' : '0'} scale-${dropdown ? '100' : '90'} absolute top-0 right-0 sm:w-1/2 w-full bg-white h-screen z-30`">
+	<div v-if="dropdown" :class="`md:hidden px-7 py-5 absolute top-0 right-0 sm:w-1/2 w-full bg-white h-screen z-30`">
 
 		<div class="relative">
 			<button @click="dropdown = !dropdown" class="absolute -top-2.5 right-0 md:hidden text-gray-600 bg-white py-1.5 px-1.5">
