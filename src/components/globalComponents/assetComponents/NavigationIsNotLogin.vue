@@ -44,12 +44,12 @@
 				<a href="/" class="my-2 hover:text-yellow-600">Tentang kami</a>
 			</div>
 
-			<router-link to="/login" class="w-full flex items-center bg-yellow-400 hover:bg-yellow-500 rounded-md mt-10">
+			<router-link to="/login" class="w-full flex items-center bg-yellow-500 hover:bg-yellow-400 rounded-md mt-10">
 				<div class="mx-auto px-2 py-2">
 					Masuk ke akun
 				</div>
 			</router-link>
-			<router-link to="/signup" class="w-full flex items-center bg-yellow-400 hover:bg-yellow-500 rounded-md my-3">
+			<router-link to="/signup" class="w-full flex items-center bg-yellow-500 hover:bg-yellow-400 rounded-md my-3">
 				<div class="mx-auto px-2 py-2">
 					Daftar akun
 				</div>
