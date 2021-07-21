@@ -2,7 +2,7 @@
 	<header class="fixed top-0 2xl:container z-20 w-full md:bg-white bg-gray-100">
 		<slot></slot>
 
-		<div class="flex w-full justify-between px-8 items-center h-20">
+		<div class="flex w-full justify-between sm:px-8 px-4 items-center h-20">
 
 			<a href="/" class="w-24">
 				<img src="../../assets/img/logo/logo.png" alt="logo-ulin">
