@@ -4,8 +4,11 @@
 
 		<figcaption class="absolute group hover:bg-opacity-0 w-full h-full bg-black bg-opacity-25 rounded-xl">
 			<div class="flex flex-col py-3 text-white px-3">
-				<h1 class="text-lg font-bold leading-tight">{{ destination.name }}</h1>
-				<span class="text-sm font-medium">{{ destination.address }}</span>
+				<h1 class="lg:text-xl text-lg font-bold leading-tight">{{ destination.name }}</h1>
+				<h4 class="flex items-center lg:text-base text-sm font-medium">
+					<span class="iconify mr-0.5 text-yellow-500 text-lg" data-icon="ri:map-pin-fill" data-inline="false"></span>
+					{{ destination.address }}
+				</h4>
 			</div>
 		</figcaption>
 	</a>

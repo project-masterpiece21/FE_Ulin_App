@@ -6,7 +6,7 @@
 			<CardListComponent />
 		</section>
 		<section class="w-2/6 sticky top-20 lg:block hidden px-4">
-			<RecomendationListComponent />
+			<RecommendationDestination />
 		</section>
 	</main>
 </template>
@@ -14,13 +14,11 @@
 <script>
 	import BannerComponent from './assetComponents/BannerComponent.vue';
 	import CardListComponent from './assetComponents/CardListComponent.vue';
-	import RecomendationListComponent from './assetComponents/RecomendationListComponent.vue';
 	import CategoryDestination from "./assetComponents/CategoryDestination.vue";
 	export default {
 		components: {
 			BannerComponent,
 			CardListComponent,
-			RecomendationListComponent,
 			CategoryDestination
 		},
 	}
