@@ -3,9 +3,9 @@
 		<img v-lazy="owner.image" :alt="owner.name" class="rounded-xl object-cover">
 
 		<div class="absolute group hover:bg-opacity-0 w-full h-full bg-black bg-opacity-25 rounded-xl">
-			<div class="px-3 text-white mt-2">
-				<h1 class="xl:text-base text-sm font-bold leading-tight">{{ owner.name }}</h1>
-				<span class="text-sm font-medium">233k pengikut</span>
+			<div class="px-3 text-white py-3.5">
+				<h1 class="lg:text-base text-sm font-bold leading-tight">{{ owner.name }}</h1>
+				<span class="lg:text-base text-sm font-medium">233 rb pengikut</span>
 			</div>
 		</div>
 	</a>
