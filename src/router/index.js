@@ -41,18 +41,18 @@ const routes = [
         }
       },
       {
-        path: 'category',
-        component: () => import('../components/layout/CategoryComponent.vue'),
+        path: 'destination',
+        component: () => import('../components/layout/SearchDestinationPage.vue'),
         meta: {
           title: 'Category Page - Ulin Apps',
           metaTags: [
             {
               name: 'description',
-              content: 'The category destination of our Ulin app.'
+              content: 'The search destination of our Ulin app.'
             },
             {
               property: 'og:description',
-              content: 'The category destination of our Ulin app.'
+              content: 'The search destination of our Ulin app.'
             }
           ]
         }
