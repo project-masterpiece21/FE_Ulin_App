@@ -1,29 +1,29 @@
 <template>
 	<main class="md:flex xl:ml-52 sm:ml-24 md:mt-24 mt-20">
 		<section class="lg:w-3/4 w-full px-4">
-			<CardMomentComponent />
+			<CardList />
 		</section>
 		<section class="w-2/6 sticky top-20 lg:block hidden px-4">
-			<BestOwnerComponent />
+			<SidebarBestOwner />
 		</section>
 	</main>
 </template>
 
 <script>
 	import { defineAsyncComponent } from 'vue';
-	const CardMomentComponent = defineAsyncComponent(() => 
-		import('./assetComponents/CardMomentComponent.vue')
+	const CardList = defineAsyncComponent(() => 
+		import('./assetComponents/CardList.vue')
 	);
 
-	const BestOwnerComponent = defineAsyncComponent(() => 
-		import('./assetComponents/BestOwnerComponent.vue')
+	const SidebarBestOwner = defineAsyncComponent(() => 
+		import('./assetComponents/SidebarBestOwner.vue')
 	);
 
 	export default {
 		name: 'Moment',
 		components: {
-			CardMomentComponent,
-			BestOwnerComponent
+			CardList,
+			SidebarBestOwner
 		}
 	}
 </script>

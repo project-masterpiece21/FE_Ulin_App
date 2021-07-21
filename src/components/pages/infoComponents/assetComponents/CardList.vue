@@ -3,10 +3,10 @@
 
 		<CardItem>
 			<template v-slot:imagePost>
-				<ImagesPostComponent />
+				<ImagesPost />
 			</template>
 			<template v-slot:buttonCard>
-				<ButtonsCardComponent />
+				<ButtonsCard />
 			</template>
 		</CardItem>
 
@@ -16,8 +16,8 @@
 <script>
 	import { defineAsyncComponent } from 'vue';
 	
-	import ImagesPostComponent from './ImagesPostCardComponent.vue';
-	import ButtonsCardComponent from './ButtonLikeCommentShareComponent.vue';
+	import ImagesPost from './ImagesPostCard.vue';
+	import ButtonsCard from './ButtonLikeCommentShare.vue';
 
 	const CardItem = defineAsyncComponent(() => 
 		import('./CardItem.vue')
@@ -26,8 +26,8 @@
 	export default {
 		components: {
 			CardItem,
-			ImagesPostComponent,
-			ButtonsCardComponent
+			ImagesPost,
+			ButtonsCard
 		},
 	}
 </script>

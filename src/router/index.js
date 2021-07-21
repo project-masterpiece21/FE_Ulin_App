@@ -8,7 +8,7 @@ const routes = [
       {
         path: 'home',
         alias: '/',
-        component: () => import('../components/layout/HomeComponent.vue'),
+        component: () => import('../components/layout/HomePage.vue'),
         meta: {
           title: 'Home Page - Ulin Apps',
           metaTags: [
@@ -25,7 +25,7 @@ const routes = [
       },
       {
         path: 'moment',
-        component: () => import('../components/layout/MomentComponent.vue'),
+        component: () => import('../components/layout/MomentPage.vue'),
         meta: {
           title: 'Moment Page - Ulin Apps',
           metaTags: [
@@ -59,7 +59,7 @@ const routes = [
       },
       {
         path: 'rank',
-        component: () => import('../components/layout/RankComponent.vue'),
+        component: () => import('../components/layout/RankPage.vue'),
         meta: {
           title: 'Rank Page - Ulin Apps',
           metaTags: [
@@ -74,19 +74,36 @@ const routes = [
           ]
         }
       },
+      {
+        path: 'information',
+        component: () => import('../components/layout/InformationPage.vue'),
+        meta: {
+          title: 'News Page - Ulin Apps',
+          metaTags: [
+            {
+              name: 'description',
+              content: 'The news destination of our Ulin app.'
+            },
+            {
+              property: 'og:description',
+              content: 'The news destination of our Ulin app.'
+            }
+          ]
+        }
+      },
     ],
   },
   {
     path: '/detail',
-    component: () => import('../components/layout/DetailMenuComponent.vue'),
+    component: () => import('../components/layout/DetailMenu.vue'),
   },
   {
     path: '/signup',
-    component: () => import('../components/layout/SignupComponent.vue'),
+    component: () => import('../components/layout/SignupPage.vue'),
   },
   {
     path: '/login',
-    component: () => import('../components/layout/LoginComponent.vue'),
+    component: () => import('../components/layout/LoginPage.vue'),
   }
 ];
 
