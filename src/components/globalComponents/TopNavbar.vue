@@ -28,13 +28,9 @@
 
 			<div class="flex items-center">
 <!-- 
-				<NavbarIsLogin>
-					<TopNavigation />
-				</NavbarIsLogin> -->
+				<NavbarIsLogin /> -->
 				
-				<NavbarIsNotLogin>
-					<TopNavigation />
-				</NavbarIsNotLogin>
+				<NavbarIsNotLogin />
 			</div>
 			
 		</div>
@@ -44,13 +40,11 @@
 <script>
 	import NavbarIsLogin from './assetComponents/NavigationIsLogin.vue';
 	import NavbarIsNotLogin from './assetComponents/NavigationIsNotLogin.vue';
-	import TopNavigation from './assetComponents/TopNavigation.vue';
 	import DropdownMenu from './assetComponents/DropdownMenu.vue';
 	export default {
 		components: {
 			NavbarIsLogin,
 			NavbarIsNotLogin,
-			TopNavigation,
 			DropdownMenu
 		}
 	}
