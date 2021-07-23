@@ -21,6 +21,7 @@
         "arrow-body-style": 0,
         "consistent-return": 0,
         "vue/no-multiple-template-root": 0,
-        "unknownAtRules": 0
+        "unknownAtRules": 0,
+        "quotes": 0
     }
 }
