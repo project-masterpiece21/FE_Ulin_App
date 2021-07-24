@@ -14,14 +14,14 @@ const routes = [
           metaTags: [
             {
               name: 'description',
-              content: 'The home page of our Ulin app.'
+              content: 'The home page of our Ulin app.',
             },
             {
               property: 'og:description',
-              content: 'The home page of our Ulin app.'
-            }
-          ]
-        }
+              content: 'The home page of our Ulin app.',
+            },
+          ],
+        },
       },
       {
         path: 'moment',
@@ -31,31 +31,31 @@ const routes = [
           metaTags: [
             {
               name: 'description',
-              content: 'The moment page of our Ulin app.'
+              content: 'The moment page of our Ulin app.',
             },
             {
               property: 'og:description',
-              content: 'The moment page of our Ulin app.'
-            }
-          ]
-        }
+              content: 'The moment page of our Ulin app.',
+            },
+          ],
+        },
       },
       {
         path: 'destination',
         component: () => import('../components/layout/SearchDestinationPage.vue'),
         meta: {
-          title: 'Category Page - Ulin Apps',
+          title: 'Search Destination - Ulin Apps',
           metaTags: [
             {
               name: 'description',
-              content: 'The search destination of our Ulin app.'
+              content: 'The search destination of our Ulin app.',
             },
             {
               property: 'og:description',
-              content: 'The search destination of our Ulin app.'
-            }
-          ]
-        }
+              content: 'The search destination of our Ulin app.',
+            },
+          ],
+        },
       },
       {
         path: 'rank',
@@ -65,14 +65,14 @@ const routes = [
           metaTags: [
             {
               name: 'description',
-              content: 'The Ranked destination of our Ulin app.'
+              content: 'The Ranked destination of our Ulin app.',
             },
             {
               property: 'og:description',
-              content: 'The rangked destination of our Ulin app.'
-            }
-          ]
-        }
+              content: 'The rangked destination of our Ulin app.',
+            },
+          ],
+        },
       },
       {
         path: 'information',
@@ -82,14 +82,14 @@ const routes = [
           metaTags: [
             {
               name: 'description',
-              content: 'The news destination of our Ulin app.'
+              content: 'The news destination of our Ulin app.',
             },
             {
               property: 'og:description',
-              content: 'The news destination of our Ulin app.'
-            }
-          ]
-        }
+              content: 'The news destination of our Ulin app.',
+            },
+          ],
+        },
       },
     ],
   },
@@ -104,7 +104,7 @@ const routes = [
   {
     path: '/login',
     component: () => import('../components/layout/LoginPage.vue'),
-  }
+  },
 ];
 
 const router = createRouter({
@@ -112,28 +112,28 @@ const router = createRouter({
   routes,
 });
 
-
 router.beforeEach((to, from, next) => {
-  const nearestWithTitle = to.matched.slice().reverse().find(r => r.meta && r.meta.title);
+  const nearestWithTitle = to.matched.slice().reverse().find((r) => r.meta && r.meta.title);
 
-  const nearestWithMeta = to.matched.slice().reverse().find(r => r.meta && r.meta.metaTags);
+  const nearestWithMeta = to.matched.slice().reverse().find((r) => r.meta && r.meta.metaTags);
 
-  const previousNearestWithMeta = from.matched.slice().reverse().find(r => r.meta && r.meta.metaTags);
+  // eslint-disable-next-line max-len
+  const previousNearestWithMeta = from.matched.slice().reverse().find((r) => r.meta && r.meta.metaTags);
 
-  if(nearestWithTitle) {
+  if (nearestWithTitle) {
     document.title = nearestWithTitle.meta.title;
-  } else if(previousNearestWithMeta) {
+  } else if (previousNearestWithMeta) {
     document.title = previousNearestWithMeta.meta.title;
   }
 
-  Array.from(document.querySelectorAll('[data-vue-router-controlled]')).map(el => el.parentNode.removeChild(el));
+  Array.from(document.querySelectorAll('[data-vue-router-controlled]')).map((el) => el.parentNode.removeChild(el));
 
-  if(!nearestWithMeta) return next();
+  if (!nearestWithMeta) return next();
 
-  nearestWithMeta.meta.metaTags.map(tagDef => {
+  nearestWithMeta.meta.metaTags.map((tagDef) => {
     const tag = document.createElement('meta');
 
-    Object.keys(tagDef).forEach(key => {
+    Object.keys(tagDef).forEach((key) => {
       tag.setAttribute(key, tagDef[key]);
     });
 
@@ -141,7 +141,7 @@ router.beforeEach((to, from, next) => {
 
     return tag;
   })
-  .forEach(tag => document.head.appendChild(tag));
+    .forEach((tag) => document.head.appendChild(tag));
 
   next();
 });

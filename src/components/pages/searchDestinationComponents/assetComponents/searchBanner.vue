@@ -1,15 +1,23 @@
 <template>
   <div class="relative">
-    <img
-      src="/src/assets/img/bg-search/bg-search3.jpg"
-      alt=""
-      class="w-full md:h-80 h-64 object-cover sm:rounded-md"
-    />
+    <div
+      class="
+        lg:aspect-w-7 lg:aspect-h-2
+        md:aspect-w-6 md:aspect-h-2
+        aspect-w-5 aspect-h-2
+      "
+    >
+      <img
+        src="/src/assets/img/bg-search/bg-search3.jpg"
+        alt=""
+        class="object-cover sm:rounded-md"
+      />
+    </div>
     <div
       class="
         absolute
-        md:inset-y-48
-        inset-y-40 inset-x-0
+        lg:inset-y-48
+        inset-y-32 inset-x-0
         xl:px-52
         lg:px-42
         md:px-36
@@ -23,10 +31,14 @@
           name="search-destination"
           id="search-destination"
           class="
+            focus:ring
+            ring-yellow-500
+            md:text-base
+            text-sm
             lg:py-3
             sm:py-2
             py-1.5
-            px-4
+            px-5
             mx-auto
             focus:outline-none
             rounded-full
@@ -39,6 +51,9 @@
         <button
           type="submit"
           class="
+            focus:ring focus:ring-offset-2
+            ring-yellow-500
+            lg:py-3
             sm:py-2
             py-1.5
             px-4
