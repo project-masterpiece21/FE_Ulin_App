@@ -16,8 +16,11 @@
     <div
       class="
         absolute
-        lg:inset-y-48
-        inset-y-32 inset-x-0
+        lg:bottom-14
+        md:bottom-12
+        sm:bottom-9
+        bottom-7
+        inset-x-0
         xl:px-52
         lg:px-42
         md:px-36
