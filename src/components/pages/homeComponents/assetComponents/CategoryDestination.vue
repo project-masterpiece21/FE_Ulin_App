@@ -2,7 +2,7 @@
   <section class="md:hidden px-4 w-full my-8">
     <div class="scrollbar-thin overflow-x-scroll scrollbar-thumb-rounded">
       <div class="flex flex-row w-max">
-        <div class="group flex flex-col items-center sm:mr-8 mr-7">
+        <div class="group flex flex-col items-center mr-8">
           <button
             class="
               group-hover:bg-yellow-100
@@ -20,7 +20,9 @@
               class="sm:h-9 sm:w-9 w-8 h-8 mx-auto"
             />
           </button>
-          <span class="mx-auto text-xs mt-1.5 truncate">Pantai</span>
+          <span class="mx-auto xs:text-xs text-xss mt-1.5 truncate"
+            >Pantai</span
+          >
         </div>
 
         <div class="group flex flex-col items-center sm:mr-8 mr-7">
@@ -41,7 +43,9 @@
               class="sm:h-9 sm:w-9 w-8 h-8 mx-auto"
             />
           </button>
-          <span class="mx-auto text-xs mt-1.5 truncate">Camping</span>
+          <span class="mx-auto xs:text-xs text-xss mt-1.5 truncate"
+            >Camping</span
+          >
         </div>
 
         <div class="group flex flex-col items-center sm:mr-8 mr-7">
@@ -62,7 +66,9 @@
               class="sm:h-9 sm:w-9 w-8 h-8 mx-auto"
             />
           </button>
-          <span class="mx-auto text-xs mt-1.5 truncate">Pegunungan</span>
+          <span class="mx-auto xs:text-xs text-xss mt-1.5 truncate"
+            >Pegunungan</span
+          >
         </div>
 
         <div class="group flex flex-col items-center sm:mr-8 mr-7">
@@ -83,7 +89,9 @@
               class="sm:h-9 sm:w-9 w-8 h-8 mx-auto"
             />
           </button>
-          <span class="mx-auto text-xs mt-1.5 truncate">Muncak</span>
+          <span class="mx-auto xs:text-xs text-xss mt-1.5 truncate"
+            >Muncak</span
+          >
         </div>
 
         <div class="group flex flex-col items-center sm:mr-8 mr-7">
@@ -104,7 +112,9 @@
               class="sm:h-9 sm:w-9 w-8 h-8 mx-auto"
             />
           </button>
-          <span class="mx-auto text-xs mt-1.5 truncate">Water Park</span>
+          <span class="mx-auto xs:text-xs text-xss mt-1.5 truncate"
+            >Water Park</span
+          >
         </div>
 
         <div class="group flex flex-col items-center sm:mr-8 mr-7">
@@ -125,29 +135,11 @@
               class="sm:h-9 sm:w-9 w-8 h-8 mx-auto"
             />
           </button>
-          <span class="mx-auto text-xs mt-1.5 truncate">Kuliner</span>
+          <span class="mx-auto xs:text-xs text-xss mt-1.5 truncate"
+            >Kuliner</span
+          >
         </div>
       </div>
     </div>
   </section>
 </template>
-
-<!-- <script>
-	import { reactive } from 'vue';
-	export default {
-		setup() {
-			const categories = reactive([
-				{ name: 'Pantai', src: '/src/assets/img/beach.png' },
-				{ name: 'Camping', src: '/src/assets/img/camp.png' },
-				{ name: 'Pegunungan', src: '/src/assets/img/mountain.png' },
-				{ name: 'Muncak', src: '/src/assets/img/tracking.png' },
-				{ name: 'Water Park', src: '/src/assets/img/pool.png' },
-				{ name: 'Kuliner', src: '/src/assets/img/culinary.png' },
-			]);
-
-			return {
-				categories
-			}
-		}
-	}
-</script> -->
