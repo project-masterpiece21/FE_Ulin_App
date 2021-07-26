@@ -1,5 +1,5 @@
 <template>
-  <div class="sm:mt-7 mt-5 sm:px-0 px-7">
+  <div class="sm:mt-8 mt-7 sm:px-0 px-7">
     <div class="sm:text-sm text-xss font-medium">
       <h1 class="md:text-xl sm:text-lg text-base font-bold">
         Wilayah paling banyak dicari
@@ -7,7 +7,7 @@
       <span class="text-gray-500"
         >Untuk saat ini kami fokus diwilayah Ciayumajakuning</span
       >
-      <div class="flex items-center mt-5 mb-44">
+      <div class="flex items-center mt-4 mb-44">
         <div class="grid grid-cols-4 lg:gap-x-6 gap-x-3">
           <div
             v-for="destination in destinations"

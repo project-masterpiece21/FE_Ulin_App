@@ -1,96 +1,82 @@
 <template>
-  <template>
-    <router-link
-      to="/detail"
+  <router-link
+    to="/"
+    v-for="destination in destinations"
+    :key="destination"
+    class="relative rounded-md w-full overflow-hidden"
+  >
+    <div class="lg:h-44 md:h-30 h-28 w-32 md:w-full">
+      <img
+        v-lazy="{
+          src: destination.image,
+        }"
+        :alt="destination.name"
+        class="object-cover w-full h-full"
+      />
+    </div>
+
+    <!-- Title destination -->
+    <div
       class="
+        absolute
+        bottom-0
         w-full
-        bg-white
-        rounded-lg
-        overflow-hidden
-        border
-        cursor-pointer
-        shadow-md
-        hover:shadow-xl
+        bg-gradient-to-l
+        from-yellow-300
+        via-yellow-400
+        to-yellow-500
       "
     >
-      <div>
-        <figure class="relative overflow-hidden flex-shrink-0">
-          <div
-            class="
-              md:aspect-w-5 md:aspect-h-3
-              sm:aspect-w-5 sm:aspect-h-2
-              aspect-w-4 aspect-h-2
-            "
-          >
-            <img
-              v-lazy="{
-                src: 'https://images.unsplash.com/photo-1555071941-45994dc79d9c?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1534&q=80',
-              }"
-              alt="Man looking at item at a store"
-              class="object-cover"
-            />
-          </div>
-
-          <div
-            class="
-              absolute
-              rounded-tl-xl
-              flex
-              items-center
-              mx-auto
-              right-0
-              bottom-0
-              md:px-4
-              py-2
-              sm:px-5
-              px-3.5
-              bg-gradient-to-r
-              from-yellow-400
-              via-yellow-500
-              to-yellow-600
-              text-white
-            "
-          >
-            <span
-              class="iconify mr-0.5"
-              data-icon="ri:map-pin-fill"
-              data-inline="false"
-            ></span>
-
-            <span class="font-semibold sm:text-xs text-xss truncate"
-              >Kabupaten Majalengka</span
-            >
-          </div>
-        </figure>
-
-        <div class="relative px-4 sm:py-4 py-3">
-          <div class="flex justify-between overflow-ellipsis overflow-hidden">
-            <div class="md:w-5/6 w-10/12">
-              <router-link
-                to="/detail"
-                class="
-                  block
-                  mt-1
-                  sm:text-base
-                  text-sm
-                  leading-tight
-                  font-semibold
-                  text-black
-                "
-              >
-                Penyaweuan, Majalengka, Jawa Barat
-              </router-link>
-            </div>
-          </div>
-
-          <div>
-            <p class="mt-1.5 sm:text-sm text-xs text-gray-500">
-              Getting a new business off the ground is a lot of hard work. Here
-              are five ideas you can use to find your first customers.
-            </p>
-          </div>
-        </div>
+      <div
+        class="
+          text-white
+          lg:text-sm
+          md:text-xs
+          text-xss
+          overflow-x-hidden
+          md:py-1
+          py-0.5
+          lg:font-semibold
+        "
+      >
+        <h1
+          class="truncate mx-auto flex items-center justify-center text-center"
+        >
+          <span
+            class="iconify mr-0.5"
+            data-icon="ri:map-pin-fill"
+            data-inline="false"
+          ></span>
+          {{ destination.name }}
+        </h1>
       </div>
-    </router-link>
-  </template>
+    </div>
+    <!-- Title destination -->
+
+    <div
+      class="
+        md:block
+        hidden
+        hover:opacity-0
+        transition-opacity
+        duration-500
+        absolute
+        top-0
+        w-full
+        h-full
+        bg-gradient-to-t
+        from-black
+        to-blue-400
+        opacity-20
+        z-10
+        rounded-md
+      "
+    ></div>
+  </router-link>
 </template>
+
+<script>
+export default {
+  props: ["destinations"],
+};
+</script>
