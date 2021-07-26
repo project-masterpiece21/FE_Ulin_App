@@ -66,13 +66,14 @@
       <div class="relative px-4 sm:py-4 py-3">
         <div class="flex justify-between overflow-ellipsis overflow-hidden">
           <div>
-            <VisitorRecommendation class="mb-0.5" />
+            <VisitorRecommendation class="xs:mb-0.5" />
 
             <router-link
               to="/detail"
               class="
                 sm:text-base
-                text-sm
+                xs:text-sm
+                text-xs
                 leading-tight
                 font-semibold
                 text-black
@@ -85,8 +86,10 @@
 
         <div
           class="
-            mt-4
-            text-xs
+            sm:mt-4
+            mt-2
+            sm:text-xs
+            text-xss
             flex flex-wrap
             z-20
             sm:gap-2
