@@ -4,7 +4,8 @@
       class="
         lg:aspect-w-7 lg:aspect-h-2
         md:aspect-w-6 md:aspect-h-2
-        aspect-w-5 aspect-h-2
+        sm:aspect-w-5 sm:aspect-h-2
+        aspect-w-4 aspect-h-2
       "
     >
       <img
@@ -18,8 +19,9 @@
         absolute
         lg:bottom-14
         md:bottom-12
-        sm:bottom-9
-        bottom-7
+        sm:bottom-10
+        xs:bottom-14
+        bottom-9
         inset-x-0
         xl:px-52
         lg:px-42
@@ -37,10 +39,13 @@
             focus:ring
             ring-yellow-500
             md:text-base
-            text-sm
+            sm:text-sm
+            xs:text-xs
+            text-xss
             lg:py-3
             sm:py-2
-            py-1.5
+            xs:py-1.5
+            py-1
             px-5
             mx-auto
             focus:outline-none
@@ -58,8 +63,10 @@
             ring-yellow-500
             lg:py-3
             sm:py-2
-            py-1.5
-            px-4
+            xs:py-1.5
+            py-1
+            sm:px-4
+            px-2
             bg-yellow-400
             rounded-full
             hover:bg-yellow-500
@@ -67,7 +74,7 @@
           "
         >
           <span
-            class="iconify mx-auto text-2xl text-white"
+            class="iconify mx-auto sm:text-2xl text-xl text-white"
             data-icon="bx:bx-search-alt"
             data-inline="false"
           ></span>
