@@ -26,45 +26,58 @@
           >
             <div class="lg:h-44 md:h-30 h-28 w-32 md:w-full">
               <img
-                :src="destination.image"
+                v-lazy="{
+                  src: destination.image,
+                }"
                 :alt="destination.name"
                 class="object-cover w-full h-full"
               />
             </div>
 
+            <!-- Title destination -->
             <div
               class="
+                absolute
+                bottom-0
+                w-full
                 bg-gradient-to-l
                 from-yellow-300
                 via-yellow-400
                 to-yellow-500
-                text-white
-                md:text-xs
-                text-xss
-                overflow-x-hidden
-                lg:py-1.5
-                md:py-1
-                py-0.5
               "
             >
-              <h1
+              <div
                 class="
-                  truncate
-                  mx-auto
-                  flex
-                  items-center
-                  justify-center
-                  text-center
+                  text-white
+                  lg:text-sm
+                  md:text-xs
+                  text-xss
+                  overflow-x-hidden
+                  md:py-1
+                  py-0.5
+                  lg:font-semibold
                 "
               >
-                <span
-                  class="iconify mr-0.5"
-                  data-icon="ri:map-pin-fill"
-                  data-inline="false"
-                ></span>
-                {{ destination.name }}
-              </h1>
+                <h1
+                  class="
+                    truncate
+                    mx-auto
+                    flex
+                    items-center
+                    justify-center
+                    text-center
+                  "
+                >
+                  <span
+                    class="iconify mr-0.5"
+                    data-icon="ri:map-pin-fill"
+                    data-inline="false"
+                  ></span>
+                  {{ destination.name }}
+                </h1>
+              </div>
             </div>
+            <!-- Title destination -->
 
             <div
               class="

@@ -15,9 +15,11 @@
             class="relative"
           >
             <img
-              :src="destination.image"
+              v-lazy="{
+                src: destination.image,
+              }"
               :alt="destination.name"
-              class="object-cover lg:h-80 sm:h-60 h-36 w-full rounded-md"
+              class="object-cover lg:h-80 sm:h-52 h-36 w-full rounded-md"
             />
             <div
               class="
@@ -75,8 +77,9 @@
                 class="
                   absolute
                   cursor-pointer
+                  md:top-8
                   sm:top-3
-                  top-12
+                  top-5
                   flex flex-wrap
                   justify-center
                   w-full
@@ -84,13 +87,7 @@
                 "
               >
                 <h1
-                  class="
-                    font-semibold
-                    lg:text-lg
-                    md:text-base
-                    sm:text-sm
-                    text-xs
-                  "
+                  class="font-bold md:text-lg sm:text-base xs:text-xs text-xss"
                 >
                   {{ destination.name }}
                 </h1>
@@ -102,7 +99,7 @@
                     px-0.5
                     text-xss
                     leading-none
-                    sm:block
+                    lg:block
                     hidden
                   "
                 >
@@ -124,9 +121,10 @@
                 <a
                   href="/"
                   class="
+                    text-center
                     flex
                     justify-center
-                    bg-gradient-to-b
+                    sm:bg-gradient-to-b
                     from-yellow-300
                     via-yellow-400
                     to-yellow-500
@@ -143,9 +141,10 @@
                     py-0.5
                     lg:text-base
                     md:text-sm
-                    sm:text-xs
                     text-xss
                     rounded-full
+                    sm:no-underline
+                    underline
                   "
                 >
                   Jelajahi sekarang
