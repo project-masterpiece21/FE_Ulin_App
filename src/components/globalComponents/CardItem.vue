@@ -83,14 +83,24 @@
           </div>
         </div>
 
-        <div class="mt-4 text-xs flex flex-wrap z-20 text-gray-700">
-          <a href="/" class="sm:py-1 py-0.5 px-2 rounded-full bg-gray-200 mr-2"
+        <div
+          class="
+            mt-4
+            text-xs
+            flex flex-wrap
+            z-20
+            sm:gap-2
+            gap-1.5
+            text-gray-700
+          "
+        >
+          <a href="/" class="sm:py-1 py-0.5 px-2 rounded-full bg-gray-200"
             >Penyaweuan</a
           >
-          <a href="/" class="sm:py-1 py-0.5 px-2 rounded-full bg-gray-200 mr-2"
+          <a href="/" class="sm:py-1 py-0.5 px-2 rounded-full bg-gray-200"
             >Majalengka</a
           >
-          <a href="/" class="sm:py-1 py-0.5 px-2 rounded-full bg-gray-200 mr-2"
+          <a href="/" class="sm:py-1 py-0.5 px-2 rounded-full bg-gray-200"
             >Ciayumajakuning</a
           >
         </div>
