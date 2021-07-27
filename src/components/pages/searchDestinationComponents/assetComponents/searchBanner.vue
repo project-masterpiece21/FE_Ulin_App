@@ -39,13 +39,10 @@
             focus:ring
             ring-yellow-500
             md:text-base
-            sm:text-sm
-            xs:text-xs
+            xs:text-sm
             text-xss
             lg:py-3
-            sm:py-2
-            xs:py-1.5
-            py-1
+            py-2
             px-5
             mx-auto
             focus:outline-none
@@ -62,9 +59,7 @@
             focus:ring focus:ring-offset-2
             ring-yellow-500
             lg:py-3
-            sm:py-2
-            xs:py-1.5
-            py-1
+            py-2
             sm:px-4
             px-2
             bg-yellow-400

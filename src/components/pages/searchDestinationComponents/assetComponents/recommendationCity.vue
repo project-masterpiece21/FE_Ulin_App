@@ -7,8 +7,18 @@
       <span class="text-gray-500"
         >Untuk saat ini kami fokus diwilayah Ciayumajakuning</span
       >
-      <div class="flex items-center mt-4 mb-44">
-        <div class="grid grid-cols-4 lg:gap-x-6 gap-x-3">
+      <div
+        class="
+          scrollbar-thin
+          overflow-x-scroll
+          scrollbar-thumb-rounded
+          md:mt-4
+          mt-3.5
+          overflow-hidden
+          mb-36
+        "
+      >
+        <div class="flex flex-row w-max md:grid grid-cols-4 gap-4 md:w-full">
           <div
             v-for="destination in destinations"
             :key="destination"
@@ -19,7 +29,15 @@
                 src: destination.image,
               }"
               :alt="destination.name"
-              class="object-cover lg:h-80 sm:h-52 h-36 w-full rounded-md"
+              class="
+                object-cover
+                lg:h-80
+                md:w-full
+                sm:h-52
+                h-36
+                w-40
+                rounded-md
+              "
             />
             <div
               class="
@@ -33,7 +51,7 @@
                 lg:text-xl
                 md:text-lg
                 sm:text-base
-                text-xss
+                text-xs
                 z-30
               "
             >
@@ -86,9 +104,7 @@
                   text-white text-center
                 "
               >
-                <h1
-                  class="font-bold md:text-lg sm:text-base xs:text-xs text-xss"
-                >
+                <h1 class="font-bold md:text-lg sm:text-base text-xs">
                   {{ destination.name }}
                 </h1>
                 <p
@@ -124,27 +140,24 @@
                     text-center
                     flex
                     justify-center
-                    sm:bg-gradient-to-b
+                    bg-gradient-to-b
                     from-yellow-300
-                    via-yellow-400
                     to-yellow-500
                     hover:bg-gradient-to-b
                     hover:from-yellow-400
-                    hover:via-yellow-500
                     hover:to-yellow-600
                     font-semibold
-                    lg:px-8
-                    sm:px-2
-                    px-1
-                    lg:py-1.5
+                    lg:px-5
+                    sm:px-3
+                    px-2
+                    md:py-1.5
                     sm:py-1
-                    py-0.5
+                    xs:py-1.5
+                    py-1
                     lg:text-base
-                    md:text-sm
+                    md:text-xs
                     text-xss
                     rounded-full
-                    sm:no-underline
-                    underline
                   "
                 >
                   Jelajahi sekarang
