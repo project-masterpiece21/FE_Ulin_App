@@ -75,23 +75,23 @@
           px-1.5
         "
       >
-        <div class="text-base font-medium">Tutup</div>
+        <div class="text-base font-medium hover:text-blue-500">Tutup</div>
       </button>
     </div>
 
     <div class="relative w-full justify-center mt-10 text-white font-semibold">
       <div class="flex flex-col text-gray-600 font-medium border-b pb-1.5">
-        <a href="/" class="my-2 hover:text-yellow-600">Cari tempat wisata</a>
-        <a href="/" class="my-2 hover:text-yellow-600">Rekomendasi untukmu</a>
-        <a href="/" class="my-2 hover:text-yellow-600">Moment</a>
-        <a href="/" class="my-2 hover:text-yellow-600">Peringkat wisata</a>
+        <a href="/" class="my-2 hover:text-blue-500">Cari tempat wisata</a>
+        <a href="/" class="my-2 hover:text-blue-500">Rekomendasi untukmu</a>
+        <a href="/" class="my-2 hover:text-blue-500">Moment</a>
+        <a href="/" class="my-2 hover:text-blue-500">Peringkat wisata</a>
       </div>
 
       <div class="flex flex-col text-gray-600 font-medium">
-        <a href="/" class="my-2 hover:text-yellow-600">Pusat bantuan</a>
-        <a href="/" class="my-2 hover:text-yellow-600">Syarat dan ketentuan</a>
-        <a href="/" class="my-2 hover:text-yellow-600">Pusat karir</a>
-        <a href="/" class="my-2 hover:text-yellow-600">Tentang kami</a>
+        <a href="/" class="my-2 hover:text-blue-500">Pusat bantuan</a>
+        <a href="/" class="my-2 hover:text-blue-500">Syarat dan ketentuan</a>
+        <a href="/" class="my-2 hover:text-blue-500">Pusat karir</a>
+        <a href="/" class="my-2 hover:text-blue-500">Tentang kami</a>
       </div>
 
       <div class="xs:mt-9 mt-6">
@@ -102,12 +102,10 @@
             flex
             items-center
             hover:bg-gradient-to-b
-            hover:from-green-300
-            hover:via-green-400
-            hover:to-blue-400
-            bg-gradient-to-l
+            hover:from-green-500
+            hover:to-blue-600
+            bg-gradient-to-b
             from-green-400
-            via-green-500
             to-blue-500
             rounded-lg
           "
@@ -121,12 +119,10 @@
             flex
             items-center
             hover:bg-gradient-to-b
-            hover:from-green-300
-            hover:via-green-400
-            hover:to-blue-400
-            bg-gradient-to-l
+            hover:from-green-500
+            hover:to-blue-600
+            bg-gradient-to-b
             from-green-400
-            via-green-500
             to-blue-500
             rounded-lg
             my-3
