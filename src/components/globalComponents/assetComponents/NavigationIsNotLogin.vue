@@ -11,16 +11,14 @@
             px-6
             rounded-xl
             shadow
-            text-yellow-700
+            text-white
             font-semibold
             bg-gradient-to-b
-            from-yellow-200
-            via-yellow-300
-            to-yellow-400
-            hover:bg-gradient-to-l
-            hover:from-yellow-300
-            hover:via-yellow-400
-            hover:to-yellow-500
+            from-green-300
+            to-blue-400
+            hover:bg-gradient-to-b
+            hover:from-green-400
+            hover:to-blue-500
           "
         >
           Daftar
@@ -38,7 +36,7 @@
             shadow
             font-medium
             hover:shadow-md
-            hover:text-yellow-600
+            hover:text-blue-400
             hover:font-semibold
           "
         >
