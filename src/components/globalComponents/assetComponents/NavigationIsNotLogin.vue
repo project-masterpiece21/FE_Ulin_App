@@ -96,60 +96,62 @@
         <a href="/" class="my-2 hover:text-yellow-600">Tentang kami</a>
       </div>
 
-      <router-link
-        to="/login"
-        class="
-          w-full
-          flex
-          items-center
-          bg-gradient-to-b
-          from-yellow-300
-          via-yellow-400
-          to-yellow-500
-          hover:bg-gradient-to-l
-          hover:from-yellow-400
-          hover:via-yellow-500
-          hover:to-yellow-600
-          rounded-md
-          mt-10
-        "
-      >
-        <div class="mx-auto px-2 py-2">Masuk ke akun</div>
-      </router-link>
-      <router-link
-        to="/signup"
-        class="
-          w-full
-          flex
-          items-center
-          bg-gradient-to-b
-          from-yellow-300
-          via-yellow-400
-          to-yellow-500
-          hover:bg-gradient-to-l
-          hover:from-yellow-400
-          hover:via-yellow-500
-          hover:to-yellow-600
-          rounded-md
-          my-3
-        "
-      >
-        <div class="mx-auto px-2 py-2">Daftar akun</div>
-      </router-link>
+      <div class="xs:mt-9 mt-6">
+        <router-link
+          to="/login"
+          class="
+            w-full
+            flex
+            items-center
+            hover:bg-gradient-to-b
+            hover:from-green-300
+            hover:via-green-400
+            hover:to-blue-400
+            bg-gradient-to-l
+            from-green-400
+            via-green-500
+            to-blue-500
+            rounded-lg
+          "
+        >
+          <div class="mx-auto px-2 py-2">Masuk ke akun</div>
+        </router-link>
+        <router-link
+          to="/signup"
+          class="
+            w-full
+            flex
+            items-center
+            hover:bg-gradient-to-b
+            hover:from-green-300
+            hover:via-green-400
+            hover:to-blue-400
+            bg-gradient-to-l
+            from-green-400
+            via-green-500
+            to-blue-500
+            rounded-lg
+            my-3
+          "
+        >
+          <div class="mx-auto px-2 py-2">Daftar akun</div>
+        </router-link>
+      </div>
 
       <div
         class="
-          flex flex-col
+          xs:block
+          hidden
           text-gray-500
           font-light
           text-xs
           justify-center
           items-center
-          mt-6
+          mt-7
           text-center
         "
       >
-        <span>© 2021 Ulin Apps</span>
+        <span class="block">© 2021 Ulin Apps</span>
         <span>Sebuah aplikasi yang bergerak di bidang destinasi wisata</span>
       </div>
     </div>

@@ -10,7 +10,7 @@
       flex
       text-xss
       bg-white
-      z-50
+      z-40
     "
   >
     <a
@@ -51,9 +51,9 @@ import { reactive } from "vue";
 export default {
   setup() {
     const navMenu = reactive([
-      { name: "Cari tempat", icon: "ri:map-pin-fill", link: "/destination" },
-      { name: "Moment", icon: "ri:ghost-smile-fill", link: "/moment" },
       { name: "Beranda", icon: "bx:bxs-home-smile", link: "/" },
+      { name: "Moment", icon: "ri:ghost-smile-fill", link: "/moment" },
+      { name: "Cari tempat", icon: "ri:map-pin-fill", link: "/destination" },
       { name: "Peringkat", icon: "icomoon-free:trophy", link: "/rank" },
       {
         name: "Pusat info",
