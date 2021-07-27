@@ -1,5 +1,5 @@
 <template>
-  <section class="md:hidden px-4 w-full my-8">
+  <section class="md:hidden px-4 w-full my-4 py-3">
     <div class="scrollbar-thin overflow-x-scroll scrollbar-thumb-rounded">
       <div class="flex flex-row w-max">
         <div class="group flex flex-col items-center mr-8">
