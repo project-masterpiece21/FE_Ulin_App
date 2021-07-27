@@ -14,11 +14,11 @@
             text-white
             font-semibold
             bg-gradient-to-b
-            from-green-300
-            to-blue-400
+            from-yellow-300
+            to-yellow-500
             hover:bg-gradient-to-b
-            hover:from-green-400
-            hover:to-blue-500
+            hover:from-yellow-300
+            hover:to-yellow-400
           "
         >
           Daftar
@@ -36,7 +36,7 @@
             shadow
             font-medium
             hover:shadow-md
-            hover:text-blue-400
+            hover:text-yellow-500
             hover:font-semibold
           "
         >
@@ -75,23 +75,31 @@
           px-1.5
         "
       >
-        <div class="text-base font-medium hover:text-blue-500">Tutup</div>
+        <div class="text-base font-medium">Tutup</div>
       </button>
     </div>
 
     <div class="relative w-full justify-center mt-10 text-white font-semibold">
-      <div class="flex flex-col text-gray-600 font-medium border-b pb-1.5">
-        <a href="/" class="my-2 hover:text-blue-500">Cari tempat wisata</a>
-        <a href="/" class="my-2 hover:text-blue-500">Rekomendasi untukmu</a>
-        <a href="/" class="my-2 hover:text-blue-500">Moment</a>
-        <a href="/" class="my-2 hover:text-blue-500">Peringkat wisata</a>
+      <div
+        class="
+          flex flex-col
+          text-gray-600
+          font-medium
+          border-b border-yellow-200
+          pb-1.5
+        "
+      >
+        <a href="/" class="my-2 hover:text-yellow-500">Cari tempat wisata</a>
+        <a href="/" class="my-2 hover:text-yellow-500">Rekomendasi untukmu</a>
+        <a href="/" class="my-2 hover:text-yellow-500">Moment</a>
+        <a href="/" class="my-2 hover:text-yellow-500">Peringkat wisata</a>
       </div>
 
       <div class="flex flex-col text-gray-600 font-medium">
-        <a href="/" class="my-2 hover:text-blue-500">Pusat bantuan</a>
-        <a href="/" class="my-2 hover:text-blue-500">Syarat dan ketentuan</a>
-        <a href="/" class="my-2 hover:text-blue-500">Pusat karir</a>
-        <a href="/" class="my-2 hover:text-blue-500">Tentang kami</a>
+        <a href="/" class="my-2 hover:text-yellow-500">Pusat bantuan</a>
+        <a href="/" class="my-2 hover:text-yellow-500">Syarat dan ketentuan</a>
+        <a href="/" class="my-2 hover:text-yellow-500">Pusat karir</a>
+        <a href="/" class="my-2 hover:text-yellow-500">Tentang kami</a>
       </div>
 
       <div class="xs:mt-9 mt-6">
@@ -102,11 +110,11 @@
             flex
             items-center
             hover:bg-gradient-to-b
-            hover:from-green-500
-            hover:to-blue-600
+            hover:from-yellow-300
+            hover:to-yellow-400
             bg-gradient-to-b
-            from-green-400
-            to-blue-500
+            from-yellow-300
+            to-yellow-500
             rounded-lg
           "
         >
@@ -119,11 +127,11 @@
             flex
             items-center
             hover:bg-gradient-to-b
-            hover:from-green-500
-            hover:to-blue-600
+            hover:from-yellow-300
+            hover:to-yellow-400
             bg-gradient-to-b
-            from-green-400
-            to-blue-500
+            from-yellow-300
+            to-yellow-500
             rounded-lg
             my-3
           "
