@@ -30,14 +30,14 @@
     >
       <span
         :class="$route.path === menu.link ? 'text-yellow-500' : 'text-gray-400'"
-        class="iconify text-xl mx-auto group-hover:text-yellow-500"
+        class="iconify text-xl mx-auto"
         :data-icon="menu.icon"
         data-inline="false"
       ></span>
 
       <div
         :class="$route.path === menu.link ? 'text-yellow-500' : ''"
-        class="text-gray-500 group-hover:text-yellow-500"
+        class="text-gray-500"
       >
         {{ menu.name }}
       </div>
