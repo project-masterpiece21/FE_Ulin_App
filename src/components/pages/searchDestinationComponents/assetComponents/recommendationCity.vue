@@ -87,7 +87,7 @@
                 from-green-300
                 to-transparent
                 opacity-0
-                z-40
+                z-20
                 rounded-md
               "
             >
