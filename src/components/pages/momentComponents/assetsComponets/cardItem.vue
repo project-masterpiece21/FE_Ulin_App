@@ -1,8 +1,6 @@
 <template>
-  <div class="md:w-1/5 w-1/4">
-    <div class="w-full h-full">
-      <img :src="image" :alt="alt" />
-    </div>
+  <div class="w-full xl:max-h-56 lg:max-h-48 md:max-h-44 xs:max-h-40 max-h-28 bg-yellow-200">
+      <img :src="image" :alt="alt" class="w-full h-full object-cover" />
   </div>
 </template>
 
