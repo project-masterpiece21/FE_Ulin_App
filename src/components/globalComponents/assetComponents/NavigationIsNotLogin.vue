@@ -15,10 +15,10 @@
             font-semibold
             bg-gradient-to-b
             from-yellow-300
-            to-yellow-500
+            to-yellow-400
             hover:bg-gradient-to-b
             hover:from-yellow-300
-            hover:to-yellow-400
+            hover:to-yellow-500
           "
         >
           Daftar
