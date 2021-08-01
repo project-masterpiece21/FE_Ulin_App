@@ -1,5 +1,5 @@
 <template>
-	<main class="md:flex xl:ml-52 sm:ml-24 md:mt-24 mt-20">
+	<main class="md:flex xl:ml-52 sm:ml-24 lg:mt-36 mt-20">
 		<section class="lg:w-3/4 w-full px-4">
 			<CardList />
 		</section>
