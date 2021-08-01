@@ -5,7 +5,8 @@
         xl:w-44
         xl:ml-3
         flex flex-col
-        md:pt-32
+        lg:pt-36
+        md:pt-24
         pt-20
         md:w-28
         w-24
