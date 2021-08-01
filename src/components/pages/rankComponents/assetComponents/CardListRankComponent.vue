@@ -6,11 +6,15 @@
 				<p class="font-bold truncate"> Pencarian</p>
 			</div>
 
-			<select name="role" class="border-none shadow-none sm:text-sm text-xs bg-gray-50 focus:ring-2 ring-gray-200 focus:ring-gray-300 font-medium w-36">
-				<option value="">Pengunjung</option>
-				<option value="User">Pengelolah</option>
-				<option value="Owner">Pencarian</option>
-			</select>
+			<div>
+				<form action="POST">
+					<select name="role" class="border-none shadow-none sm:text-sm text-xs bg-gray-50 focus:ring-2 ring-gray-200 focus:ring-gray-300 font-medium w-36">
+					<option value="">Pengunjung</option>
+					<option value="User">Pengelolah</option>
+					<option value="Owner">Pencarian</option>
+				</select>
+				</form>
+			</div>
 		</div>
 		<CardItemRankComponent />
 	</div>

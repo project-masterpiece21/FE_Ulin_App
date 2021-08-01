@@ -13,7 +13,7 @@
 
 			<span class="flex items-center">
 				<span class="iconify text-base md:text-lg text-yellow-500" data-icon="fluent:thumb-like-20-filled" data-inline="false"></span>
-				<span class="text-lg text-center text-base font-semibold ml-1 text-yellow-500">8.5</span>
+				<span class="text-center text-base font-semibold ml-1 text-yellow-500">8.5</span>
 			</span>
 		</div>
 

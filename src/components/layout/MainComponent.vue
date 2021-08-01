@@ -1,10 +1,15 @@
 <template>
 	<keep-alive>
-		<TopSideNavbar />
-	</keep-alive>
-	<keep-alive>
 		<TopNavbar>
-			<TopSideNavbar />
+			<template v-slot:top-navigation>
+				<TopSideNavbar />
+			</template>
+			
+			<template v-slot:search-form>
+				<SearchForm>
+					<PopularSearch />
+				</SearchForm>
+			</template>
 		</TopNavbar>
 	</keep-alive>
 	<keep-alive>
@@ -18,9 +23,14 @@
 
 <script>
 	import TopSideNavbar from "../globalComponents/assetComponents/TopSideNavbar.vue";
+	import SearchForm from '../globalComponents/assetComponents/SearchForm.vue';
+	import PopularSearch from '../globalComponents/assetComponents/PopularSearch.vue';
+	
 	export default {
 		components: {
-			TopSideNavbar
+			TopSideNavbar,
+			SearchForm,
+			PopularSearch
 		}
 	}
 </script>
