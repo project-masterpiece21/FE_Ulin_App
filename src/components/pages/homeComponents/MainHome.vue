@@ -1,6 +1,6 @@
 <template>
   <main class="md:flex xl:ml-52 sm:ml-20 mt-24">
-    <section class="lg:w-3/4 w-full px-4">
+    <section class="lg:w-3/4 w-full px-1">
       <Banner />
       <CategoryDestination />
       <CardList />
