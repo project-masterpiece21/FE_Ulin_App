@@ -1,6 +1,33 @@
 <template>
-	<figure class="w-full px-4 animate-pulse">
-		<div class="xl:h-60 md:mt-0 w-full md:h-52 sm:h-48 h-44 bg-gray-300 rounded-lg mt-24">
-		</div>
-	</figure>
+  <div class="relative w-full px-6 rounded-lg">
+    <Carousel :autoplay="3500">
+      <Slide v-for="banner in banners" :key="banner">
+          <img v-lazy="banner" :alt="banner">
+      </Slide>
+      <template #addons>
+        <Navigation />
+        <Pagination />
+      </template>
+    </Carousel>
+  </div>
 </template>
+
+<script>
+  import { ref } from 'vue';
+  import { Carousel, Navigation, Pagination, Slide } from 'vue3-carousel';
+
+  import 'vue3-carousel/dist/carousel.css';
+
+  export default {
+    name: 'Banner',
+    components: { Carousel, Navigation, Pagination, Slide },
+    setup() {
+      const banners = ref([
+        '1.png',
+        '2.png'
+      ]);
+
+      return { banners };
+    }
+  }
+</script>
