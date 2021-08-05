@@ -1,6 +1,6 @@
 <template>
   <div class="relative w-full px-6 rounded-lg">
-    <Carousel :autoplay="3500">
+    <Carousel :autoplay="5000" :wrap-around="true">
       <Slide v-for="banner in banners" :key="banner">
           <img v-lazy="banner" :alt="banner">
       </Slide>
@@ -31,3 +31,14 @@
     }
   }
 </script>
+
+<style>
+:root {
+  --carousel-color-primary: #fbbf24;
+  --carousel-color-secondary: #fcd34d;
+}
+
+.carousel__pagination-button--active {
+  background-color: #d97706;
+}
+</style>
