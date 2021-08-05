@@ -4,6 +4,7 @@ import VueLazyLoad from 'vue3-lazyload';
 import './assets/css/tailwindcss.css';
 import App from './App.vue';
 import router from './router';
+import stores from './stores';
 
 // Global Components
 import NavbarBottomMobile from './components/globalComponents/NavbarBottomMobile.vue';
@@ -23,5 +24,6 @@ app.component('CardItem', CardItem);
 
 app.use(router);
 app.use(VueLazyLoad);
+app.use(stores);
 
 app.mount('#app');
