@@ -1,0 +1,44 @@
+{
+  "message": "success",
+  "status": 200,
+  "place": [
+    {
+      "id": "1",
+      "ownerId": "2",
+      "name": "Terasering Panyaweuan",
+      "images": [
+        "wlwlwlwl.jpg",
+        "awokwkwkwwk.jpg",
+        "wkwkwkwkwk.jpg"
+      ],
+      "description": "lorem ipsum ....",
+      "address": {
+        "city": "Kabupaten Majalengka",
+        "province": "Jawa Barat",
+        "fullAddress": "Argapura Kecamatan Maja Kabupaten Majelengka Jawa Barat"
+      },
+      "info": {
+        "status": "active",
+        "owner": "Karang taruna Majalengka",
+        "openDay": "Senin - Minggu",
+        "openTime": "08:00 - 15:00",
+        "ticket": "10000 - 15000",
+        "transportations": [ "Mobil", "Motor" ]
+      },
+      "coordinates": [ "212321323233", "32343244324434" ],
+      "tags": [ 
+        "panyaweuan",
+        "majalengka",
+        "ciayumajakuning",
+        "terasering" 
+      ],
+      "createAt": "",
+      "updateAt": "",
+      "recommendation": {
+        "owner": true,
+        "visitors": false
+      },
+      "likes": 2333
+    }
+  ]
+}

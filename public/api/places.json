@@ -1,0 +1,23 @@
+{
+  "message": "success",
+  "status": 200,
+  "places": [
+    {
+      "id": "1",
+      "name": "Terasering Panyaweuan",
+      "image": "wkwkwkwk.jpg",
+      "address": [
+        {
+          "city": "Kabupaten Majalengka",
+          "province": "Jawa Barat"
+        }
+      ],
+      "tags": [ 
+        "panyaweuan",
+        "majalengka",
+        "ciayumajakuning",
+        "terasering" 
+      ]
+    }
+  ]
+}
