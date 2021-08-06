@@ -1,8 +1,12 @@
 <template>
   <div class="relative w-full px-6 rounded-lg">
-    <Carousel :autoplay="5000" :wrap-around="true">
-      <Slide v-for="banner in banners" :key="banner">
-          <img v-lazy="banner" :alt="banner">
+    <Carousel :autoplay="6500" :wrap-around="true">
+      <Slide 
+      v-for="banner in banners" 
+      :key="banner">
+          <a href="/">
+            <img v-lazy="banner" :alt="banner">
+          </a>
       </Slide>
       <template #addons>
         <Navigation />
@@ -36,6 +40,11 @@
 :root {
   --carousel-color-primary: #fbbf24;
   --carousel-color-secondary: #fcd34d;
+}
+
+.carousel__prev, .carousel__next {
+  background-color: white;
+  color: #4b5563;
 }
 
 .carousel__pagination-button--active {
