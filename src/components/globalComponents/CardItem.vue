@@ -22,10 +22,8 @@
             "
           >
             <img
-              v-lazy="{
-                src: 'https://images.unsplash.com/photo-1555071941-45994dc79d9c?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1534&q=80',
-              }"
-              alt="Man looking at item at a store"
+              v-lazy="image"
+              :alt="name"
               class="object-cover"
             />
           </div>
@@ -58,7 +56,7 @@
           ></span>
 
           <span class="font-semibold sm:text-xs text-xss truncate"
-            >Kabupaten Majalengka</span
+            >{{ `${city}, ${province}` }}</span
           >
         </div>
       </figure>
@@ -79,7 +77,7 @@
                 text-black
               "
             >
-              Penyaweuan, Majalengka, Jawa Barat
+              {{ name }}
             </router-link>
           </div>
         </div>
@@ -116,6 +114,8 @@
 import VisitorRecommendation from "./assetComponents/visitorRecommendation.vue";
 
 export default {
+  name: "card-item",
+  props: [ 'name', 'description', 'image', 'province', 'city', 'address' ],
   components: {
     VisitorRecommendation,
   },

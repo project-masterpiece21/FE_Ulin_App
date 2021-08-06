@@ -9,7 +9,7 @@
         <CategoryDestination />
       </keep-alive>
       
-      <CardList />
+      <CardList :places="places" />
     </section>
     <section class="w-2/6 sticky top-20 lg:block hidden px-4">
       <RecommendationDestination />
@@ -18,7 +18,8 @@
 </template>
 
 <script>
-import { defineAsyncComponent } from 'vue';
+import { defineAsyncComponent, onMounted, computed } from 'vue';
+import { useStore } from 'vuex';
 
 const Banner = defineAsyncComponent(() =>
   import("./assetComponents/Banner.vue")
@@ -34,5 +35,18 @@ export default {
     CardList,
     CategoryDestination,
   },
+  setup() {
+    const store = useStore();
+
+    onMounted(() => {
+      store.dispatch('getPlaces');
+    });
+
+    const places = computed(() => {
+      return store.getters.getterPlaces;
+    })
+
+    return { places }
+  }
 };
 </script>
