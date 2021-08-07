@@ -1,28 +1,32 @@
 <template>
-	<section class="relative">
-		<div class="scrollbar-thin overflow-x-scroll scrollbar-thumb-rounded">
-			<div class="flex flex-row w-max w-full">
+	<div class="px-3">
+		<Carousel :settings="settings" :breakpoints="breakpoints">
+			<Slide v-for="image in images" :key="image">
+				<div class="w-full mr-2">
+					<img :src="image.image" :alt="image.image" class="rounded-lg w-full">
+				</div>
+			</Slide>
 
-				<figure v-for="image in images" :key="image" class="mr-4 rounded-md overflow-hidden">
-					<img :src="image.image" :alt="image.image" class="h-52 object-cover">
-				</figure>
-
-			</div>
-		</div>
-
-		<button class="absolute inset-y-1/2 left-2">
-			<span class="iconify cursor-pointer text-white text-opacity-60 w-10 h-10 p-2 rounded-full bg-black bg-opacity-20 hover:text-opacity-80 hover:bg-opacity-50" data-icon="bx:bxs-left-arrow" data-inline="false"></span>
-		</button>
-
-		<button class="absolute inset-y-1/2 right-2">
-			<span class="iconify cursor-pointer text-white text-opacity-60 w-10 h-10 p-2 rounded-full bg-black bg-opacity-20 hover:text-opacity-80 hover:bg-opacity-50" data-icon="bx:bxs-right-arrow" data-inline="false"></span>
-		</button>
-	</section>
+			<template #addons>
+				<Navigation />
+			</template>
+		</Carousel>
+	</div>
 </template>
 
 <script>
 	import { reactive } from "vue";
+	import { Carousel, Navigation, Slide } from 'vue3-carousel';
+
+  import 'vue3-carousel/dist/carousel.css';
+
 	export default {
+		name: "images-slider-detail",
+		components: {
+			Carousel,
+			Navigation,
+			Slide
+		},
 		setup() {
 			const images = reactive([
 				{ image: "https://images.unsplash.com/photo-1469474968028-56623f02e42e?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=753&q=80"},
@@ -31,9 +35,30 @@
 				{ image: "https://images.unsplash.com/photo-1432405972618-c60b0225b8f9?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=750&q=80"}
 			]);
 
+			const breakpoints = ({
+				240: {
+					itemsToShow: 1.4,
+					snapAlign: 'start',
+				},
+			});
+
+			const settings = ({
+				itemsToShow: 3,
+      	snapAlign: 'center',
+			});
+
 			return {
-				images
+				images,
+				breakpoints,
+				settings
 			}
 		}
 	}
 </script>
+
+<style>
+	.carousel__prev, .carousel__next {
+		background-color: white;
+		color: #4b5563;
+	}
+</style>

@@ -1,19 +1,26 @@
 export default {
   namespace: true,
   state: {
-    places: []
+    places: [],
+    placeById: [],
   },
 
   getters: {
     getterPlaces(state) {
       return state.places;
     },
+    getterPlaceById(state) {
+      return state.placeById;
+    }
   },
 
   mutations: {
     setPlaces(state, payload) {
       state.places = payload;
     },
+    setPlaceById(state, payload) {
+      state.placeById = payload;
+    }
   },
 
   actions: {
@@ -23,6 +30,13 @@ export default {
       const { data } = await response.json();
 
       commit('setPlaces', data)
+    },
+
+    async getPlaceById({ commit }, params) {
+      const response = await fetch(`http://ulin-api.herokuapp.com/v1/place/${params}`);
+
+      const { data } = await response.json();
+      commit('setPlaceById', data)
     }
   }
 };

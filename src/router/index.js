@@ -94,7 +94,8 @@ const routes = [
     ],
   },
   {
-    path: '/detail',
+    path: '/destination/:id',
+    name: 'detail-destination',
     component: () => import('../components/layout/DetailMenu.vue'),
   },
   {

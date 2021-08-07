@@ -3,6 +3,7 @@
     <CardItem 
       v-for="(place, index) in places" 
       :key="index" 
+      :id="place.id"
       :name="place.name"
       :description="places.description"
       :image="place.image"

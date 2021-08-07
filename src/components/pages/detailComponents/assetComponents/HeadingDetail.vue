@@ -1,7 +1,15 @@
 <template>
-	<div class="my-7">
-		<h1 class="md:text-2xl sm:text-xl text-lg font-semibold w-full block mr-4 leading-tight">
-			Penyaweuan, Majalengka, Jawa Barat, Indonesia 
+	<div class="my-4">
+		<h1 class="
+			md:text-2xl 
+			sm:text-xl 
+			text-lg 
+			font-semibold 
+			w-full block 
+			mr-4 
+			leading-tight"
+		>
+				{{ name }}
 		</h1>
 
 		<button class="flex items-center rounded-lg focus:outline-none mt-2">
@@ -13,7 +21,14 @@
 		</button>
 
 		<p class="mt-2 md:text-lg text-sm text-gray-700 font-medium">
-			Maja, kecamatan Maja, Kabupaten Majalengka, Majalengka, Jawa Barat, Indonesia
+			{{ `${address} ${city} ${province}` }}
 		</p>
 	</div>
 </template>
+
+<script>
+export default {
+	name: 'heading-detail',
+	props: [ 'name', 'address', 'city', 'province' ]
+}
+</script>

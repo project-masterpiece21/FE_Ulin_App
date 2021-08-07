@@ -13,7 +13,7 @@
   >
     <div>
       <figure class="relative overflow-hidden flex-shrink-0">
-        <router-link to="/detail">
+        <router-link :to="{ name: 'detail-destination', params: { id: id }}">
           <div
             class="
               md:aspect-w-5 md:aspect-h-3
@@ -115,7 +115,7 @@ import VisitorRecommendation from "./assetComponents/visitorRecommendation.vue";
 
 export default {
   name: "card-item",
-  props: [ 'name', 'description', 'image', 'province', 'city', 'address' ],
+  props: [ 'id', 'name', 'description', 'image', 'province', 'city', 'address' ],
   components: {
     VisitorRecommendation,
   },
