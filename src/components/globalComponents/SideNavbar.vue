@@ -2,8 +2,8 @@
   <nav class="fixed top-0 left-0 hidden sm:block z-40">
     <div
       class="
-        xl:w-44
-        xl:ml-3
+        xl:w-52
+        xl:px-3.5
         flex flex-col
         lg:pt-36
         md:pt-24
@@ -11,6 +11,7 @@
         md:w-28
         w-24
         h-screen
+        lg:bg-white
         bg-gray-100
       "
     >
@@ -19,8 +20,14 @@
         :href="menu.link"
         v-for="menu in navMenu"
         :key="menu.name"
-        class="xl:w-full group mt-4 mx-auto cursor-pointer block items-center"
-      >
+        class="
+          xl:w-full
+          group mt-4 
+          mx-auto 
+          cursor-pointer 
+          block 
+          items-center"
+        >
         <div
           :class="
             $route.path === menu.link
@@ -36,7 +43,7 @@
             w-14
             h-14
             rounded-full
-            group-hover:bg-white
+            group-hover:bg-gray-100
           "
         >
           <div class="xl:pl-3 flex xl:ml-0 mx-auto items-center">

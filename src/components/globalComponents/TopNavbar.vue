@@ -1,8 +1,7 @@
 <template>
   <header class="fixed top-0 2xl:container z-50 w-full lg:bg-gradient-to-t
-            from-yellow-100
-            via-yellow-200
-            to-yellow-500 bg-gray-100">
+            from-white
+            to-gray-100 bg-gray-100">
     <slot name="top-navigation"></slot>
 
     <div class="flex w-full justify-between sm:px-8 px-4 items-center h-20">

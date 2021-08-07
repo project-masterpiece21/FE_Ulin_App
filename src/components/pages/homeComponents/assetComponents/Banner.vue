@@ -1,6 +1,6 @@
 <template>
   <div class="relative w-full px-6 rounded-lg">
-    <Carousel :autoplay="6500" :wrap-around="true">
+    <Carousel :autoplay="5000" :wrap-around="true">
       <Slide 
       v-for="banner in banners" 
       :key="banner">
@@ -28,7 +28,9 @@
     setup() {
       const banners = ref([
         '1.png',
-        '2.png'
+        '2.png',
+        '3.png',
+        '4.png',
       ]);
 
       return { banners };

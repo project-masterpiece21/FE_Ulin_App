@@ -1,6 +1,6 @@
 <template>
 <div class="lg:block hidden w-full z-30">
-	<div class="w-full px-6 lg:h-9 h-8 flex justify-between items-center text-base text-white font-medium">
+	<div class="w-full px-6 lg:h-9 h-8 flex justify-between items-center text-base text-gray-600 font-medium">
 		<div class="flex items-center">
 			<router-link v-for="navigation in navigations" :key="navigation.name" :to="navigation.link" class="group flex items-center mr-3">
 				<span class="iconify mr-1" :data-icon="navigation.icon" data-inline="false"></span>
