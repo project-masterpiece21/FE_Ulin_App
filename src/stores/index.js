@@ -1,10 +1,10 @@
 import { createStore} from 'vuex';
 
-import getPlaces from './modules/getPlaces';
+import places from './modules/places';
 
 const stores = createStore({
   modules: {
-    getPlaces
+    places
   }
 });
 
