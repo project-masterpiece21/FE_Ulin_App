@@ -84,11 +84,11 @@
 			const params = route.params.id;
 
 			onMounted(() => {
-				store.dispatch('getPlaceById', params)
+				store.dispatch('place/getPlaceById', params)
 			});
 
 			const place = computed(() => {
-				return store.getters.getterPlaceById;
+				return store.place.getters.getterPlaceById;
 			})
 
 			return { place }
