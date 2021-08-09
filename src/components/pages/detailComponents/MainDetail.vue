@@ -88,7 +88,7 @@
 			});
 
 			const place = computed(() => {
-				return store.place.getters.getterPlaceById;
+				return store.getters.place.getterPlaceById;
 			})
 
 			return { place }
