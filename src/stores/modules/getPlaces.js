@@ -32,7 +32,7 @@ export default {
       commit('setPlaces', data);
     },
 
-    async getPlaceById({ commit }, {params}) {
+    async getPlaceById({ commit }, params) {
       const response = await fetch(`http://ulin-api.herokuapp.com/v1/place/${params}`);
 
       const { data } = await response.json();
