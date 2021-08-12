@@ -1,32 +1,12 @@
 <template>
 	<div class="px-3">
-		<Carousel :settings="settings" :breakpoints="breakpoints">
-			<Slide v-for="image in images" :key="image">
-				<div class="w-full mr-2">
-					<img :src="image.image" :alt="image.image" class="rounded-lg w-full">
-				</div>
-			</Slide>
-
-			<template #addons>
-				<Navigation />
-			</template>
-		</Carousel>
 	</div>
 </template>
 
 <script>
 	import { reactive } from "vue";
-	import { Carousel, Navigation, Slide } from 'vue3-carousel';
-
-  import 'vue3-carousel/dist/carousel.css';
-
 	export default {
 		name: "images-slider-detail",
-		components: {
-			Carousel,
-			Navigation,
-			Slide
-		},
 		setup() {
 			const images = reactive([
 				{ image: "https://images.unsplash.com/photo-1469474968028-56623f02e42e?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=753&q=80"},

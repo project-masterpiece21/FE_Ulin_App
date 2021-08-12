@@ -67,7 +67,7 @@
             <VisitorRecommendation class="xs:mb-0.5" />
 
             <router-link
-              to="/detail"
+              :to="{ name: 'detail-destination', params: { id: id }}"
               class="
                 sm:text-base
                 xs:text-sm

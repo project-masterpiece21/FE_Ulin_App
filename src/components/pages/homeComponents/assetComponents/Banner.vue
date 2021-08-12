@@ -1,55 +1,48 @@
 <template>
-  <div class="relative w-full px-6 rounded-lg">
-    <Carousel :autoplay="5000" :wrap-around="true">
-      <Slide 
-      v-for="banner in banners" 
-      :key="banner">
-          <a href="/">
-            <img v-lazy="banner" :alt="banner">
-          </a>
-      </Slide>
-      <template #addons>
-        <Navigation />
-        <Pagination />
+  <div class="w-full overflow-hidden px-4">
+    <vueper-slides
+      :slide-ratio="2/5"
+      :breakpoints="breakpoints"
+      autoplay
+      class="no-shadow"
+      :gap=3
+    >
+
+      <vueper-slide 
+        v-for="banner in banners" 
+        :key="banner"
+        :image="banner"
+      />
+
+      <template #loader>
+        <div w-full h-full animate-pulse>
+        </div>
       </template>
-    </Carousel>
+    </vueper-slides>
   </div>
 </template>
 
 <script>
-  import { ref } from 'vue';
-  import { Carousel, Navigation, Pagination, Slide } from 'vue3-carousel';
+import { ref } from "vue";
+import { VueperSlides, VueperSlide } from 'vueperslides';
+import 'vueperslides/dist/vueperslides.css'
 
-  import 'vue3-carousel/dist/carousel.css';
+export default {
+  name: "Banner",
+  components: {
+    VueperSlides,
+    VueperSlide
+  },
+  setup() {
+    const banners = ref(["1.png", "2.png", "3.png", "4.png"]);
 
-  export default {
-    name: 'Banner',
-    components: { Carousel, Navigation, Pagination, Slide },
-    setup() {
-      const banners = ref([
-        '1.png',
-        '2.png',
-        '3.png',
-        '4.png',
-      ]);
+    const breakpoints = ({
+      640: {
+        arrows: false
+      }
+    });
 
-      return { banners };
-    }
-  }
+    return { banners, breakpoints };
+  },
+};
 </script>
-
-<style>
-:root {
-  --carousel-color-primary: #fbbf24;
-  --carousel-color-secondary: #fcd34d;
-}
-
-.carousel__prev, .carousel__next {
-  background-color: white;
-  color: #4b5563;
-}
-
-.carousel__pagination-button--active {
-  background-color: #d97706;
-}
-</style>

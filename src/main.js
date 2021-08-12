@@ -11,7 +11,6 @@ import NavbarBottomMobile from './components/globalComponents/NavbarBottomMobile
 import SideNavbar from './components/globalComponents/SideNavbar.vue';
 import TopNavbar from './components/globalComponents/TopNavbar.vue';
 import RecommendationDestination from './components/globalComponents/RecommendationDestination.vue';
-
 import CardItem from './components/globalComponents/CardItem.vue';
 
 const app = createApp(App);
