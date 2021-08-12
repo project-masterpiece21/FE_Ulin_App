@@ -1,10 +1,4 @@
 <template>
-<<<<<<< HEAD
-  <div class="relative w-full px-6 rounded-lg">
-    <a href="/" class="md:mr-4 rounded-lg overflow-hidden">
-      
-    </a>
-=======
   <div class="w-full overflow-hidden px-4">
     <vueper-slides
       :slide-ratio="2/5"
@@ -25,28 +19,10 @@
         </div>
       </template>
     </vueper-slides>
->>>>>>> moment
   </div>
 </template>
 
 <script>
-<<<<<<< HEAD
-  import { ref } from 'vue';
-
-  export default {
-    name: 'Banner',
-    setup() {
-      const banners = ref([
-        '1.png',
-        '2.png',
-        '3.png',
-        '4.png',
-      ]);
-
-      return { banners };
-    }
-  }
-=======
 import { ref } from "vue";
 import { VueperSlides, VueperSlide } from 'vueperslides';
 import 'vueperslides/dist/vueperslides.css'
@@ -69,5 +45,5 @@ export default {
     return { banners, breakpoints };
   },
 };
->>>>>>> moment
+
 </script>

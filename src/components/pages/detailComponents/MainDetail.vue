@@ -22,11 +22,7 @@
 
 					<NavigationInfo />
 
-<<<<<<< HEAD
-					<ImagesSlider />
-=======
 					<ImageSlider />
->>>>>>> moment
 
 					<DescriptionDetail 
 						:description="place.description"
@@ -62,11 +58,7 @@
 	import InfoDetail from './assetComponents/InfoDetail.vue';
 	import HeadingDetail from './assetComponents/HeadingDetail.vue';
 	import NavigationInfo from './assetComponents/NavigationInfo.vue';
-<<<<<<< HEAD
-	import ImagesSlider from './assetComponents/ImagesSlider.vue';
-=======
 	import ImageSlider from './assetComponents/imageSlider.vue';
->>>>>>> moment
 	import DescriptionDetail from './assetComponents/DescriptionDetail.vue';
 	import ReviewDetail from './assetComponents/ReviewDetail.vue';
 	import RecommendationCity from '../searchDestinationComponents/assetComponents/recommendationCity.vue';
@@ -80,11 +72,7 @@
 			InfoDetail,
 			HeadingDetail,
 			NavigationInfo,
-<<<<<<< HEAD
-			ImagesSlider,
-=======
 			ImageSlider,
->>>>>>> moment
 			DescriptionDetail,
 			ReviewDetail,
 			RecommendationCity,
