@@ -23,7 +23,7 @@
     "vue": "^3.0.5",
     "vue-router": "^4.0.9",
     "vue3-lazyload": "^0.2.2-beta",
-    "vueperslides": "^2.15.2",
+    "vueperslides": "^3.3.2",
     "vuex": "^4.0.2"
   },
   "devDependencies": {

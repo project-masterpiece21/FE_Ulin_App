@@ -1,6 +1,19 @@
 <template>
-  <section class="xl:ml-56 md:ml-28 sm:ml-28 lg:mt-36 md:mt-24 mt-20 sm:mr-7">
-    <div class="grid lg:grid-cols-5 md:grid-cols-4 sm:grid-cols-3 grid-cols-3 gap-1 w-full mb-20">
+  <section
+    class="xl:ml-56 lg:ml-32 md:ml-28 sm:ml-28 lg:mt-36 md:mt-24 mt-20 sm:mr-7"
+  >
+    <div
+      class="
+        grid
+        lg:grid-cols-5
+        md:grid-cols-4
+        sm:grid-cols-3
+        grid-cols-3
+        gap-1
+        w-full
+        mb-20
+      "
+    >
       <CardItem
         v-for="image in images"
         :key="image.name"
