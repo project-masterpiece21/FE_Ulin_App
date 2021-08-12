@@ -4,8 +4,8 @@
       :slide-ratio="2/5"
       :breakpoints="breakpoints"
       autoplay
-      class="no-shadow"
       :gap=3
+      class="no-shadow"
     >
 
       <vueper-slide 
