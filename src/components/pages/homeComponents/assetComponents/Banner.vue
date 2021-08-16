@@ -1,6 +1,7 @@
 <template>
   <div class="w-full overflow-hidden px-4">
     <vueper-slides
+      lazy lazy-load-on-drag
       :slide-ratio="2/5"
       :breakpoints="breakpoints"
       autoplay
