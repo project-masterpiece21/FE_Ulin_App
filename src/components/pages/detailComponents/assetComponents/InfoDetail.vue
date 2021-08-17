@@ -28,15 +28,36 @@
 
 	export default {
 		name: 'info-detail',
-		props: [
-			'name',
-			'owner',
-			'openDay',
-			'openTime',
-			'ticket',
-			'vehicles',
-			'address',
-		],
+		props: {
+			name: {
+				type: String,
+				default: 'Wwkwkwk'
+			},
+			owner: {
+				type: String,
+				default: ''
+			},
+			openDay: {
+				type: String,
+				default: ''
+			},
+			openTime: {
+				type: String,
+				default: ''
+			},
+			ticket: {
+				type: String,
+				default: ''
+			},
+			vehicles: {
+				type: String,
+				default: ''
+			},
+			address: {
+				type: String,
+				default: ''
+			}
+		},
 		setup(props) {
 			const items = toRefs(props);
 
