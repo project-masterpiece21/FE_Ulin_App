@@ -46,4 +46,5 @@ export default {
     return { banners, breakpoints };
   },
 };
+
 </script>
