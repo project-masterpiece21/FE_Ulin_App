@@ -12,6 +12,7 @@ import SideNavbar from './components/globalComponents/SideNavbar.vue';
 import TopNavbar from './components/globalComponents/TopNavbar.vue';
 import RecommendationDestination from './components/globalComponents/RecommendationDestination.vue';
 import CardItem from './components/globalComponents/CardItem.vue';
+import PopupLogin from './components/globalComponents/PopupLogin.vue';
 
 const app = createApp(App);
 
@@ -20,6 +21,7 @@ app.component('SideNavbar', SideNavbar);
 app.component('TopNavbar', TopNavbar);
 app.component('RecommendationDestination', RecommendationDestination);
 app.component('CardItem', CardItem);
+app.component('PopupLogin', PopupLogin);
 
 app.use(router);
 app.use(VueLazyLoad);
