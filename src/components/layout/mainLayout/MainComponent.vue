@@ -22,9 +22,9 @@
 </template>
 
 <script>
-	import TopSideNavbar from "../globalComponents/assetComponents/TopSideNavbar.vue";
-	import SearchForm from '../globalComponents/assetComponents/SearchForm.vue';
-	import PopularSearch from '../globalComponents/assetComponents/PopularSearch.vue';
+	import TopSideNavbar from "../../globalComponents/assetComponents/TopSideNavbar.vue";
+	import SearchForm from '../../globalComponents/assetComponents/SearchForm.vue';
+	import PopularSearch from '../../globalComponents/assetComponents/PopularSearch.vue';
 	
 	export default {
 		components: {
