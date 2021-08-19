@@ -39,12 +39,12 @@ export default {
     const store = useStore();
 
     onMounted(() => {
-      store.dispatch('getPlaces');
+      store.dispatch('getPlaces/getPlaces');
     });
 
     const places = computed(() => {
-      return store.getters.getterPlaces;
-    })
+      return store.getters['getPlaces/getterPlaces'];
+    });
 
     return { places }
   }
