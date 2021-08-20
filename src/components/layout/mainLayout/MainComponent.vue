@@ -18,6 +18,9 @@
 	<keep-alive>
 		<NavbarBottomMobile />
 	</keep-alive>
+
+	<popup-login />
+	
 	<router-view></router-view>
 </template>
 

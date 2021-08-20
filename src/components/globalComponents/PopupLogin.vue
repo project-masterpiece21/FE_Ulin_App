@@ -1,5 +1,6 @@
 <template>
   <section
+    v-if="credensial !== true"
     class="
       hidden
       md:block
@@ -15,7 +16,7 @@
       rounded-lg
     "
   >
-    <button name="close" class="group">
+    <button @click="closePopup" name="close" class="group">
       <span
         class="iconify text-base mx-auto top-2 right-3 absolute group-hover:text-gray-600"
         data-icon="akar-icons:circle-x"
@@ -59,3 +60,28 @@
     </div>
   </section>
 </template>
+
+<script>
+import { onMounted, computed } from 'vue';
+import { useStore } from 'vuex';
+
+export default {
+  setup() {
+    const store = useStore(); 
+
+    onMounted(() => {
+      localStorage.setItem('credensial', false);
+    });
+
+    const credensial = computed(() => {
+      return store.getters.checkCredential
+    });
+
+    const closePopup = computed(() => {
+      store.commit('setCredential');
+    });
+
+    return { credensial, closePopup }
+  }
+}
+</script>
