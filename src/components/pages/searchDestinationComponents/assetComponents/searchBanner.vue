@@ -36,6 +36,7 @@
           name="search-destination"
           id="search-destination"
           class="
+            flex-1
             focus:ring
             ring-yellow-500
             md:text-base
@@ -56,6 +57,7 @@
         <button
           type="submit"
           class="
+            flex-shrink-0
             focus:ring focus:ring-offset-2
             ring-yellow-500
             lg:py-3
