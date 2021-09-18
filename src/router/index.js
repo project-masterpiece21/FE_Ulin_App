@@ -91,6 +91,23 @@ const routes = [
           ],
         },
       },
+      {
+        path: 'coming-soon',
+        component: () => import('../components/pages/comingSoonComponents/ComingSoonMain.vue'),
+        meta: {
+          title: 'Comming Soon - Ulin Apps',
+          metaTags: [
+            {
+              name: 'description',
+              content: 'The new fitur Ulin app.',
+            },
+            {
+              property: 'og:description',
+              content: 'The new fitur of our Ulin app.',
+            },
+          ],
+        },
+      },
     ],
   },
   {

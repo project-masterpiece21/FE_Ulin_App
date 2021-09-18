@@ -81,9 +81,9 @@ export default {
       { name: "Momentum", icon: "ri:ghost-smile-fill", link: "/moment" },
       { name: "Peringkat", icon: "icomoon-free:trophy", link: "/rank" },
       {
-        name: "Pusat info",
-        icon: "ph:newspaper-clipping-fill",
-        link: "/information",
+        name: "Coming Soon",
+        icon: "bx:bx-calendar-star",
+        link: "/coming-soon",
       },
     ]);
 

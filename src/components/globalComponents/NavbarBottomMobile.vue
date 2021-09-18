@@ -56,8 +56,8 @@ export default {
       { name: "Cari tempat", icon: "ri:map-pin-fill", link: "/destination" },
       { name: "Peringkat", icon: "icomoon-free:trophy", link: "/rank" },
       {
-        name: "Pusat info",
-        icon: "ph:newspaper-clipping-fill",
+        name: "Coming Soon",
+        icon: "bx:bx-calendar-star",
         link: "/information",
       },
     ]);

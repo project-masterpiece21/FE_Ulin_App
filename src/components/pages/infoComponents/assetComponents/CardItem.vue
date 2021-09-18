@@ -2,10 +2,10 @@
 	<div v-for="owner in owners" :key="owner" class="bg-white sm:px-14 sm:py-8 py-5 mb-5 px-6 rounded-lg cursor-pointer" >
 		<div class="relative">
 			<div class="flex items-center">
-				<div class="sm:w-14 sm:h-14 w-12 h-12">
+				<div class="sm:w-14 sm:h-14 w-12 h-12 flex-shrink-0">
 					<img :src="owner.image" :alt="owner.name" class="object-cover rounded-xl w-full h-full">
 				</div>
-				<div class="sm:ml-4 ml-2 truncate">
+				<div class="sm:ml-4 ml-2 truncate flex-1">
 					<h1 class="lg:text-lg font-semibold text-base truncate mr-20">{{ owner.name }}</h1>
 					<span class="text-sm text-gray-500 truncate">{{ owner.time }}</span>
 				</div>
