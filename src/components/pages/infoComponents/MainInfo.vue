@@ -3,8 +3,10 @@
 		<section class="lg:w-3/4 w-full">
 			<CardList />
 		</section>
-		<section class="w-2/6 sticky top-20 lg:block hidden px-4">
-			<SidebarBestOwner />
+		<section class="w-2/6 lg:block hidden px-4">
+			<div class="sticky top-32">
+				<SidebarBestOwner />
+			</div>
 		</section>
 	</main>
 </template>

@@ -94,6 +94,24 @@ const routes = [
     ],
   },
   {
+    path: '/user/:id',
+    name: 'profile-user',
+    component: () => import('../components/layout/UserProfile.vue'),
+    meta: {
+      title: 'Profile user - Ulin Apps',
+      metaTags: [
+        {
+          name: 'description',
+          content: 'Profile user Ulin app.',
+        },
+        {
+          property: 'og:description',
+          content: 'Profile user Ulin app.',
+        },
+      ],
+    },
+  },
+  {
     path: '/destination/:id',
     name: 'detail-destination',
     component: () => import('../components/layout/DetailMenu.vue'),

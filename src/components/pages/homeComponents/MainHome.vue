@@ -11,8 +11,10 @@
       
       <CardList :places="places" />
     </section>
-    <section class="w-2/6 sticky top-20 lg:block hidden px-4">
-      <RecommendationDestination />
+    <section class="w-2/6 relative lg:block hidden px-4">
+      <div class="sticky top-32">
+        <RecommendationDestination />
+      </div>
     </section>
   </main>
 </template>

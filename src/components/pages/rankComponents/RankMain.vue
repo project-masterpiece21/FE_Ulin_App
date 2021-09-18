@@ -4,9 +4,9 @@
 			<CardListRankComponent />
 		</section>
 		<section class="w-2/5 md:block hidden px-4">
-			<keep-alive>
-				<SidebarRanks />
-			</keep-alive>
+			<search-rank />
+			<tags-rank />
+			<owner-rank class="sticky top-32" />
 		</section>
 	</main>
 </template>
@@ -16,12 +16,16 @@
 
 	const CardListRankComponent = defineAsyncComponent(() => import('./assetComponents/CardListRankComponent.vue'));
 
-	const SidebarRanks = defineAsyncComponent(() => import('./assetComponents/SidebarRankComponent.vue'));
+	const SearchRank = defineAsyncComponent(() => import('./assetComponents/SearchRankComponent.vue'));
+	const TagsRank = defineAsyncComponent(() => import('./assetComponents/TagRankComponent.vue'));
+	const OwnerRank = defineAsyncComponent(() => import('./assetComponents/OwnerRankComponent.vue'));
 
 	export default {
 		components: {
 			CardListRankComponent,
-			SidebarRanks
+			SearchRank,
+			TagsRank,
+			OwnerRank
 		}
 	}
 </script>
