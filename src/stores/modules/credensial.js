@@ -1,6 +1,6 @@
 export default {
   state: {
-    credential: false
+    credential: true
   },
   getters : {
     checkCredential(state) {
@@ -9,8 +9,7 @@ export default {
   },
   mutations: {
     setCredential(state) {
-      state.credential = true
-      localStorage.setItem('credensial', true);
+      state.credential = false
     }
   }
 };

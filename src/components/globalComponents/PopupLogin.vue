@@ -1,6 +1,6 @@
 <template>
   <section
-    v-if="credensial !== true"
+    v-if="credensial"
     class="
       hidden
       md:block
@@ -68,10 +68,6 @@ import { useStore } from 'vuex';
 export default {
   setup() {
     const store = useStore(); 
-
-    onMounted(() => {
-      localStorage.setItem('credensial', false);
-    });
 
     const credensial = computed(() => {
       return store.getters.checkCredential
