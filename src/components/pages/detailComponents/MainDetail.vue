@@ -1,7 +1,17 @@
 <template>
 
 	<keep-alive>
-		<TopNavbar class="sm:block hidden"></TopNavbar>
+		<TopNavbar class="sm:block hidden">
+			<template v-slot:top-navigation>
+				<top-side-navbar />
+			</template>
+			
+			<template v-slot:search-form>
+				<search-form>
+					<popular-search />
+				</search-form>
+			</template>
+		</TopNavbar>
 	</keep-alive>
 
 	<main class="md:flex lg:mt-24 sm:mt-20">

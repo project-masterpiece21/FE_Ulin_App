@@ -2,13 +2,13 @@
 	<keep-alive>
 		<TopNavbar>
 			<template v-slot:top-navigation>
-				<TopSideNavbar />
+				<top-side-navbar />
 			</template>
 			
 			<template v-slot:search-form>
-				<SearchForm>
-					<PopularSearch />
-				</SearchForm>
+				<search-form>
+					<popular-search />
+				</search-form>
 			</template>
 		</TopNavbar>
 	</keep-alive>
@@ -23,17 +23,3 @@
 	
 	<router-view></router-view>
 </template>
-
-<script>
-	import TopSideNavbar from "../../globalComponents/assetComponents/TopSideNavbar.vue";
-	import SearchForm from '../../globalComponents/assetComponents/SearchForm.vue';
-	import PopularSearch from '../../globalComponents/assetComponents/PopularSearch.vue';
-	
-	export default {
-		components: {
-			TopSideNavbar,
-			SearchForm,
-			PopularSearch
-		}
-	}
-</script>

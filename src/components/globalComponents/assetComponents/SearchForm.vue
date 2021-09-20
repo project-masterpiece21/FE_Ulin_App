@@ -21,7 +21,7 @@
       />
 
       <button
-        type="sumbit"
+        type="submit"
         class="
           absolute
           right-0
