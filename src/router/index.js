@@ -8,7 +8,7 @@ const routes = [
       {
         path: 'home',
         alias: '/',
-        component: () => import('../components/layout/mainLayout/HomePage.vue'),
+        component: () => import('../components/layout/HomePage.vue'),
         meta: {
           title: 'Home Page - Ulin Apps',
           metaTags: [
@@ -25,7 +25,7 @@ const routes = [
       },
       {
         path: 'moment',
-        component: () => import('../components/layout/mainLayout/MomentPage.vue'),
+        component: () => import('../components/layout/MomentPage.vue'),
         meta: {
           title: 'Moment Page - Ulin Apps',
           metaTags: [
@@ -42,7 +42,7 @@ const routes = [
       },
       {
         path: 'destination',
-        component: () => import('../components/layout/mainLayout/SearchDestinationPage.vue'),
+        component: () => import('../components/layout/SearchDestinationPage.vue'),
         meta: {
           title: 'Search Destination - Ulin Apps',
           metaTags: [
@@ -59,7 +59,7 @@ const routes = [
       },
       {
         path: 'rank',
-        component: () => import('../components/layout/mainLayout/RankPage.vue'),
+        component: () => import('../components/layout/RankPage.vue'),
         meta: {
           title: 'Rank Page - Ulin Apps',
           metaTags: [
@@ -76,7 +76,7 @@ const routes = [
       },
       {
         path: 'information',
-        component: () => import('../components/layout/mainLayout/InformationPage.vue'),
+        component: () => import('../components/layout/InformationPage.vue'),
         meta: {
           title: 'News Page - Ulin Apps',
           metaTags: [

@@ -6,7 +6,7 @@
 	import { defineAsyncComponent } from 'vue';
 
 	const HomeComponents = defineAsyncComponent(() => 
-		import('../../pages/homeComponents/MainHome.vue')
+		import('../pages/homeComponents/MainHome.vue')
 	);
 	export default {
 		name: "Home",

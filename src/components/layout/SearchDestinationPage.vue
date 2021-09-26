@@ -6,7 +6,7 @@
 import { defineAsyncComponent } from "vue";
 
 const SearchDestination = defineAsyncComponent(() =>
-  import("../../pages/searchDestinationComponents/SearchDestinationMain.vue")
+  import("../pages/searchDestinationComponents/SearchDestinationMain.vue")
 );
 
 export default {
