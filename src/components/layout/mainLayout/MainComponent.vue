@@ -1,6 +1,6 @@
 <template>
 	<keep-alive>
-		<TopNavbar>
+		<TopNavbar >
 			<template v-slot:top-navigation>
 				<top-side-navbar />
 			</template>

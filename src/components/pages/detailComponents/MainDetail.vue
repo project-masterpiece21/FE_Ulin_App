@@ -14,7 +14,7 @@
 		</TopNavbar>
 	</keep-alive>
 
-	<main class="md:flex lg:mt-24 sm:mt-20">
+	<main class="md:flex lg:mt-36 sm:mt-20">
 
 		<section class="lg:w-3/4 w-full lg:px-4 md:px-8">
 				<HeroImage :img="place.image" :name="place.name" />
