@@ -147,6 +147,23 @@ const routes = [
     },
   },
   {
+    path: '/about-me',
+    component: () => import('../components/layout/AboutMe.vue'),
+    meta: {
+      title: 'About Me - Ulin Apps',
+      metaTags: [
+        {
+          name: 'description',
+          content: "It's all about us",
+        },
+        {
+          property: 'og:description',
+          content: "It's all about us",
+        },
+      ],
+    },
+  },
+  {
     path: '/signup',
     component: () => import('../components/layout/SignupPage.vue'),
   },

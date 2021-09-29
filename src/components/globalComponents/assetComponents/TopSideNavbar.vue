@@ -33,7 +33,7 @@ export default {
       { name: 'Notifikasi', icon: 'akar-icons:bell', link: '/' },
       { name: 'Syarat dan Ketentuan', icon: 'gridicons:notice-outline', link: '/' },
       { name: 'Pusat bantuan', icon: 'iconoir:headset-help', link: '/' },
-      { name: 'Tentang Kami', icon: 'fluent:emoji-laugh-16-regular', link: '/' },
+      { name: 'Tentang Kami', icon: 'fluent:emoji-laugh-16-regular', link: '/about-me' },
     ]);
 
     return { navigations, navigations2 };
