@@ -9,7 +9,7 @@
       "
     >
       <img
-        src="/src/assets/img/bg-search/bg-search3.jpg"
+        src="/bg-search/bg-search.jpg"
         alt=""
         class="object-cover sm:rounded-md"
       />

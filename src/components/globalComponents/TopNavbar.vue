@@ -6,7 +6,7 @@
 
     <div class="flex w-full justify-between sm:px-8 px-4 items-center h-20">
       <a href="/" class="w-24">
-        <img src="/logo.png" alt="logo-ulin" />
+        <img src="/logo/logo.png" alt="logo-ulin" />
       </a>
 
       <div class="relative md:block hidden w-3/5">

@@ -147,10 +147,10 @@ const routes = [
     },
   },
   {
-    path: '/about-me',
-    component: () => import('../components/layout/AboutMe.vue'),
+    path: '/about-us',
+    component: () => import('../components/layout/AboutUs.vue'),
     meta: {
-      title: 'About Me - Ulin Apps',
+      title: 'About Us - Ulin Apps',
       metaTags: [
         {
           name: 'description',

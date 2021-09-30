@@ -35,7 +35,7 @@ export default {
     VueperSlide
   },
   setup() {
-    const banners = ref(["1.png", "2.png", "3.png", "4.png"]);
+    const banners = ref(["/banner/1.png", "/banner/2.png", "/banner/3.png", "/banner/4.png"]);
 
     const breakpoints = ({
       640: {
