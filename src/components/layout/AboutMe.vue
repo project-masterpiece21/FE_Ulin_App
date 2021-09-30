@@ -24,10 +24,10 @@
       </p>
     </div>
 
-    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-y-10 flex justify-center mt-12">
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-y-10 flex justify-center mt-12 items-center">
       <div class="flex flex-col items-center">
-        <div class="relative w-44 h-44 bg-white rounded-full shadow overflow-hidden">
-          <img src="Saepudin.jpg" alt="Edwina" class="absolute -top-5 -right-0 mb-24">
+        <div class="relative w-48 h-48 bg-white rounded-full shadow overflow-hidden">
+          <img src="/Saepudin.jpg" alt="Edwina" class="absolute -top-5 -right-0">
         </div>
 
         <h1 class="mt-5 font-semibold text-lg">Agung Saepudin</h1>
@@ -36,7 +36,7 @@
 
       <div class="flex flex-col items-center">
         <div class="relative w-48 h-48 bg-white rounded-full shadow overflow-hidden">
-          <img src="Edwina.jpg" alt="Edwina" class="absolute -top-12 -right-0 mb-24">
+          <img src="/Edwina.jpg" alt="Edwina" class="absolute -top-12 -right-0">
         </div>
 
         <h1 class="mt-5 font-semibold text-lg">Edwina Ayu Christy</h1>
@@ -44,8 +44,8 @@
       </div>
 
       <div class="flex flex-col items-center">
-        <div class="w-48 h-48 bg-white rounded-full shadow">
-
+        <div class="relative w-48 h-48 bg-white rounded-full shadow overflow-hidden">
+          <img src="/Alvin.jpeg" alt="Edwina" class="absolute w-96 h-96 -top-28 -right-0 object-cover">
         </div>
 
         <h1 class="mt-5 font-semibold text-lg">Alvin Immanuel Simbolon</h1>
@@ -53,8 +53,8 @@
       </div>
 
       <div class="flex flex-col items-center">
-        <div class="w-48 h-48 bg-white rounded-full shadow">
-
+        <div class="relative w-48 h-48 bg-white rounded-full shadow overflow-hidden">
+          <img src="/Arnoud.jpeg" alt="Edwina" class="absolute -top-12 -right-0 object-cover">
         </div>
 
         <h1 class="mt-5 font-semibold text-lg">Arnoud Reinhardt OS</h1>

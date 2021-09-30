@@ -6,7 +6,7 @@
 
     <div class="flex w-full justify-between sm:px-8 px-4 items-center h-20">
       <a href="/" class="w-24">
-        <img src="../../assets/img/logo/logo.png" alt="logo-ulin" />
+        <img src="/logo.png" alt="logo-ulin" />
       </a>
 
       <div class="relative md:block hidden w-3/5">
@@ -16,9 +16,9 @@
       </div>
 
       <div class="flex items-center">
-        <!-- <NavbarIsLogin /> -->
+        <NavbarIsLogin />
 
-        <NavbarIsNotLogin />
+        <!-- <NavbarIsNotLogin /> -->
       </div>
     </div>
   </header>
@@ -30,12 +30,13 @@ import { ref } from "vue";
 
 import NavbarIsNotLogin from "./assetComponents/NavigationIsNotLogin.vue";
 import SideNavbar from './assetComponents/SideNavbar.vue';
+import NavbarIsLogin from './assetComponents/NavigationIsLogin.vue';
 
 export default {
   components: {
     NavbarIsNotLogin,
     SideNavbar,
-    // NavbarIsLogin,
+    NavbarIsLogin,
   }
 };
 </script>
