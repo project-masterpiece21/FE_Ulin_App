@@ -13,7 +13,7 @@
   >
     <div>
       <figure class="relative overflow-hidden flex-shrink-0">
-        <router-link :to="{ name: 'detail-destination', params: { id: id }}">
+        <a :href="`destination/${id}`">
           <div
             class="
               md:aspect-w-5 md:aspect-h-3
@@ -27,7 +27,7 @@
               class="object-cover"
             />
           </div>
-        </router-link>
+        </a>
 
         <div
           class="
@@ -66,7 +66,7 @@
           <div>
             <VisitorRecommendation class="xs:mb-0.5" />
 
-            <router-link
+            <!-- <router-link
               :to="{ name: 'detail-destination', params: { id: id }}"
               class="
                 sm:text-base
@@ -78,7 +78,7 @@
               "
             >
               {{ name }}
-            </router-link>
+            </router-link> -->
           </div>
         </div>
 
@@ -106,7 +106,7 @@
           >
         </div>
       </div>
-    </div>
+      </div>
   </div>
 </template>
 

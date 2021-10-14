@@ -58,6 +58,24 @@ const routes = [
         },
       },
       {
+        path: 'destination/:id',
+        name: 'detail-destination',
+        component: () => import('../components/layout/DetailMenu.vue'),
+        meta: {
+          title: 'Detail Page - Ulin Apps',
+          metaTags: [
+            {
+              name: 'description',
+              content: 'The detail destination of our Ulin app.',
+            },
+            {
+              property: 'og:description',
+              content: 'The detail destination of our Ulin app.',
+            },
+          ],
+        },
+      },
+      {
         path: 'rank',
         component: () => import('../components/layout/RankPage.vue'),
         meta: {
@@ -124,24 +142,6 @@ const routes = [
         {
           property: 'og:description',
           content: 'Profile user Ulin app.',
-        },
-      ],
-    },
-  },
-  {
-    path: '/destination/:id',
-    name: 'detail-destination',
-    component: () => import('../components/layout/DetailMenu.vue'),
-    meta: {
-      title: 'Detail Page - Ulin Apps',
-      metaTags: [
-        {
-          name: 'description',
-          content: 'The detail destination of our Ulin app.',
-        },
-        {
-          property: 'og:description',
-          content: 'The detail destination of our Ulin app.',
         },
       ],
     },

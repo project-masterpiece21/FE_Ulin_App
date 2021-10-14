@@ -8,7 +8,7 @@
       <keep-alive>
         <CategoryDestination />
       </keep-alive>
-      
+
       <CardList :places="places" />
     </section>
     <section class="w-2/6 relative lg:block hidden px-4">
