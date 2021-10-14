@@ -1,5 +1,5 @@
 <template>
-  <nav class="fixed top-0 left-0 hidden sm:block z-40">
+  <nav class="fixed top-0 hidden sm:block z-40">
     <div
       class="
         xl:w-52
@@ -10,6 +10,7 @@
         pt-20
         md:w-28
         w-24
+        lg:shadow
         h-screen
         lg:bg-white
         bg-gray-100
@@ -22,10 +23,10 @@
         :key="menu.name"
         class="
           xl:w-full
-          group mt-4 
-          mx-auto 
-          cursor-pointer 
-          block 
+          group mt-4
+          mx-auto
+          cursor-pointer
+          block
           items-center"
         >
         <div

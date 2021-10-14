@@ -12,7 +12,7 @@
       <div class="relative md:block hidden w-3/5">
 
       <!-- Form search -->
-        <slot name="search-form"></slot> 
+        <slot name="search-form"></slot>
       </div>
 
       <div class="flex items-center">
