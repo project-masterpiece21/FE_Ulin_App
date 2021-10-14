@@ -60,7 +60,7 @@ const routes = [
       {
         path: 'destination/:id',
         name: 'detail-destination',
-        component: () => import('../components/layout/DetailMenu.vue'),
+        component: () => import('../components/layout/DetailPlace.vue'),
         meta: {
           title: 'Detail Page - Ulin Apps',
           metaTags: [
