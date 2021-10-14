@@ -7,7 +7,7 @@
 <script>
 	import { defineAsyncComponent } from 'vue';
 
-	const MainDetail = defineAsyncComponent(() => 
+	const MainDetail = defineAsyncComponent(() =>
 		import ('../pages/detailComponents/MainDetail.vue')
 	);
 	export default {

@@ -5,7 +5,7 @@
 			<template v-slot:top-navigation>
 				<top-side-navbar />
 			</template>
-			
+
 			<template v-slot:search-form>
 				<search-form>
 					<popular-search />
@@ -23,20 +23,20 @@
 
 				<div class="lg:px-0 px-3 w-full">
 
-					<HeadingDetail 
-						:name="place.name" 
-						:address="place.address" 
+					<HeadingDetail
+						:name="place.name"
+						:address="place.address"
 						:city="place.city"
 						:province="place.province"
 					/>
 
 					<NavigationInfo />
 
-					<ImageSlider />
+					<!-- <ImageSlider /> -->
 
-					<DescriptionDetail 
+					<DescriptionDetail
 						:description="place.description"
-						:name="place.name" 
+						:name="place.name"
 					/>
 
 					<InfoDetail
@@ -63,7 +63,7 @@
 	import { onMounted, computed } from 'vue';
 	import { useStore } from 'vuex';
 
-	import HeroImage from './assetComponents/HeroImage.vue' 
+	import HeroImage from './assetComponents/HeroImage.vue'
 	import InviteButton from './assetComponents/InviteButton.vue';
 	import InfoDetail from './assetComponents/InfoDetail.vue';
 	import HeadingDetail from './assetComponents/HeadingDetail.vue';
@@ -94,13 +94,14 @@
 			const params = route.params.id;
 
 			onMounted(() => {
-				store.dispatch('getPlaceById/getPlaceById', params)
+				store.dispatch('getPlaceById/getPlaceById')
 			});
 
 			const place = computed(() => {
 				return store.getters['getPlaceById/getterPlaceById'];
-			})
+			});
 
+			console.log(place.value);
 			return { place }
 		}
 	}

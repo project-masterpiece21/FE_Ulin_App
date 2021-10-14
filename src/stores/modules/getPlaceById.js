@@ -18,10 +18,10 @@ export default {
 
   actions: {
     async getPlaceById({ commit }, params) {
-      const response = await fetch(`http://ulin-api.herokuapp.com/v1/place/${params}`);
+      const response = await fetch('/api/placeDetail.json');
 
-      const { data } = await response.json();
-      commit('setPlaceById', data);
+      const { place } = await response.json();
+      commit('setPlaceById', place);
     }
   },
 }
