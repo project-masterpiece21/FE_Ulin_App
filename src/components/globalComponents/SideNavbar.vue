@@ -2,8 +2,8 @@
   <nav class="fixed top-0 hidden sm:block z-40">
     <div
       class="
-        xl:w-52
-        xl:px-3.5
+        xl:w-56
+        xl:px-4
         flex flex-col
         lg:pt-36
         md:pt-24

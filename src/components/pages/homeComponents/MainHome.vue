@@ -1,5 +1,5 @@
 <template>
-  <main class="md:flex xl:ml-52 lg:ml-24 sm:ml-20 lg:mt-36 mt-24">
+  <main class="md:flex xl:ml-56 lg:ml-24 sm:ml-20 lg:mt-36 mt-24">
     <section class="lg:w-3/4 w-full lg:px-4 md:px-8 sm:px-2 px-1">
       <keep-alive>
         <Banner />
