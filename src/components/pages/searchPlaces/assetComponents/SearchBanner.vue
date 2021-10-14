@@ -1,5 +1,5 @@
 <template>
-  <div class="relative">
+  <div class="relative sm:px-4">
     <div
       class="
         lg:aspect-w-7 lg:aspect-h-2

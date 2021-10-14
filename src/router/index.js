@@ -41,8 +41,8 @@ const routes = [
         },
       },
       {
-        path: 'destination',
-        component: () => import('../components/layout/SearchDestinationPage.vue'),
+        path: 'places',
+        component: () => import('../components/layout/SearchPlaces.vue'),
         meta: {
           title: 'Search Destination - Ulin Apps',
           metaTags: [

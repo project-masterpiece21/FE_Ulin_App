@@ -1,10 +1,10 @@
 <template>
-  <section class="md:hidden px-4 w-full my-4 py-3">
+  <section class="md:hidden px-4 w-full my-6 py-3">
     <div class="scrollbar-thin overflow-x-scroll scrollbar-thumb-rounded">
       <div class="flex flex-row w-max">
-        <div 
+        <div
           v-for="(category, index ) in categories"
-          :key="index" 
+          :key="index"
           class="group flex flex-col items-center mr-8">
             <button
               class="

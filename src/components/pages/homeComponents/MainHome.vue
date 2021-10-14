@@ -1,54 +1,40 @@
 <template>
-  <main class="md:flex xl:ml-56 lg:ml-24 sm:ml-20 lg:mt-36 mt-24">
-    <section class="lg:w-3/4 w-full lg:px-4 md:px-8 sm:px-2 px-1">
+  <main class="xl:ml-64 lg:ml-32 md:ml-28 sm:ml-24 lg:mt-36 mt-24 sm:mr-7">
+
       <keep-alive>
         <Banner />
       </keep-alive>
 
       <keep-alive>
-        <CategoryDestination />
+        <CategoryDestinationMobile />
       </keep-alive>
 
-      <CardList :places="places" />
-    </section>
-    <section class="w-2/6 relative lg:block hidden px-4">
-      <div class="sticky top-32">
-        <RecommendationDestination />
-      </div>
-    </section>
+      <RecommendationPlaces class="md:mt-10" />
+      <RecommendationCulinary class="mt-8 md:mt-14" />
+      <RecommendationCity class="mt-9 md:mt-14" />
+
   </main>
 </template>
 
 <script>
-import { defineAsyncComponent, onMounted, computed } from 'vue';
-import { useStore } from 'vuex';
+import { defineAsyncComponent } from 'vue';
 
 const Banner = defineAsyncComponent(() =>
   import("./assetComponents/Banner.vue")
 );
 
-import CardList from "./assetComponents/CardList.vue";
-import CategoryDestination from "./assetComponents/CategoryDestination.vue";
+import CategoryDestinationMobile from "./assetComponents/CategoryDestination.vue";
+import RecommendationPlaces from "./assetComponents/RecommendationPlaces.vue";
+import RecommendationCity from "./assetComponents/recommendationCity.vue";
+import RecommendationCulinary from "./assetComponents/recommendationCulinary.vue";
 
 export default {
-  name: 'Homepage',
   components: {
     Banner,
-    CardList,
-    CategoryDestination,
+    CategoryDestinationMobile,
+    RecommendationPlaces,
+    RecommendationCity,
+    RecommendationCulinary,
   },
-  setup() {
-    const store = useStore();
-
-    onMounted(() => {
-      store.dispatch('getPlaces/getPlaces');
-    });
-
-    const places = computed(() => {
-      return store.getters['getPlaces/getterPlaces'];
-    });
-
-    return { places }
-  }
 };
 </script>

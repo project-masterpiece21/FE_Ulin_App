@@ -1,22 +1,20 @@
 <template>
-  <div class="mt-7 sm:px-0 px-7">
+  <div class="mt-7 md:mt-12 sm:px-0 px-7">
     <div class="sm:text-sm text-xss font-medium">
-      <h1 class="md:text-xl sm:text-lg text-base font-bold">
-        Wisata paling banyak dicari
-      </h1>
-      <span class="text-gray-500"
-        >Wisata populer diambil dari pencarian paling banyak saat ini</span
-      >
-      <div
-        class="
+      <div class="md:text-center">
+        <h1 class="lg:text-2xl md:text-xl sm:text-lg text-base font-bold">
+          Wisata paling banyak dicari
+        </h1>
+        <span class="text-gray-500 lg:text-lg">Wisata populer diambil dari pencarian paling banyak saat ini</span>
+      </div>
+      <div class="
           scrollbar-thin
           overflow-x-scroll
           scrollbar-thumb-rounded
-          md:mt-4
+          md:mt-10
           mt-3.5
           overflow-hidden
-        "
-      >
+        ">
         <div class="flex flex-row w-max md:grid grid-cols-5 gap-4 md:w-full">
           <CardItem :destinations="destinations" />
         </div>

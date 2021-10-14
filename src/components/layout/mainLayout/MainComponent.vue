@@ -5,7 +5,7 @@
 			<template v-slot:top-navigation>
 				<top-side-navbar />
 			</template>
-			
+
 			<template v-slot:search-form>
 				<search-form>
 					<popular-search />
@@ -24,8 +24,8 @@
 		<NavbarBottomMobile />
 	</keep-alive>
 
-	<popup-login />
-	
+	<!-- <popup-login /> -->
+
 	<!-- View Page -->
 	<router-view></router-view>
 </template>

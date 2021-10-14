@@ -78,7 +78,7 @@ export default {
   setup() {
     const navMenu = reactive([
       { name: "Beranda", icon: "bx:bxs-home-smile", link: "/" },
-      { name: "Cari Tempat", icon: "ri:map-pin-fill", link: "/destination" },
+      { name: "Cari Tempat", icon: "ri:map-pin-fill", link: "/places" },
       { name: "Momentum", icon: "ri:ghost-smile-fill", link: "/moment" },
       { name: "Peringkat", icon: "icomoon-free:trophy", link: "/rank" },
       {

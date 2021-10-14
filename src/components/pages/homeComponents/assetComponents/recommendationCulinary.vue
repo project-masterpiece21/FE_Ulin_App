@@ -1,18 +1,18 @@
 <template>
-  <div class="sm:mt-8 mt-6 sm:px-0 px-7">
+  <div class="md:mt-12 sm:mt-8 mt-7 sm:px-0 px-7">
     <div class="sm:text-sm text-xss font-medium">
-      <h1 class="md:text-xl sm:text-lg text-base font-bold">
-        Kuliner paling populer
-      </h1>
-      <span class="text-gray-500"
-        >Makanan khas paling banyak dicari pengunjung</span
-      >
+      <div class="md:text-center">
+        <h1 class="lg:text-2xl md:text-xl sm:text-lg text-base font-bold">
+          Kuliner paling populer
+        </h1>
+        <span class="text-gray-500 lg:text-xl">Makanan khas paling banyak dicari pengunjung</span>
+      </div>
       <div
         class="
           scrollbar-thin
           overflow-x-scroll
           scrollbar-thumb-rounded
-          md:mt-4
+          md:mt-10
           mt-3.5
           overflow-hidden
         "
