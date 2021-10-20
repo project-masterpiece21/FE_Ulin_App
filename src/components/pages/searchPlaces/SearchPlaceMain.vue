@@ -6,7 +6,7 @@
 </template>
 
 <script>
-import { defineAsyncComponent, onMounted, computed } from 'vue';
+import { onMounted, computed } from 'vue';
 import { useStore } from 'vuex';
 
 

@@ -168,6 +168,10 @@ const routes = [
     path: '/signup',
     component: () => import('../components/layout/SignupPage.vue'),
   },
+  {
+    path: '/login',
+    component: () => import('../components/layout/LoginPage.vue'),
+  },
 ];
 
 const router = createRouter({

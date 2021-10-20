@@ -16,6 +16,7 @@ import PopupLogin from './components/globalComponents/PopupLogin.vue';
 import TopSideNavbar from './components/globalComponents/assetComponents/TopSideNavbar.vue';
 import SearchForm from './components/globalComponents/assetComponents/SearchForm.vue';
 import PopularSearch from './components/globalComponents/assetComponents/PopularSearch.vue';
+import ModalAlert from './components/globalComponents/ModalAlert.vue'
 
 const app = createApp(App);
 
@@ -29,6 +30,7 @@ app.component('CardItem', CardItem);
 app.component('PopupLogin', PopupLogin);
 app.component('SearchForm', SearchForm);
 app.component('PopularSearch', PopularSearch);
+app.component('ModalAlert', ModalAlert);
 
 app.use(router);
 app.use(VueLazyLoad);
