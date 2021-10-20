@@ -19,6 +19,8 @@
     "rules": {}
   },
   "dependencies": {
+    "@vuelidate/core": "^2.0.0-alpha.28",
+    "@vuelidate/validators": "^2.0.0-alpha.23",
     "es6-promise": "^4.2.8",
     "vue": "^3.1.5",
     "vue-router": "^4.0.9",
