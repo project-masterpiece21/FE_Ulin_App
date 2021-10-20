@@ -25,11 +25,11 @@
 				</button>
 			</router-link>
 
-			<router-link to="/">
+			<a href="/user/dasda">
 				<button name="profile" class="group h-9 w-9 md:h-10 md:w-10 rounded-full shadow focus:outline-none bg-white">
 					<span class="iconify group-hover:text-yellow-500 text-gray-600 text-base md:text-xl mx-auto" data-icon="bx:bxs-user" data-inline="false"></span>
 				</button>
-			</router-link>
+			</a>
 		</div>
 		<!-- Nav -->
 	</div>

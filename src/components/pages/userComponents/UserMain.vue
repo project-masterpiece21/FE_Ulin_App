@@ -1,21 +1,38 @@
 <template>
-  <background-profile>
-  </background-profile>
-  <user-profile />
+  <!-- Top Navbar -->
+  <keep-alive>
+    <TopNavbar >
+      <template v-slot:top-navigation>
+        <top-side-navbar />
+      </template>
+
+      <template v-slot:search-form>
+        <search-form>
+          <popular-search />
+        </search-form>
+      </template>
+    </TopNavbar>
+  </keep-alive>
+
+  <section class="xl:ml-64 lg:ml-32 md:ml-28 sm:ml-24 lg:mt-36 mt-24 sm:mr-7">
+    <user-profile />
+
+    <ButtonNavigationMenu />
+  </section>
 </template>
 
 <script>
-import BackgroundProfile from './assetComponents/BackgroundProfile.vue';
 import UserProfile from './assetComponents/UserProfile.vue';
+import ButtonNavigationMenu from './assetComponents/ButtonNavigationMenu.vue';
 
 export default {
   name: 'user-pages',
   components: {
-    BackgroundProfile,
-    UserProfile
+    ButtonNavigationMenu,
+    UserProfile,
   },
   setup() {
-    
+
   },
 }
 </script>

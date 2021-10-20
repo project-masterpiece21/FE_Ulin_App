@@ -16,8 +16,6 @@
 
 <script>
 import { ref } from "vue";
-import { VueperSlides, VueperSlide } from 'vueperslides';
-import 'vueperslides/dist/vueperslides.css'
 
 import 'vue3-carousel/dist/carousel.css';
 import { Carousel, Slide, Pagination, Navigation } from 'vue3-carousel';
@@ -25,8 +23,6 @@ import { Carousel, Slide, Pagination, Navigation } from 'vue3-carousel';
 export default {
   name: "Banner",
   components: {
-    VueperSlides,
-    VueperSlide,
     Carousel,
     Slide,
     Pagination,

@@ -6,17 +6,7 @@
           v-for="(category, index ) in categories"
           :key="index"
           class="group flex flex-col items-center mr-8">
-            <button
-              class="
-                group-hover:bg-yellow-100
-                sm:h-14
-                sm:w-14
-                h-12
-                w-12
-                bg-gray-200
-                rounded-full
-              "
-            >
+            <button class=" group-hover:bg-yellow-100 sm:h-14 sm:w-14 h-12 w-12 bg-gray-200 rounded-full">
               <img
                 :src="category.icon"
                 alt="category.name"
