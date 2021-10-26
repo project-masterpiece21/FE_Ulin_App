@@ -167,6 +167,9 @@ const routes = [
   {
     path: '/signup',
     component: () => import('../components/layout/SignupPage.vue'),
+    meta: {
+      title: 'Signup - Ulin Apps'
+    },
   },
   {
     path: '/login',

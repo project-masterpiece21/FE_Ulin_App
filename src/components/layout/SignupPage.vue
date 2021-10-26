@@ -58,11 +58,16 @@
     </div>
 
     <transition name="fade">
-      <modal-alert v-show="checkStatus === 209">
+      <modal-alert v-show="checkEmail"> 
         <template #text-alert>
           <h2 class="break-words w-full sm:px-12 px-20 sm:text-base text-sm">
             Email sudah pernah digunakan sebelumnya
           </h2>
+
+
+          <button @click="closeButton()" name="button close" class="px-10 py-2 bg-yellow-400 hover:bg-yellow-500 rounded-full font-semibold text-white border-2 border-white shadow">
+            Tutup
+          </button>
         </template>
       </modal-alert>
     </transition>
@@ -108,17 +113,22 @@ export default {
       store.dispatch('signupUser/postRegister', payload)
     };
 
-    const checkStatus = computed(() => {
-      return store.getters['signupUser/checkPayload'];
+    const checkEmail = computed(() => {
+      const checkEmailExist = store.getters['signupUser/getEmailStatus'];
+
+      return checkEmailExist;
     });
 
-    console.log(checkStatus.value)
+    const closeButton = () => {
+      store.commit('signupUser/setEmailFalse');
+    }
 
     return {
       v$,
       payload,
       signupUser,
-      checkStatus
+      checkEmail,
+      closeButton
     }
   },
 }
