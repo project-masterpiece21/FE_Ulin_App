@@ -6,5 +6,5 @@ services:
     container_name: ulin-app
     build: .
     ports:
-      - 80:80
+      - 443:80
     restart: on-failure
