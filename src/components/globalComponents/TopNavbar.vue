@@ -16,9 +16,9 @@
       </div>
 
       <div class="flex items-center">
-        <!-- <NavbarIsLogin /> -->
+        <NavbarIsLogin />
 
-        <NavbarIsNotLogin />
+        <!-- <NavbarIsNotLogin /> -->
       </div>
     </div>
   </header>
@@ -28,9 +28,9 @@
 // import NavbarIsLogin from "./assetComponents/NavigationIsLogin.vue";
 import { ref } from "vue";
 
-import NavbarIsNotLogin from "./assetComponents/NavigationIsNotLogin.vue";
-import SideNavbar from './assetComponents/SideNavbar.vue';
-import NavbarIsLogin from './assetComponents/NavigationIsLogin.vue';
+import NavbarIsNotLogin from "./assetsTopNavbar/NavigationIsNotLogin.vue";
+import SideNavbar from './assetsTopNavbar/SideNavbar.vue';
+import NavbarIsLogin from './assetsTopNavbar/NavigationIsLogin.vue';
 
 export default {
   components: {

@@ -13,9 +13,9 @@ import TopNavbar from './components/globalComponents/TopNavbar.vue';
 import RecommendationDestination from './components/globalComponents/RecommendationDestination.vue';
 import CardItem from './components/globalComponents/CardItem.vue';
 import PopupLogin from './components/globalComponents/PopupLogin.vue';
-import TopSideNavbar from './components/globalComponents/assetComponents/TopSideNavbar.vue';
-import SearchForm from './components/globalComponents/assetComponents/SearchForm.vue';
-import PopularSearch from './components/globalComponents/assetComponents/PopularSearch.vue';
+import TopSideNavbar from './components/globalComponents/assetsTopNavbar/TopSideNavbar.vue';
+import SearchForm from './components/globalComponents/assetsTopNavbar/SearchForm.vue';
+import PopularSearch from './components/globalComponents/assetsTopNavbar/PopularSearch.vue';
 import ModalAlert from './components/globalComponents/ModalAlert.vue'
 
 const app = createApp(App);
