@@ -1,5 +1,5 @@
 <template>
-  <div class="relative min-h-screen sm:bg-gradient-to-b from-yellow-100 to-yellow-300 flex justify-center items-center">
+  <div class="relative min-h-screen flex justify-center items-center">
     <div class="sm:w-96 w-80 rounded-lg bg-white shadow-xl py-12">
       <div class="w-full px-10">
         <h1 class="text-2xl font-semibold text-gray-900">Daftar akun baru</h1>
@@ -58,7 +58,7 @@
     </div>
 
     <transition name="fade">
-      <modal-alert v-show="checkEmail"> 
+      <modal-alert v-show="checkEmail">
         <template #text-alert>
           <h2 class="break-words w-full sm:px-12 px-20 sm:text-base text-sm">
             Email sudah pernah digunakan sebelumnya
@@ -92,15 +92,15 @@ export default {
 
     const rules = computed(() => {
       const localRules = {
-        username: { 
+        username: {
           required: helpers.withMessage('Nama lengkap harus diisi ya :)', required)
         },
-        email: { 
-          required: helpers.withMessage('Email harus diisi ya :)', required), 
-          email: helpers.withMessage('Diisi pakai email ya :)', email) 
+        email: {
+          required: helpers.withMessage('Email harus diisi ya :)', required),
+          email: helpers.withMessage('Diisi pakai email ya :)', email)
           },
-        password: { 
-          required: helpers.withMessage('Password harus diisi ya :)', required), 
+        password: {
+          required: helpers.withMessage('Password harus diisi ya :)', required),
           minLength: helpers.withMessage('Password harus 6 karakter', minLength(6)) }
       }
 
@@ -108,7 +108,7 @@ export default {
     });
 
     const v$ = useVueValidate(rules, payload);
-    
+
     const signupUser = () => {
       store.dispatch('signupUser/postRegister', payload)
     };
