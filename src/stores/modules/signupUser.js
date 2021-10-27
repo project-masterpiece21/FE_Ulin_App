@@ -27,7 +27,7 @@ export default {
   },
   actions: {
     async postRegister({ commit }, payload) {
-      const url = 'http://47.254.244.4:443/auth/v1/signup';
+      const url = 'http://47.254.244.4/auth/v1/signup';
 
       const response = await fetch(url, {
         method: 'POST',
