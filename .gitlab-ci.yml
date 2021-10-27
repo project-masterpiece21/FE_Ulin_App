@@ -1,0 +1,10 @@
+image: docker
+services:
+  - docker:dind
+stages:
+  - deploy
+step-deploy-prod:
+  stage: deploy
+  script:
+    - docker build -t app/ulin-apps .
+    - docker run -d -p 443:80 --rm --name ulin-apps app/ulin-apps
