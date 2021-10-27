@@ -1,0 +1,10 @@
+version: '3.7'
+
+services:
+  ulin-app:
+    image: ulin-app
+    container_name: ulin-app
+    build: .
+    ports:
+      - 80:80
+    restart: on-failure
