@@ -6,7 +6,7 @@
       </div>
       <div class="absolute top-2 left-1/3 z-50 bg-white h-64 w-1/3 rounded-md">
         <form class="p-4" method="post">
-          <textarea type="text" name="" placeholder="Moment" class="w-full focus:outline-none bg-gray-100 p-2 rounded-md"></textarea>
+          <textarea type="text" name="" placeholder="Moment" class="text-sm w-full focus:outline-none bg-gray-100 p-2 rounded-md"></textarea>
         </form>
       </div>
     </div>
