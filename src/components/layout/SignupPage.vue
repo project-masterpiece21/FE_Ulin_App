@@ -114,9 +114,7 @@ export default {
     };
 
     const checkEmail = computed(() => {
-      const checkEmailExist = store.getters['signupUser/getEmailStatus'];
-
-      return checkEmailExist;
+      return store.getters['signupUser/getEmailStatus'];
     });
 
     const closeButton = () => {

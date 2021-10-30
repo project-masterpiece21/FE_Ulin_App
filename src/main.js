@@ -16,7 +16,8 @@ import PopupLogin from './components/globalComponents/PopupLogin.vue';
 import TopSideNavbar from './components/globalComponents/assetsTopNavbar/TopSideNavbar.vue';
 import SearchForm from './components/globalComponents/assetsTopNavbar/SearchForm.vue';
 import PopularSearch from './components/globalComponents/assetsTopNavbar/PopularSearch.vue';
-import ModalAlert from './components/globalComponents/ModalAlert.vue'
+import ModalAlert from './components/globalComponents/ModalAlert.vue';
+import ModalForm from './components/globalComponents/ModalForm.vue';
 
 const app = createApp(App);
 
@@ -31,6 +32,7 @@ app.component('PopupLogin', PopupLogin);
 app.component('SearchForm', SearchForm);
 app.component('PopularSearch', PopularSearch);
 app.component('ModalAlert', ModalAlert);
+app.component('ModalForm', ModalForm);
 
 app.use(router);
 app.use(VueLazyLoad);
