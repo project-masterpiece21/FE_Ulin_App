@@ -1,4 +1,4 @@
-import router from '../../router';
+import router from '../../../router';
 
 export default {
   namespaced: true,
@@ -16,18 +16,18 @@ export default {
   },
   mutations: {
     setPayload(state, payload) {
-      return state.payloadUser = payload
+      return state.payloadUser = payload;
     },
-    setEmailExits(state, already) {
-      return state.emailIsAlready = already;
+    setEmailExits(state) {
+      return state.emailIsAlready = true;
     },
     setEmailFalse(state) {
-      return state.emailIsAlready = false
+      return state.emailIsAlready = false;
     }
   },
   actions: {
     async postRegister({ commit }, payload) {
-      const url = 'http://47.254.244.4/auth/v1/signup';
+      const url = 'https://api.ulin-app.xyz/auth/v1/signup';
 
       const response = await fetch(url, {
         method: 'POST',
@@ -44,7 +44,7 @@ export default {
       if (status.statusCode === 200) {
         router.push({ path: '/login' })
       } else if (status.statusCode === 409 ) {
-        commit('setEmailExits', true)
+        commit('setEmailExits')
       }
     }
   }

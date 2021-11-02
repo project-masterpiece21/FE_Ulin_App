@@ -4,16 +4,16 @@
       <div class="w-full px-10 pt-2 pb-7">
         <h1 class="text-2xl font-semibold text-gray-900">Masuk akun</h1>
 
-        <form class="mt-12">
+        <form @submit.prevent="loginUser" class="mt-12">
           <div class="mt-7 relative">
             <label for="email" class="absolute -top-4 text-sm text-gray-600 font-medium">Email</label>
 
-            <input id="email" name="email" type="text" class="peer h-10 w-full border-b border-gray-300 text-gray-900 focus:outline-none focus:border-yellow-500" placeholder="Masukan email" />
+            <input v-model="payload.email" id="email" name="email" type="text" class="peer h-10 w-full border-b border-gray-300 text-gray-900 focus:outline-none focus:border-yellow-500" placeholder="Masukan email" />
           </div>
           <div class="mt-7 relative">
             <label for="password" class="absolute -top-4 text-sm text-gray-600 font-medium">Password</label>
 
-            <input id="password" type="password" name="password" class="h-10 w-full border-b border-gray-300 text-gray-900 focus:outline-none focus:border-yellow-500" placeholder="Masukan Password" />
+            <input v-model="payload.password" id="password" type="password" name="password" class="h-10 w-full border-b border-gray-300 text-gray-900 focus:outline-none focus:border-yellow-500" placeholder="Masukan Password" />
           </div>
 
           <button type="sumbit" class="mt-12 px-4 py-2 rounded-lg bg-yellow-500 hover:bg-yellow-400 text-white font-semibold text-center block w-full focus:outline-none focus:ring focus:ring-offset-1 focus:ring-yellow-500 focus:ring-opacity-80 cursor-pointer">
@@ -21,6 +21,7 @@
           </button>
         </form>
 
+				<!-- login Oauth2 -->
         <div class="mt-5 w-full mx-auto">
           <span class="text-xs mx-auto flex justify-center text-gray-500 my-4">Atau masuk menggunakan</span>
 
@@ -43,15 +44,32 @@
 
           </div>
         </div>
+
+				<!-- Close login Oatuh2 -->
       </div>
     </div>
   </div>
 </template>
 
 <script>
+import { reactive, computed } from 'vue';
+import { useStore } from 'vuex';
 export default {
   setup() {
-    
+    const store = useStore();
+		const payload = reactive({
+			email: '',
+			password: ''
+		});
+
+		const loginUser = () => {
+			store.dispatch('loginUser/postLogin', payload);
+		}
+
+		return {
+			payload,
+			loginUser
+		}
   },
 }
 </script>
