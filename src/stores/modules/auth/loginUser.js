@@ -4,16 +4,26 @@ export default {
   namespaced: true,
   state: {
     payloadUser: {},
-    isLoading: false
+    isLoading: false,
+    isStatus: false
   },
   getters: {
-    isLoading(state) {
+    getLoading(state) {
       return state.isLoading;
+    },
+    getStatus(state) {
+      return state.isStatus;
     }
   },
   mutations: {
     setPayload(state, payload) {
       state.payloadUser = payload;
+    },
+    seLoading(state) {
+      state.isLoading = !state.isLoading;
+    },
+    setModal(state) {
+      state.isStatus = !state.isStatus;
     }
   },
   actions: {
@@ -22,7 +32,7 @@ export default {
 
         const url = 'https://api.ulin-app.xyz/auth/v1/login';
 
-        const response = await fetch(url, {
+        const data = await fetch(url, {
           method: 'POST',
           headers: {
             'Content-Type': 'application/json'
@@ -30,11 +40,13 @@ export default {
           body: JSON.stringify(payload)
         })
 
-        const status = await response.json();
+        const response = await data.json();
 
-        console.log(status);
+        if (response.statusCode === 400 || response.statusCode === 401) {
+          commit('setModal')
+        }
 
-        commit('setPayload', status);
+        commit('setPayload', response);
       } catch (err) {
         console.log(err)
       };
