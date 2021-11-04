@@ -29,6 +29,7 @@ const routes = [
         name: 'profile-user',
         component: () => import('../components/layout/UserProfile.vue'),
         meta: {
+          requiresAuth: true,
           title: 'Profile user - Ulin Apps',
           metaTags: [
             {
