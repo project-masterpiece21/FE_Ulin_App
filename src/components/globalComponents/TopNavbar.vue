@@ -16,17 +16,17 @@
       </div>
 
       <div class="flex items-center">
-        <!-- <NavbarIsLogin /> -->
+        <NavbarIsLogin v-if="login_status" />
 
-        <NavbarIsNotLogin />
+        <NavbarIsNotLogin v-else />
       </div>
     </div>
   </header>
 </template>
 
 <script>
-// import NavbarIsLogin from "./assetComponents/NavigationIsLogin.vue";
-import { ref } from "vue";
+import { useStore } from 'vuex';
+import { computed } from 'vue';
 
 import NavbarIsNotLogin from "./assetsTopNavbar/NavigationIsNotLogin.vue";
 import SideNavbar from './assetsTopNavbar/SideNavbar.vue';
@@ -37,6 +37,19 @@ export default {
     NavbarIsNotLogin,
     SideNavbar,
     NavbarIsLogin,
+  },
+  setup() {
+    const store = useStore();
+
+    const isLogin = computed(() => {
+      return store.getters['loginUser/isLogin']
+    });
+
+    const { login_status } = isLogin.value;
+
+    return {
+      login_status
+    }
   }
 };
 </script>

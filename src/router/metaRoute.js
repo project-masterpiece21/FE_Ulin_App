@@ -8,10 +8,11 @@ const metaRoute = (to, from, next) => {
     return store.getters['loginUser/isLogin'];
   })
 
-  const accessToken = getToken.value.accessToken;
+  const accessToken = getToken.value.token_access;
+  const loginStatus = getToken.value.login_status;
 
   if(checkRequiredAuth) {
-    if (accessToken === null || accessToken === undefined || accessToken === '') {
+    if (accessToken === null && loginStatus) {
       next({
         path: '/login',
         params: { nextUrl: to.fullPath }

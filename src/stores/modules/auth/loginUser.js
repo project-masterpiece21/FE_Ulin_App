@@ -3,7 +3,10 @@ import createPersistedState from 'vuex-persistedstate';
 export default {
   namespaced: true,
   state: {
-    payloadUser: {},
+    isAuth: {
+      token_access: '',
+      login_status: false
+    },
     isLoading: false,
     isStatus: false
   },
@@ -15,13 +18,13 @@ export default {
       return state.isStatus;
     },
     isLogin(state) {
-      return state.payloadUser;
+      return state.isAuth;
     }
   },
   mutations: {
-    setAuth(state, payload) {
-      state.payloadUser = payload;
-
+    setAuth(state, token) {
+      state.isAuth.token_access = token;
+      state.isAuth.login_status = true;
     },
     seLoading(state) {
       state.isLoading = !state.isLoading;
@@ -50,7 +53,9 @@ export default {
           return commit('setModal');
         }
 
-        commit('setAuth', response);
+        const token = response.accessToken;
+
+        commit('setAuth', token);
         router.push('/home')
       } catch (err) {
         console.log(err)
