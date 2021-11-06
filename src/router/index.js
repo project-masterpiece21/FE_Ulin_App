@@ -80,8 +80,8 @@ const routes = [
         },
       },
       {
-        path: 'places/:id',
-        name: 'places',
+        path: 'place/:id',
+        name: 'place-detail',
         component: () => import('../components/layout/DetailPlace.vue'),
         meta: {
           title: 'Detail Page - Ulin Apps',
