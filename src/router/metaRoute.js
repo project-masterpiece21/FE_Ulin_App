@@ -1,13 +1,39 @@
 const metaRoute = (to, from, next) => {
-  if(to.matched.some(record => record.meta.requiresAuth)) {
-    if (localStorage.getItem('token') === null) {
+
+  const checkRequiredAuth = to.matched.some(record => record.meta.requiresAuth);
+  const accessToken = localStorage.getItem('ACCESS_TOKEN');
+
+  if(checkRequiredAuth) {
+    if (accessToken === null) {
       next({
         path: '/login',
         params: { nextUrl: to.fullPath }
       })
+    } else {
+      next()
     }
   }
 
+
+  if (to.name === 'login' && accessToken) {
+    next({
+      path: '/home',
+      params: { nextUrl: to.fullPath }
+    })
+  } else if(to.name === 'signup' && accessToken) {
+    next({
+      path: '/home',
+      params: { nextUrl: to.fullPath }
+    })
+  }
+  
+  if (to.matched.some(record => record.meta.guest)) {
+    if (localStorage.getItem('ACCESS_TOKEN') === null) {
+      next()
+    } else {
+      next({ name: 'home' })
+    }
+  }
 
   const nearestWithTitle = to.matched.slice().reverse().find((r) => r.meta && r.meta.title);
 

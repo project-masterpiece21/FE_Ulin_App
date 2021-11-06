@@ -16,8 +16,10 @@ export default {
     }
   },
   mutations: {
-    setPayload(state, payload) {
+    setAuth(state, payload) {
       state.payloadUser = payload;
+
+      localStorage.setItem('ACCESS_TOKEN', payload.accessToken);
     },
     seLoading(state) {
       state.isLoading = !state.isLoading;
@@ -43,10 +45,11 @@ export default {
         const response = await data.json();
 
         if (response.statusCode === 400 || response.statusCode === 401) {
-          commit('setModal')
+          return commit('setModal');
         }
 
-        commit('setPayload', response);
+        commit('setAuth', response);
+        router.push('/home')
       } catch (err) {
         console.log(err)
       };
