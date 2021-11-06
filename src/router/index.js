@@ -26,7 +26,7 @@ const routes = [
       },
       {
         path: '/user/:id',
-        name: 'profile-user',
+        name: 'dashboard',
         component: () => import('../components/layout/UserProfile.vue'),
         meta: {
           requiresAuth: true,
@@ -45,6 +45,7 @@ const routes = [
       },
       {
         path: 'moment',
+        name: 'moment',
         component: () => import('../components/layout/MomentPage.vue'),
         meta: {
           title: 'Moment Page - Ulin Apps',
@@ -62,6 +63,7 @@ const routes = [
       },
       {
         path: 'places',
+        name: 'places',
         component: () => import('../components/layout/SearchPlaces.vue'),
         meta: {
           title: 'Search Destination - Ulin Apps',
@@ -78,8 +80,8 @@ const routes = [
         },
       },
       {
-        path: 'destination/:id',
-        name: 'detail-destination',
+        path: 'places/:id',
+        name: 'places',
         component: () => import('../components/layout/DetailPlace.vue'),
         meta: {
           title: 'Detail Page - Ulin Apps',
@@ -97,6 +99,7 @@ const routes = [
       },
       {
         path: 'rank',
+        name: 'rank',
         component: () => import('../components/layout/RankPage.vue'),
         meta: {
           title: 'Rank Page - Ulin Apps',
@@ -114,6 +117,7 @@ const routes = [
       },
       {
         path: 'information',
+        name: 'information',
         component: () => import('../components/layout/InformationPage.vue'),
         meta: {
           title: 'News Page - Ulin Apps',
@@ -131,6 +135,7 @@ const routes = [
       },
       {
         path: 'coming-soon',
+        name: 'comming-soon',
         component: () => import('../components/pages/comingSoonComponents/ComingSoonMain.vue'),
         meta: {
           title: 'Comming Soon - Ulin Apps',
@@ -150,6 +155,7 @@ const routes = [
   },
   {
     path: '/about-us',
+    name: 'about-us',
     component: () => import('../components/layout/AboutUs.vue'),
     meta: {
       title: 'About Us - Ulin Apps',

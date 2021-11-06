@@ -1,10 +1,17 @@
-const metaRoute = (to, from, next) => {
+import store from '../stores';
+import { computed } from 'vue';
 
+const metaRoute = (to, from, next) => {
   const checkRequiredAuth = to.matched.some(record => record.meta.requiresAuth);
-  const accessToken = localStorage.getItem('ACCESS_TOKEN');
+
+  const getToken = computed(() => {
+    return store.getters['loginUser/isLogin'];
+  })
+
+  const accessToken = getToken.value.accessToken;
 
   if(checkRequiredAuth) {
-    if (accessToken === null) {
+    if (accessToken === null || accessToken === undefined || accessToken === '') {
       next({
         path: '/login',
         params: { nextUrl: to.fullPath }
@@ -18,20 +25,28 @@ const metaRoute = (to, from, next) => {
   if (to.name === 'login' && accessToken) {
     next({
       path: '/home',
-      params: { nextUrl: to.fullPath }
-    })
-  } else if(to.name === 'signup' && accessToken) {
-    next({
-      path: '/home',
+      home: 'home',
       params: { nextUrl: to.fullPath }
     })
   }
+  
+  if(to.name === 'signup' && accessToken) {
+    next({
+      path: '/home',
+      name: 'home',
+      params: { nextUrl: to.fullPath }
+    })
+  }
+
   
   if (to.matched.some(record => record.meta.guest)) {
     if (localStorage.getItem('ACCESS_TOKEN') === null) {
       next()
     } else {
-      next({ name: 'home' })
+      next({
+        path: '/',
+        params: { nextUrl: to.fullPath }
+      })
     }
   }
 

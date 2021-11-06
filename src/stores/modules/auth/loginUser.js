@@ -1,5 +1,5 @@
 import router from '../../../router';
-
+import createPersistedState from 'vuex-persistedstate';
 export default {
   namespaced: true,
   state: {
@@ -13,13 +13,15 @@ export default {
     },
     getStatus(state) {
       return state.isStatus;
+    },
+    isLogin(state) {
+      return state.payloadUser;
     }
   },
   mutations: {
     setAuth(state, payload) {
       state.payloadUser = payload;
 
-      localStorage.setItem('ACCESS_TOKEN', payload.accessToken);
     },
     seLoading(state) {
       state.isLoading = !state.isLoading;
