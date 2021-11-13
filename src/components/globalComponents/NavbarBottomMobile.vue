@@ -58,7 +58,7 @@ export default {
       {
         name: "Coming Soon",
         icon: "bx:bx-calendar-star",
-        link: "/information",
+        link: "/coming-soon",
       },
     ]);
 
