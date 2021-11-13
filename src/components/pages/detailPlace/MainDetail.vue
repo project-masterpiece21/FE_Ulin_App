@@ -1,7 +1,11 @@
 <template>
   <main class="md:flex xl:ml-60 lg:ml-32 sm:ml-24 lg:mt-36 mt-20 mb-24">
 		<section class="md:w-3/5 w-full px-4">
-			<ImageHero />
+			<ImageHero>
+        <template v-slot:button-like>
+          <ButtonLike />
+        </template>
+      </ImageHero>
       <ImagesList />
       <DescriptionPlace>
         <template v-slot:star-rating>
@@ -30,6 +34,7 @@ import ImageHero from "./assetComponents/ImageHero.vue"
 import ImagesList from "./assetComponents/ImagesList.vue"
 import DescriptionPlace from "./assetComponents/DescriptionPlace.vue"
 import UserReviews from "./assetComponents/UserReviews.vue"
+import ButtonLike from "./assetComponents/ButtonLike.vue"
 export default {
   name: "detail-main",
   components: {
@@ -38,7 +43,8 @@ export default {
     DescriptionPlace,
     StarRating,
     RatingReview,
-    UserReviews
+    UserReviews,
+    ButtonLike
   },
   setup() {
 
