@@ -1,5 +1,5 @@
 <template>
-	<a v-for="destination in destinations" href="/" class="reactive flex aspect-w-4 aspect-h-2 items-center w-full mt-4">
+	<a v-for="destination in destinations" href="/" class="reactive flex aspect-w-4 aspect-h-2 items-center w-full mt-4" :key="destination.name">
 		<img v-lazy="destination.image" alt="Recomendation Destination" class="object-fit rounded-xl block object-cover">
 
 		<figcaption class="absolute group hover:bg-opacity-0 w-full h-full bg-black bg-opacity-25 rounded-xl">

@@ -13,7 +13,7 @@
   >
     <div>
       <figure class="relative overflow-hidden flex-shrink-0">
-        <a :href="`destination/${id}`">
+        <a :href="`place/${id}`">
           <div
             class="
               md:aspect-w-5 md:aspect-h-3
