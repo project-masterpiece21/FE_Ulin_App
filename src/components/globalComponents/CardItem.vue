@@ -66,19 +66,18 @@
           <div>
             <VisitorRecommendation class="xs:mb-0.5" />
 
-            <!-- <router-link
-              :to="{ name: 'detail-destination', params: { id: id }}"
+            <h1
               class="
                 sm:text-base
                 xs:text-sm
                 text-xs
                 leading-tight
                 font-semibold
-                text-black
+                text-gray-900
               "
             >
               {{ name }}
-            </router-link> -->
+            </h1>
           </div>
         </div>
 
