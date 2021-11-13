@@ -3,7 +3,7 @@
     <Carousel :autoplay="4500" :breakpoints="breakpoints" :wrap-around="true">
       <slide v-for="slide in banners" :key="slide">
         <div class="px-4 carousel__item">
-          <img v-lazy="{ src: slide }" :src="slide" :alt="slide" class="rounded-lg">
+          <img :src="slide" :alt="slide" class="rounded-lg">
         </div>
       </slide>
 

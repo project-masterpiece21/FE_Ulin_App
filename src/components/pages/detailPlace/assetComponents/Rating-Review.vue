@@ -1,5 +1,5 @@
 <template>
-  <section class="mt-4">
+  <section class="mt-6">
     <div class="text-medium text-gray-800">
       <h1 class="font-semibold sm:text-lg">
         Rating dan Reviews

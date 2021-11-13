@@ -13,7 +13,7 @@
     </div>
     <slot name="star-rating"></slot>
 
-    <div class="leading-tight mt-5 text-gray-800">
+    <div class="leading-tight mt-6 text-gray-800">
       <h2 class="sm:text-lg font-semibold" >Tentang Jalan Terusan Taman Kuningan</h2>
       <p class="text-sm sm:text-base mt-3">
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique ullam sequi deleniti. Natus, expedita! Dicta deleniti odit est ex in, alias voluptate aut tempora minima omnis quis distinctio repudiandae quisquam.
