@@ -13,7 +13,7 @@
   >
     <div>
       <figure class="relative overflow-hidden flex-shrink-0">
-        <a :href="`place/${id}`">
+        <router-link :to="{ name: 'place-detail', params: { id: id }}">
           <div
             class="
               md:aspect-w-5 md:aspect-h-3
@@ -27,7 +27,7 @@
               class="object-cover"
             />
           </div>
-        </a>
+        </router-link>
 
         <div
           class="
