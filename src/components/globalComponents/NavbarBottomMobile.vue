@@ -13,8 +13,8 @@
       z-40
     "
   >
-    <a
-      :href="menu.link"
+    <router-link
+      :to="menu.link"
       v-for="menu in navMenu"
       :key="menu.name"
       :name="menu.name"
@@ -27,26 +27,28 @@
         group
         cursor-pointer
       "
-    >
-      <span
-        :class="$route.path === menu.link ? 'text-yellow-500' : 'text-gray-400'"
-        class="iconify text-xl mx-auto"
-        :data-icon="menu.icon"
-        data-inline="false"
-      ></span>
+    > 
+      <div :class="[(activeRoute === menu.link) ? 'text-yellow-500' : 'text-gray-400' ]">
+        <span
+          class="iconify text-xl mx-auto"
+          :data-icon="menu.icon"
+          data-inline="false"
+        ></span>
+      </div>
 
       <div
-        :class="$route.path === menu.link ? 'text-yellow-500' : ''"
+        :class="[(activeRoute === menu.link) ? 'text-yellow-500' : 'text-gray-400' ]"
         class="text-gray-500"
       >
         {{ menu.name }}
       </div>
-    </a>
+    </router-link>
   </nav>
 </template>
 
 <script>
-import { reactive } from "vue";
+import { reactive, computed } from "vue";
+import { useRoute } from 'vue-router';
 
 export default {
   setup() {
@@ -62,8 +64,15 @@ export default {
       },
     ]);
 
+    const route = useRoute();
+
+    const activeRoute = computed(() => {
+      return route.path;
+    })
+
     return {
       navMenu,
+      activeRoute
     };
   },
 };

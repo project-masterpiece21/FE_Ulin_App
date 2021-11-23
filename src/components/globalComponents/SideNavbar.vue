@@ -17,8 +17,8 @@
       "
     >
       <!-- Menu Navbar -->
-      <a
-        :href="menu.link"
+      <router-link
+        :to="menu.link"
         v-for="menu in navMenu"
         :key="menu.name"
         class="
@@ -48,31 +48,30 @@
           "
         >
           <div class="xl:pl-3 flex xl:ml-0 mx-auto items-center">
-            <span
-              :class="$route.path === menu.link ? 'text-yellow-500' : ''"
-              class="iconify xl:text-2xl text-3xl mx-auto text-gray-400"
-              :data-icon="menu.icon"
-              data-inline="false"
-            ></span>
+            <div :class="[(routeActive === menu.link) ? 'text-yellow-500' : 'text-gray-400' ]">
+              <span
+                class="iconify xl:text-2xl text-3xl mx-auto"
+                :data-icon="menu.icon"
+                data-inline="false"
+              ></span>
+            </div>
 
-            <h1
-              :class="
-                $route.path === menu.link ? 'text-yellow-500 font-semibold' : ''
-              "
+            <h1 :class="[(routeActive === menu.link) ? 'text-yellow-500 font-semibold' : '' ]"
               class="xl:block text-black hidden ml-3 font-medium"
             >
               {{ menu.name }}
             </h1>
           </div>
         </div>
-      </a>
+      </router-link>
       <!-- Menu Navbar -->
     </div>
   </nav>
 </template>
 
 <script>
-import { reactive } from "vue";
+import { reactive, computed } from "vue";
+import { useRoute } from 'vue-router';
 
 export default {
   setup() {
@@ -88,8 +87,16 @@ export default {
       },
     ]);
 
+    const router = useRoute()
+
+    const routeActive = computed(() => {
+      return router.path;
+    })
+
+
     return {
       navMenu,
+      routeActive
     };
   },
 };
