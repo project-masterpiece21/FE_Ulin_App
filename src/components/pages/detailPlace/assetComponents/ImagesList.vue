@@ -1,7 +1,7 @@
 <template>
   <section class="grid grid-cols-4 gap-2 mt-2">
     <div v-for="image in images" :key="image" class="rounded-lg overflow-hidden aspect-w-7 aspect-h-5">
-      <img :src="image.img" class="object-cover">
+      <img v-lazy={src:image.img} class="object-cover">
     </div>
   </section>
 </template>

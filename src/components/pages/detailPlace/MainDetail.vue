@@ -1,7 +1,7 @@
 <template>
   <main class="md:flex xl:ml-60 lg:ml-32 sm:ml-24 lg:mt-36 mt-20 mb-24">
 		<section class="md:w-3/5 w-full px-4">
-			<ImageHero>
+			<ImageHero :image="place.image">
         <template v-slot:button-like>
           <ButtonLike />
         </template>
