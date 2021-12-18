@@ -1,16 +1,5 @@
 <template>
-  <div
-    class="
-      w-full
-      bg-white
-      rounded-lg
-      overflow-hidden
-      border
-      cursor-pointer
-      shadow-md
-      hover:shadow-xl
-    "
-  >
+  <div class="w-full bg-white rounded-lg overflow-hidden border cursor-pointer shadow-md hover:shadow-xl">
     <div>
       <figure class="relative overflow-hidden flex-shrink-0">
         <router-link :to="{ name: 'place-detail', params: { id: id }}">

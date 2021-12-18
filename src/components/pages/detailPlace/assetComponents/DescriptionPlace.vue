@@ -1,7 +1,7 @@
 <template>
   <section class="mt-5 xs:mt-6">
     <h1 class="font-semibold text-gray-900 sm:text-2xl xs:text-xl text-lg leading-tight">
-      Jalan Terusan Taman Kuningan
+      {{ place.name }}
     </h1>
     <div class="xs:my-2 my-1 tracking-wide text-sm text-yellow-500 font-semibold flex items-center">
       <span
@@ -14,9 +14,9 @@
     <slot name="star-rating"></slot>
 
     <div class="leading-tight mt-6 text-gray-800">
-      <h2 class="sm:text-lg font-semibold" >Tentang Jalan Terusan Taman Kuningan</h2>
+      <h2 class="sm:text-lg font-semibold" >Tentang {{ place.name }}</h2>
       <p class="text-sm sm:text-base mt-3">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique ullam sequi deleniti. Natus, expedita! Dicta deleniti odit est ex in, alias voluptate aut tempora minima omnis quis distinctio repudiandae quisquam.
+        {{ place.description }}
       </p>
     </div>
   </section>
@@ -28,6 +28,7 @@ export default {
   name: "description-place",
   components: {
   },
+  props: ["place"],
   setup() {
 
   }

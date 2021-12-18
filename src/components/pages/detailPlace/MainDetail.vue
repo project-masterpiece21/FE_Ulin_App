@@ -7,7 +7,7 @@
         </template>
       </ImageHero>
       <ImagesList />
-      <DescriptionPlace>
+      <DescriptionPlace :place="place">
         <template v-slot:star-rating>
           <StarRating />
         </template>
@@ -22,12 +22,16 @@
       </DescriptionPlace>
 		</section>
 		<section class="w-2/5 md:block hidden px-4 bg-white">
-    wkwkwk
+      wkwkwkwk
 		</section>
 	</main>
 </template>
 
 <script>
+import { onMounted, computed } from 'vue'
+import { useStore } from 'vuex'
+import { useRoute } from 'vue-router'
+
 import StarRating from "./assetComponents/StarRating.vue"
 import RatingReview from "./assetComponents/Rating-Review.vue"
 import ImageHero from "./assetComponents/ImageHero.vue"
@@ -47,7 +51,20 @@ export default {
     ButtonLike
   },
   setup() {
+    const store = useStore()
+    const router = useRoute()
 
+    const { id } = router.params
+
+    onMounted(() => {
+      store.dispatch('getPlaceById/getPlaceById', id)
+    })
+
+    const place = computed(() => {
+      return store.getters['getPlaceById/getterPlaceById']
+    })
+
+    return { place }
   }
 }
 </script>
